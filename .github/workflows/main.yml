@@ -1,9 +1,9 @@
-name: Deploys in production on every push to master
+name: Deploys in production on every push to main
 
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
