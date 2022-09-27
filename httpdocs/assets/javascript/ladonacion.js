@@ -91,7 +91,7 @@ document.querySelector('body').innerHTML += `
 
 site.init({
   popupTimeout: 1000 * 60 * 5, // 5 minutes
-  mapboxToken: '', // Insert your Mapbox' account token here
+  mapboxToken: 'pk.eyJ1IjoicmVuZW1vcmVubyIsImEiOiJjbDhpMDlxeGsxM2pxM25xaG8yNGhjcjQwIn0.iRl1az1RYdIdHOT5LJ2D1A', // Insert your Mapbox' account token here
   routes: [
     {
       page: 'portada',
