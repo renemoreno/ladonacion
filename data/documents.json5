@@ -2,7 +2,7 @@
   {
     id: 'carta_juan_carlos_dante_canonica_2018_08_12',
     file: 'file:documents/carta_juan_carlos_dante_canonica_2018_08_12.pdf',
-    title: 'Carta de Juan Carlos a Dante Canonica sobre la fundación Lucum',
+    title: 'La Carta de Juan Carlos a Dante Canonica sobre la fundación Lucum',
     origin: '#/articles/elconfidencial_2720484',
     description: 'La Carta de <a href="#/persons/juan_carlos">Juan Carlos</a> a <a href="#/persons/dante_canonica">Dante Canonica</a>, relativa a la <a href="#/entities/lucum">Fundación Lucum</a>. En ella, el rey emérito le confirma <q>una vez más</q> a su gestor en Ginebra el carácter <q>irrevocable</q> de su donación a <a href="#/persons/corinna">Corinna</a>, al tiempo que le asegura que ella jamás ha actuado como su testaferro <q>contrariamente a lo que se pueda indicar en la prensa española</q>.</q>',
     lang: 'fr',

@@ -24,7 +24,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USER }}
           REMOTE_PORT: ${{ secrets.PORT }}
-          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.LADONACION_SECRET }}
 
       - name: Deploys the /slides directory
         uses: easingthemes/ssh-deploy@v2.1.5
@@ -35,7 +35,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USER }}
           REMOTE_PORT: ${{ secrets.PORT }}
-          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.LADONACION_SECRET }}
 
       - name: Deploys the launch page
         uses: easingthemes/ssh-deploy@v2.1.5
@@ -46,4 +46,4 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USER }}
           REMOTE_PORT: ${{ secrets.PORT }}
-          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.LADONACION_SECRET }}
