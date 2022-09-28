@@ -15,16 +15,16 @@ jobs:
       - name: Installs the dependencies
         run: npm install && npx snowpack build && cp httpdocs/resources/ladonacion.js build/twitter/
 
-      - name: Deploys the site
+       - name: Deploys the site
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
           ARGS: -rltgoDzvO --delete
           SOURCE: 'build/'
-          TARGET: 'Documents/CPC/ladonacionprueba/ladonacion/httpdocs/resources'
-          REMOTE_HOST: localhost
-          REMOTE_USER: 'ponileo/renem'
-          REMOTE_PORT: 22
-          SSH_PRIVATE_KEY: ${{ secrets.LADONACION_SECRET }}
+          TARGET: ${{ secrets.REMOTE }}
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USER }}
+          REMOTE_PORT: ${{ secrets.PORT }}
+          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
 
       - name: Deploys the /slides directory
         uses: easingthemes/ssh-deploy@v2.1.5
@@ -32,10 +32,10 @@ jobs:
           ARGS: -rltgoDzvO
           SOURCE: 'slides/'
           TARGET: '${{ secrets.REMOTE }}/slides'
-          REMOTE_HOST: ${{ secrets.ponileo }}
-          REMOTE_USER: ${{ secrets.renem }}
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USER }}
           REMOTE_PORT: ${{ secrets.PORT }}
-          SSH_PRIVATE_KEY: ${{ secrets.LADONACION_SECRET }}
+          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
 
       - name: Deploys the launch page
         uses: easingthemes/ssh-deploy@v2.1.5
@@ -43,7 +43,7 @@ jobs:
           ARGS: -rltgoDzvO --delete
           SOURCE: '321/'
           TARGET: ${{ secrets.REMOTE_PRELAUNCH }}
-          REMOTE_HOST: ${{ secrets.ponileo }}
-          REMOTE_USER: ${{ secrets.renem }}
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USER }}
           REMOTE_PORT: ${{ secrets.PORT }}
-          SSH_PRIVATE_KEY: ${{ secrets.LADONACION_SECRET }}
+          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
