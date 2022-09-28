@@ -1,9 +1,9 @@
-name: Deploys in production on every push to main
+name: Deploys in production on every push to master
 
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -15,7 +15,7 @@ jobs:
       - name: Installs the dependencies
         run: npm install && npx snowpack build && cp httpdocs/resources/ladonacion.js build/twitter/
 
-       - name: Deploys the site
+      - name: Deploys the site
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
           ARGS: -rltgoDzvO --delete
