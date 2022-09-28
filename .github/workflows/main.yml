@@ -13,8 +13,15 @@ jobs:
         run: npm install && npx snowpack build && cp httpdocs/resources/ladonacion.js build/twitter/
 
       # Deploy the site with netlify-cli
-      - name: Deploy Site
+      - name: Deploy data
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        run: netlify deploy --dir=build --prod
+        run: netlify deploy --dir=data --prod
+
+      # Deploy the site with netlify-cli
+      - name: Deploy bin
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: netlify deploy --dir=bin --prod
