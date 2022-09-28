@@ -17,7 +17,7 @@ jobs:
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        run: netlify deploy --dir=httpdocs --prod
+        run: netlify deploy --dir=bin --prod
 
               # Deploy the site with netlify-cli
       - name: Deploy Slides
