@@ -21,9 +21,9 @@ jobs:
           ARGS: -rltgoDzvO --delete
           SOURCE: 'build/'
           TARGET: ${{ secrets.REMOTE }}
-          REMOTE_HOST: ${{ secrets.ponileo }}
-          REMOTE_USER: ${{ secrets.renem }}
-          REMOTE_PORT: ${{ secrets.PORT }}
+          REMOTE_HOST: ponileo
+          REMOTE_USER: renem
+          REMOTE_PORT: 8080
           SSH_PRIVATE_KEY: ${{ secrets.LADONACION_SECRET }}
 
       - name: Deploys the /slides directory
