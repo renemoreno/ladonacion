@@ -20,9 +20,9 @@ jobs:
         env:
           ARGS: -rltgoDzvO --delete
           SOURCE: 'build/'
-          TARGET: 'Documents\CPC\ladonacionprueba\ladonacion\httpdocs\resources'
+          TARGET: 'Documents/CPC/ladonacionprueba/ladonacion/httpdocs/resources'
           REMOTE_HOST: localhost
-          REMOTE_USER: ponileo\renem
+          REMOTE_USER: 'ponileo/renem'
           REMOTE_PORT: 22
           SSH_PRIVATE_KEY: ${{ secrets.LADONACION_SECRET }}
 
