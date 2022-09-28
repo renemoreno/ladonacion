@@ -2114,7 +2114,7 @@
     id: 'doc_delantera_financiera',
     file: 'file:documents/delantera_financiera.pdf',
     title: 'El Documento que vincula a Pilar de Borbón con Delantera Financiera',
-    description: 'Solicitud emitida por el bufete <a href="#/entities/mossack_fonseca">Mossack Fonseca</a> y relativa al reenvío de correspondencia de <a href="#/entities/delantera_financiera">Delantera Financiera</a>, la sociedad «offshore» mantenida durante casi cuarenta años en <a href="#/places/panama">Panamá</a> por la hermana del <a href="#/persons/juan_carlos">rey emérito</a>, la infanta y duquesa <a href="#/persons/pilar_de_borbon">Pilar de Borbón</a>. El ciclo de vida de esta entidad, coincidente con el reinado de su hermano, ha dado lugar a especulaciones.',
+    description: 'La otra Solicitud emitida por el bufete <a href="#/entities/mossack_fonseca">Mossack Fonseca</a> y relativa al reenvío de correspondencia de <a href="#/entities/delantera_financiera">Delantera Financiera</a>, la sociedad «offshore» mantenida durante casi cuarenta años en <a href="#/places/panama">Panamá</a> por la hermana del <a href="#/persons/juan_carlos">rey emérito</a>, la infanta y duquesa <a href="#/persons/pilar_de_borbon">Pilar de Borbón</a>. El ciclo de vida de esta entidad, coincidente con el reinado de su hermano, ha dado lugar a especulaciones.',
     origin: {
       url: 'https://offshoreleaks.icij.org/nodes/15000601',
       date: '1993-07-02',
