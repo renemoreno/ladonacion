@@ -12,7 +12,7 @@ jobs:
       - name: Install Dependencies
         run: npm install && npx snowpack build && cp httpdocs/resources/ladonacion.js build/twitter/
 
-        - name: Build site
+      - name: Build site
         run: npm run build
 
       # Deploy the site with netlify-cli
