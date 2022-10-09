@@ -10,15 +10,15 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install Dependencies
-        run: npm install && npx snowpack build && cp httpdocs/resources/ladonacion.js build/twitter/
+        run: npm install && npm ls && npx snowpack build && cp httpdocs/resources/ladonacion.js build/twitter/
 
       - name: Correr validate.js
-        run:  cd /bin; npm install && node validate.js  
+        run:  ls; npm install && node validate.js  
 
       - name: Build site
         run: npm run build
 
-      # Deploy the site with netlify-cli
+      # Deploy the site with netliy-cli
       - name: Deploy site
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
