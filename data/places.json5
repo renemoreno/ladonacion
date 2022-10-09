@@ -446,4 +446,19 @@
     },
     description: 'Exclusivo ático en el barrio de Knightsbride, que el <a href="#/persons/qabus_bin_said">sultán de Omán</a> adquirió por 50 millones de libras (62,7 millones de euros, un récord del momento) para ponerlo a disposición del <a href="#/persons/juan_carlos">rey Juan Carlos</a>, quien <a href="#/events/viaje_a_oman">había visitado el país árabe</a> apenas dos meses antes.',
   },
+  {
+    id: 'el_campestre',
+    title:  'Club Campestre de Chihuahua',
+    address: 'Km 3.5, Camino Al Campestre S/N, Campestre I Etapa',
+    town: 'Chihuahua',
+    zip: '31250',
+    country: 'mx',
+    coords: [28.6372996, -106.109065],
+    zoom:17,
+    google: {
+      link: 'https://goo.gl/maps/9KUDTEt8jgXUSSrM9',
+      embed:  'https://www.google.com/maps/embed?pb=!4v1665292337325!6m8!1m7!1sGq4uFILR_Bhtd8Hp6Mak0w!2m2!1d28.63511452869518!2d-106.1055379836966!3f271.0214901228552!4f11.67946961755203!5f0.7820865974627469',
+    },
+    description:  'Aqui va una descripción',
+  },
 ]

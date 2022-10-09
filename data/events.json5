@@ -968,4 +968,22 @@
     date: '2019-09-12',
     description: '<a href="#/persons/corinna">Corinna zu Sayn-Wittgenstein</a> presta declaración como testigo voluntario ante un fiscal anticorrupción español en relación con el reparto de comisiones por <a href="#/events/anuncio_adjudicacion_ave">la adjudicación a empresas españolas de la obra del AVE a La Meca</a>. La declaración tiene lugar por videoconferencia desde la embajada de España en Londres, ciudad donde Corinna tiene fijada <a href="#/places/belgrave">su residencia</a>.',
   },
+   {
+    id: 'baeza',
+    title: 'Inicia el proceso de depletación de agua',
+    date: '1998-10-01',
+    description: 'El habitante del <a href="#/places/el_campestre">Club Campestre de Chihuahua</a>, Eugenio Baeza Fares inició la depletación de varias hectáreas al norte de la ciudad de Chihuahua al explotar una nogalera',
+    pictures: [
+      {
+        file: 'file:events/pictures/EugenioBaeza00.jpg',
+        source:  {
+          name: 'Líderes Mexicanos',
+          link: 'https://lideresmexicanos.com/wp-content/uploads/2017/06/EugenioBaeza00.jpg',
+        },
+        width:  '594',
+        height: '372',
+        caption:  'El depredador posando para una foto',
+      },      
+    ],      
+    },
 ]

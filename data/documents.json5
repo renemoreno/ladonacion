@@ -2261,4 +2261,14 @@
       },
     ],
   },
+  {
+    id: 'reserva_SSPE',
+    file: 'file:documents/reserva_SSPE.pdf',
+    title: 'Acuerdo de Clasificación de Información de la SSPE',
+    description: 'Aquí vamos a explicar de que se trata esta marranada',
+    date: '2022-03-25',
+    lang: 'es',
+    origin: '#/articles/elconfidencial_2702531',
+    relations: [],
+  },
 ]

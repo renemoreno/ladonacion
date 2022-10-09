@@ -202,10 +202,10 @@ customElements.define(
     }
 
     connectedCallback() {
-      const madrid = [-3.703928, 40.420177]
+      const chihuahua = [-106.1126144,28.6785536]
 
       const styles = {
-        satellite: 'mapbox://styles/jaimeobregon/ckk2wah2t3uut17npp65nahan',
+        satellite: 'mapbox://styles/mapbox/satellite-v9', //se tiene que tener acceso a los estilos propios
         monochrome: 'mapbox://styles/jaimeobregon/ckk1sg32l2sa517qw5qfxyieq',
       }
 
@@ -214,7 +214,7 @@ customElements.define(
         map: {
           container: this.shadowRoot.querySelector('div'),
           style: styles.satellite,
-          center: madrid,
+          center: chihuahua,
           zoom: 1.75,
           minZoom: 2,
         },
