@@ -56,9 +56,11 @@ const catalog = {
 }
 
 const directories = {
-  source: `${__dirname}/../data`,
-  target: `${__dirname}/../httpdocs/resources`,
+  source: `${__dirname}/../data`, //se elimina el ${__dirname}
+  target: `${__dirname}/../httpdocs/resources`, //se elimina el ${__dirname}
 }
+console.log('carpeta de copiado: ', directories.source)
+console.log('carpeta de pegado: ', directories.target)
 
 const config = {
   makeThumbnails: async (items) => {
@@ -66,24 +68,25 @@ const config = {
       item.file = `${directories.source}/${item.file}`
       const info = await cache.fetch(`thumbnails:${item.file}`, async () => {
         console.log(`Making thumbnail of ${item.file}...`)
-        return await new Promise((resolve, reject) =>
+        return await new Promise((resolve, reject) => {
+          console.log(`${item.file}[0]`)
           gm(`${item.file}[0]`)
             .flatten()
             .density(300, 300)
             .resize(640)
             .crop(640, 400, 0, 0)
             .quality(75)
-            .toBuffer('JPG', (error, buffer) => {
+            .toBuffer('jpeg', (error, buffer) => {
               if (error) {
                 reject(error)
               }
 
               // https://github.com/aheckmann/gm/issues/654#issuecomment-773560480
-              const start = buffer.indexOf('FFD8FF', 0, 'hex')
-              const thumbnail = buffer.slice(start)
-              resolve(Buffer.from(thumbnail, 'binary'))
+              /*const start = buffer.indexOf('FFD8FF', 0, 'hex')
+              const thumbnail = buffer.slice(start)*/
+              resolve(/*Buffer.from(thumbnail, 'binary')*/)
             })
-        )
+          })
       })
 
       cpy.copy(info.path, item.thumbnail)
@@ -113,12 +116,12 @@ const config = {
             gm(screenshotInfo.path)
               .resize(1280)
               .quality(75)
-              .toBuffer('JPG', (error, thumbnail) => {
+              /*.toBuffer('JPG', (error, thumbnail) => {
                 if (error) {
                   reject(error)
                 }
                 resolve(Buffer.from(thumbnail, 'binary'))
-              })
+              })*/
           )
         }
       )
@@ -148,7 +151,8 @@ const config = {
       cpy.copy(thumbnailInfo.path, item.thumbnail)
     }
   },
-  validateURL: async (instance, schema, options, context) => {
+   //esto se tiene que comentar desde aquí
+   validateURL: async (instance, schema, options, context) => {
     await cache.fetch(`responses:${instance}`, async () => {
       // Needed to fetch https://www.ohl.es
       // See https://stackoverflow.com/a/21961005
@@ -175,6 +179,7 @@ const config = {
       return false
     })
   },
+  //hasta aquí
   hooks: [
     {
       schema: '/articles/article',
@@ -275,11 +280,11 @@ const config = {
                 (item) =>
                   item.id === article.source.match(/^#\/sources\/(.+)$/)[1]
               ).name
-          } el ${new Date(article.date).toLocaleDateString('es-ES', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          })}.`,
+            } el ${new Date(article.date).toLocaleDateString('es-ES', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            })}.`,
           image: `https://ladonacion.es/resources/${article.thumbnail}`,
         },
       }),
@@ -361,7 +366,9 @@ const config = {
         if (
           !new jsonschema.Validator().validate(instance, schema).errors.length
         ) {
+          //esto se tiene que comentar desde aquí
           config.validateURL(instance, schema, options, context)
+          //hasta aquí
         }
         return
       }
@@ -482,8 +489,10 @@ const validationErrors = config.documents
   )
   .filter((errors) => errors.length)
 
+//esto se tiene que comentar desde aquí
 config.makeThumbnails(catalog.thumbnails)
 config.takeScreenshots(catalog.screenshots)
+//hasta aquí
 
 const results = Object.fromEntries(
   config.documents.map((document) => [document.name, document.data])
@@ -491,6 +500,7 @@ const results = Object.fromEntries(
 
 const contents = `export const data = ${JSON.stringify(results)}`
 fs.writeFile(`${directories.target}/ladonacion.js`, contents, (error) => {
+  console.log("contents writing")
   if (error) {
     console.error(error)
   }
@@ -524,38 +534,38 @@ const output = {
   errors: [...validationErrors, ...catalog.semanticErrors],
 }
 
-;(async () => {
-  const exceptions = [
-    `!${directories.source}/*.json5`,
-    `!${directories.source}/schemas/**/*.json5`,
-    `!${directories.target}/ladonacion.js`,
-  ]
-  const files = await globby([
-    `${directories.source}/**`,
-    `${directories.target}/**`,
-    ...exceptions,
-  ])
+  ;(async () => {
+    const exceptions = [
+      `!${directories.source}/*.json5`,
+      `!${directories.source}/schemas/**/*.json5`,
+      `!${directories.target}/ladonacion.js`,
+    ]
+    const files = await globby([
+      `${directories.source}/**`,
+      `${directories.target}/**`,
+      ...exceptions,
+    ])
 
-  const expected = [
-    ...catalog.screenshots.map((file) => file.screenshot),
-    ...catalog.screenshots.map((file) => file.thumbnail),
-    ...catalog.thumbnails.map((file) => file.thumbnail),
-    ...catalog.files.map((file) =>
-      file.replace(/^file:/, `${directories.target}/`)
-    ),
-    ...catalog.files.map((file) =>
-      file.replace(/^file:/, `${directories.source}/`)
-    ),
-  ]
+    const expected = [
+      ...catalog.screenshots.map((file) => file.screenshot),
+      ...catalog.screenshots.map((file) => file.thumbnail),
+      ...catalog.thumbnails.map((file) => file.thumbnail),
+      ...catalog.files.map((file) =>
+        file.replace(/^file:/, `${directories.target}/`)
+      ),
+      ...catalog.files.map((file) =>
+        file.replace(/^file:/, `${directories.source}/`)
+      ),
+    ]
 
-  const orphans = files.filter((file) => !expected.includes(file))
-  output.orphans = orphans
+    const orphans = files.filter((file) => !expected.includes(file))
+    output.orphans = orphans
 
-  console.log(
-    util.inspect(output, {
-      depth: null,
-      colors: true,
-      maxArrayLength: null,
-    })
-  )
-})()
+    console.log(
+      util.inspect(output, {
+        depth: null,
+        colors: true,
+        maxArrayLength: null,
+      })
+    )
+  })()
