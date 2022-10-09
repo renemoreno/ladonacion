@@ -13,7 +13,7 @@ jobs:
         run: npm install && npm ls && npx snowpack build && cp httpdocs/resources/ladonacion.js build/twitter/
 
       - name: Correr validate.js
-        run:  ls; npm install && node validate.js  
+        run:  ls; cd bin && ls; npm install && node validate.js  
 
       - name: Build site
         run: npm run build
