@@ -12,7 +12,7 @@ template.innerHTML = `
       height: 100vh;
       border: none;
     }
-  </style>
+  </style>  
 `
 
 customElements.define(
