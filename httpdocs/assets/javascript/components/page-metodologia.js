@@ -31,7 +31,7 @@ customElements.define(
 
       // Path containing the presentation exported from slides.com, unzipped.
       // See https://help.slides.com/knowledgebase/articles/546541
-      const src = 'slides/index.html'
+      const src = 'https://63673d743d1e867c404c2120--zippy-kleicha-0f1c93.netlify.app/'
 
       // See https://stackoverflow.com/a/29859214
       const iframe = document.createElement('iframe')
