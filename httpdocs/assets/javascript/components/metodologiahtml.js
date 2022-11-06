@@ -1,65 +1,78 @@
-<!DOCTYPE html>
-	<html class="sl-root decks export offline loaded">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>ladonacion.es</title>
-
-		<meta name="description" content="En 2012 el rey de España, Juan Carlos I, transfiere a una amiga 65 millones de euros desde una cuenta secreta en Suiza. ¿Qué hay detrás de esta extraña donación?">
-
-		<link rel="stylesheet" type="text/css" href="./lib/offline-v2.css">
-
-
-
-		<!-- User CSS -->
-		<style id="user-css-output" type="text/css">
-			@keyframes pulse {
-  to {
-    box-shadow: 0 0 0 45px rgba(232, 113, 92, 0);
+const metodologiaData = `
+<style>
+  :host {
+    display: block;
   }
+
+  iframe {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+  }
+</style>
+
+<!DOCTYPE html>
+  <html class="sl-root decks export offline loaded">
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>ladonacion.es</title>
+
+      <meta name="description" content="En 2012 el rey de España, Juan Carlos I, transfiere a una amiga 65 millones de euros desde una cuenta secreta en Suiza. ¿Qué hay detrás de esta extraña donación?">
+
+
+
+
+      <!-- User CSS -->
+      <style id="user-css-output" type="text/css">
+          @keyframes pulse {
+to {
+  box-shadow: 0 0 0 45px rgba(232, 113, 92, 0);
+}
 }
 .reveal .pulsate {
-  box-shadow: 0 0 0 0 rgba(232, 113, 92, 0.7);
-  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  cursor: pointer;
+box-shadow: 0 0 0 0 rgba(232, 113, 92, 0.7);
+animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+cursor: pointer;
 }
 .reveal .avatar {
-  border-radius: 100%;
-  transition: filter 1s;
+border-radius: 100%;
+transition: filter 1s;
 }
 .reveal .saturate {
-  filter: brightness(1000%);
+filter: brightness(1000%);
 }
 .reveal .no_scroll code {
-  overflow: none;
+overflow: none;
 }
 .reveal button.copy-code-to-clipboard {
-  display: none;
+display: none;
 }
 
-		</style>
-	</head>
-	<body class="reveal-viewport theme-font-opensans theme-color-black-orange">
-		<div class="reveal">
-			<div class="slides">
-				<section data-id="53f38c7f02ec4f20586ccf598ad4407f" data-auto-animate="" data-background-image="../ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg">
-<div class="sl-block" data-block-type="image" style="width: 270.877px; height: 382.915px; left: 331.611px; top: 62.043px; min-width: 1px; min-height: 1px;" data-name="image-74e7ac" data-block-id="9ae950d75f3efaa3d0909bf9e22be82c"><div class="sl-block-style" style="z-index: 15; transform: rotate(0deg); filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0.5;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src="../ladonaciones/55ec6fa9f579f2a39171affce2173ea6.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 295.928px; height: 382.915px; left: 911.89px; top: 62.043px; min-width: 1px; min-height: 1px;" data-name="image-aad2b0" data-block-id="62675502b21cf39043218c6baebb95f9"><div class="sl-block-style" style="z-index: 10; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0.5;"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1024" data-natural-height="1325" data-lazy-loaded="" data-src="../ladonaciones/85180d6d54cf0ab89951370012121b7e.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 270.593px; height: 382.915px; left: 621.68px; top: 62.043px; min-width: 1px; min-height: 1px;" data-name="image-654a54" data-block-id="29b89bcd0e2ef3f71ed8418ba416ad75"><div class="sl-block-style" style="z-index: 11; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0.5;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="954" data-natural-height="1350" data-lazy-loaded="" data-src="../ladonaciones/ccebd9fd497c4d59c7a7c56b8adb7080.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 270.877px; height: 382.915px; left: 41.5375px; top: 62.043px; min-width: 1px; min-height: 1px;" data-name="image-7ab20e" data-block-id="204ace8766ff0a858097aa1c9c876b8f"><div class="sl-block-style" style="z-index: 12; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0.5;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src="../ladonaciones/4c57678ce618c84ed41e9732ffc30bf9.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 270.593px; height: 382.915px; left: -248.248px; top: 62.043px; min-width: 1px; min-height: 1px;" data-name="image-b7f8f7" data-block-id="b45066ab2b1e3f0f951efebc64a18be5"><div class="sl-block-style" style="z-index: 13; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0.5;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="954" data-natural-height="1350" data-lazy-loaded="" data-src="../ladonaciones/2c311190c1420933aa41bc258ffc20aa.jpg"></div></div></div>
+      </style>
+  </head>
+  <body class="reveal-viewport theme-font-opensans theme-color-black-orange">
+      <div class="reveal">
+          <div class="slides">
+              <section data-id="53f38c7f02ec4f20586ccf598ad4407f" data-auto-animate="" data-background-image=".././ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg">
+<div class="sl-block" data-block-type="image" style="width: 270.877px; height: 382.915px; left: 331.611px; top: 62.043px; min-width: 1px; min-height: 1px;" data-name="image-74e7ac" data-block-id="9ae950d75f3efaa3d0909bf9e22be82c"><div class="sl-block-style" style="z-index: 15; transform: rotate(0deg); filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0.5;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src=".././ladonaciones/55ec6fa9f579f2a39171affce2173ea6.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 295.928px; height: 382.915px; left: 911.89px; top: 62.043px; min-width: 1px; min-height: 1px;" data-name="image-aad2b0" data-block-id="62675502b21cf39043218c6baebb95f9"><div class="sl-block-style" style="z-index: 10; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0.5;"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1024" data-natural-height="1325" data-lazy-loaded="" data-src=".././ladonaciones/85180d6d54cf0ab89951370012121b7e.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 270.593px; height: 382.915px; left: 621.68px; top: 62.043px; min-width: 1px; min-height: 1px;" data-name="image-654a54" data-block-id="29b89bcd0e2ef3f71ed8418ba416ad75"><div class="sl-block-style" style="z-index: 11; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0.5;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="954" data-natural-height="1350" data-lazy-loaded="" data-src=".././ladonaciones/ccebd9fd497c4d59c7a7c56b8adb7080.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 270.877px; height: 382.915px; left: 41.5375px; top: 62.043px; min-width: 1px; min-height: 1px;" data-name="image-7ab20e" data-block-id="204ace8766ff0a858097aa1c9c876b8f"><div class="sl-block-style" style="z-index: 12; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0.5;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src=".././ladonaciones/4c57678ce618c84ed41e9732ffc30bf9.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 270.593px; height: 382.915px; left: -248.248px; top: 62.043px; min-width: 1px; min-height: 1px;" data-name="image-b7f8f7" data-block-id="b45066ab2b1e3f0f951efebc64a18be5"><div class="sl-block-style" style="z-index: 13; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0.5;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="954" data-natural-height="1350" data-lazy-loaded="" data-src=".././ladonaciones/2c311190c1420933aa41bc258ffc20aa.jpg"></div></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 174.126px; top: 510.5px;" data-block-id="da9496638406127e5501a8d2c258442a" data-name="text-2564ae"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
 <p><span style="font-size:0.9em">En una investigación judicial o periodística</span></p>
 </div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 801px; left: 80px; top: 566.5px;" data-name="text-c42e80" data-block-id="22b5b6fa469831e0ff5b86fd184ce76a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(28, 25, 23);">
 <p><strong><span style="font-size:1.4em">cada documento cuenta una historia</span></strong></p>
 </div></div>
-<div class="sl-block" data-block-type="shape" style="width: 1128.93px; height: 66px; left: -230.971px; top: 561px;" data-name="shape-9e03fc" data-block-id="181de5c82041b65bba3a56eb1213f607"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1129 66"><rect width="1128.93" height="66" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div></section><section data-background-image="../ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg" data-auto-animate="" data-id="29e00b7cab23c008e608684989de41ef">
+<div class="sl-block" data-block-type="shape" style="width: 1128.93px; height: 66px; left: -230.971px; top: 561px;" data-name="shape-9e03fc" data-block-id="181de5c82041b65bba3a56eb1213f607"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1129 66"><rect width="1128.93" height="66" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div></section><section data-background-image=".././ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg" data-auto-animate="" data-id="29e00b7cab23c008e608684989de41ef">
 
 
 
-<div class="sl-block" data-block-type="image" style="width: 432.502px; height: 611.39px; left: 45.924px; top: 68.305px; min-width: 1px; min-height: 1px;" data-name="image-74e7ac" data-block-id="2f63541d662d93a4721b0a46cd9fe81f"><div class="sl-block-style" style="z-index: 15; transform: rotate(0deg); filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src="../ladonaciones/55ec6fa9f579f2a39171affce2173ea6.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 432.502px; height: 611.39px; left: 45.924px; top: 68.305px; min-width: 1px; min-height: 1px;" data-name="image-74e7ac" data-block-id="2f63541d662d93a4721b0a46cd9fe81f"><div class="sl-block-style" style="z-index: 15; transform: rotate(0deg); filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src=".././ladonaciones/55ec6fa9f579f2a39171affce2173ea6.jpg"></div></div></div>
 
 
 
@@ -101,18 +114,18 @@
 <p>Documentos</p>
 </div></div>
 <div class="sl-block" data-block-type="shape" style="width: 8.5px; height: 8.5px; left: 573px; top: 522.25px;" data-block-id="038ce29f4ee3dac8727a544e31f4424b" data-name="shape-614e25" data-auto-animate-delay="2.3"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 27;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 9 9"><ellipse rx="4.25" ry="4.25" cx="4.25" cy="4.25" class="shape-element" fill="rgb(255, 255, 255)"></ellipse></svg></div></div>
-<div class="sl-block" data-block-type="image" style="width: 432.502px; height: 559.634px; left: 45.924px; top: 62.804px; min-width: 1px; min-height: 1px;" data-name="image-aad2b0" data-block-id="69382200125b492a46d9755a1b118de3"><div class="sl-block-style" style="z-index: 11; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1024" data-natural-height="1325" data-lazy-loaded="" data-src="../ladonaciones/85180d6d54cf0ab89951370012121b7e.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 430.698px; height: 609.478px; left: 47.728px; top: 50.217px; min-width: 1px; min-height: 1px;" data-name="image-654a54" data-block-id="0f1185ba555346bf30c9f068c0137df1"><div class="sl-block-style" style="z-index: 12; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="954" data-natural-height="1350" data-lazy-loaded="" data-src="../ladonaciones/ccebd9fd497c4d59c7a7c56b8adb7080.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 431.149px; height: 609.478px; left: 46.754px; top: 50.217px; min-width: 1px; min-height: 1px;" data-name="image-7ab20e" data-block-id="4fad4265f0847131cdbf2198aa61885f"><div class="sl-block-style" style="z-index: 13; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src="../ladonaciones/4c57678ce618c84ed41e9732ffc30bf9.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 430.698px; height: 609.478px; left: 47.728px; top: 50.217px; min-width: 1px; min-height: 1px;" data-name="image-b7f8f7" data-block-id="025ad4e5cb96f336e6fe2b43229dc9b5"><div class="sl-block-style" style="z-index: 14; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="954" data-natural-height="1350" data-lazy-loaded="" data-src="../ladonaciones/2c311190c1420933aa41bc258ffc20aa.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 432.502px; height: 559.634px; left: 45.924px; top: 62.804px; min-width: 1px; min-height: 1px;" data-name="image-aad2b0" data-block-id="69382200125b492a46d9755a1b118de3"><div class="sl-block-style" style="z-index: 11; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1024" data-natural-height="1325" data-lazy-loaded="" data-src=".././ladonaciones/85180d6d54cf0ab89951370012121b7e.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 430.698px; height: 609.478px; left: 47.728px; top: 50.217px; min-width: 1px; min-height: 1px;" data-name="image-654a54" data-block-id="0f1185ba555346bf30c9f068c0137df1"><div class="sl-block-style" style="z-index: 12; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="954" data-natural-height="1350" data-lazy-loaded="" data-src=".././ladonaciones/ccebd9fd497c4d59c7a7c56b8adb7080.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 431.149px; height: 609.478px; left: 46.754px; top: 50.217px; min-width: 1px; min-height: 1px;" data-name="image-7ab20e" data-block-id="4fad4265f0847131cdbf2198aa61885f"><div class="sl-block-style" style="z-index: 13; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src=".././ladonaciones/4c57678ce618c84ed41e9732ffc30bf9.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 430.698px; height: 609.478px; left: 47.728px; top: 50.217px; min-width: 1px; min-height: 1px;" data-name="image-b7f8f7" data-block-id="025ad4e5cb96f336e6fe2b43229dc9b5"><div class="sl-block-style" style="z-index: 14; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); opacity: 0;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="954" data-natural-height="1350" data-lazy-loaded="" data-src=".././ladonaciones/2c311190c1420933aa41bc258ffc20aa.jpg"></div></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 341px; left: 568.5px; top: 169.5px;" data-name="" data-origin-id="22b5b6fa469831e0ff5b86fd184ce76a" data-block-id="9cedee0600742d5a9de4faa400d45917"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 28; color: rgb(28, 25, 23); text-align: left;">
 <p><span style="font-size:1.2em"><strong>y se enmadejan…</strong></span></p>
 </div></div>
-<div class="sl-block" data-block-type="shape" style="width: 1115.93px; height: 66px; left: 530.029px; top: 160px;" data-name="shape-9e03fc" data-block-id="4e6d41f65ae03c9e0ee0853adc33098b"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1116 66"><rect width="1115.93" height="66" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div></section><section data-background-image="../ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg" data-auto-animate="" data-id="e0435afc049834154d689336fa95384f">
+<div class="sl-block" data-block-type="shape" style="width: 1115.93px; height: 66px; left: 530.029px; top: 160px;" data-name="shape-9e03fc" data-block-id="4e6d41f65ae03c9e0ee0853adc33098b"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1116 66"><rect width="1115.93" height="66" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div></section><section data-background-image=".././ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg" data-auto-animate="" data-id="e0435afc049834154d689336fa95384f">
 
 
 
-<div class="sl-block" data-block-type="image" style="width: 627.44px; height: 886.957px; left: -70.2199px; top: -32.1889px; min-width: 1px; min-height: 1px;" data-name="image-74e7ac" data-block-id="4a6d0daa0c049c4fd84377934d7e3cf1"><div class="sl-block-style" style="z-index: 10; transform: rotate(-3deg);"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src="../ladonaciones/55ec6fa9f579f2a39171affce2173ea6.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 627.44px; height: 886.957px; left: -70.2199px; top: -32.1889px; min-width: 1px; min-height: 1px;" data-name="image-74e7ac" data-block-id="4a6d0daa0c049c4fd84377934d7e3cf1"><div class="sl-block-style" style="z-index: 10; transform: rotate(-3deg);"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src=".././ladonaciones/55ec6fa9f579f2a39171affce2173ea6.jpg"></div></div></div>
 
 <div class="sl-block" data-block-type="shape" style="width: 142.833px; height: 22.9295px; left: 314.723px; top: 172.042px;" data-name="shape-46fdd1" data-block-id="dc9a46eee7aabeae889940d37c7f75fe"><div class="sl-block-style" style="z-index: 11; opacity: 0.45; transform: rotate(-3deg);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 0)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 143 23"><rect width="142.833" height="22.9295" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 0)"></rect></svg></div></div></div>
 <div class="sl-block" data-block-type="shape" style="width: 203.005px; height: 27.9226px; left: -4.153px; top: 45.4758px;" data-name="shape-e2d892" data-block-id="4b2690a2f1cb34e2c322d802b1065e78"><div class="sl-block-style" style="z-index: 12; opacity: 0.45; transform: rotate(-3deg);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 203 28"><rect width="203.005" height="27.9226" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 0)"></rect></svg></div></div></div>
@@ -129,7 +142,7 @@
 <p>He identificado<br>
 <strong>cada elemento</strong><br>
 de la historia…</p>
-</div></div></section><section data-background-image="../ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg" data-auto-animate="" data-id="b78441faf2244616f275a5f70a053ed4">
+</div></div></section><section data-background-image=".././ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg" data-auto-animate="" data-id="b78441faf2244616f275a5f70a053ed4">
 
 
 
@@ -144,16 +157,16 @@ de la historia…</p>
 
 
 
-<div class="sl-block" data-block-type="image" style="width: 47.8637px; height: 48.0005px; left: 460px; top: 263.909px; min-width: 1px; min-height: 1px;" data-name="image-15f981" data-block-id="ff926948e7caee1bf1f25c5be59f6d7a"><div class="sl-block-style" style="z-index: 21; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 21;"><img style="" data-natural-width="350" data-natural-height="351" data-lazy-loaded="" data-src="../ladonaciones/b47474578752e64700317d9d1ced65ac.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 48.0005px; height: 48.0005px; left: 69.7515px; top: 65.6908px; min-width: 1px; min-height: 1px;" data-name="image-906842" data-block-id="f6aebb50b848b0305185a87357f8f30f"><div class="sl-block-style" style="z-index: 22; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 22; border-style: solid; border-width: 1px;"><img style="" data-natural-width="64" data-natural-height="64" data-lazy-loaded="" data-src="../ladonaciones/9246f5fe3638ab38a6d7a280442ce3eb.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 48.0005px; height: 48.0005px; left: 57.3711px; top: 226.623px; min-width: 1px; min-height: 1px;" data-name="image-d1ea1f" data-block-id="94275d7fad6fc79b061e7f2b4223fe9d"><div class="sl-block-style" style="z-index: 23; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 23; border-style: solid; border-width: 1px;"><img style="" data-natural-width="93" data-natural-height="93" data-lazy-loaded="" data-src="../ladonaciones/116a418f0014b26f1ae362b5d4543f86.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 48.0005px; height: 48.0005px; left: 81.371px; top: 583.666px; min-width: 1px; min-height: 1px;" data-name="image-3a6491" data-block-id="fa525f625ba4768fce50fca28c09e16d"><div class="sl-block-style" style="z-index: 24; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 24; border-style: solid; border-width: 1px;"><img style="" data-natural-width="111" data-natural-height="111" data-lazy-loaded="" data-src="../ladonaciones/30524d844e94b9854d220bf065093c09.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 48.0005px; height: 48.0005px; left: 224.408px; top: 452px; min-width: 1px; min-height: 1px;" data-name="image-4d2fd2" data-block-id="0e0ecc52e07008a84f5809779c50db5a"><div class="sl-block-style" style="z-index: 25; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 25; border-style: solid; border-width: 1px;"><img style="" data-natural-width="339" data-natural-height="339" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-src="../ladonaciones/874f59c7a30e9ff381f2d86d314e9e5a.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 48.069px; height: 48.069px; left: 261.347px; top: 132.438px; min-width: 1px; min-height: 1px;" data-name="image-c106ad" data-block-id="bcf8998435704b92b0234161a0e1be5a"><div class="sl-block-style" style="z-index: 26; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 26; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src="../ladonaciones/699c38927d4d8774eaf1fe5900f84872.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 48.0005px; height: 48.0005px; left: 415.61px; top: 615.02px; min-width: 1px; min-height: 1px;" data-name="image-204a3a" data-block-id="77a11cce7f964db2a7961883ab30332e"><div class="sl-block-style" style="z-index: 27; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 27; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src="../ladonaciones/263d83fa7318ce34a1863dd715741144.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 48.024px; height: 48.024px; left: 362.128px; top: 188.009px; min-width: 1px; min-height: 1px;" data-name="image-09d299" data-block-id="2797f5f51f30ef4f2546baa56941c8a4"><div class="sl-block-style" style="z-index: 28; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 28; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src="../ladonaciones/2952ebd2b3ab2af63bbf57c76d8c524a.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 48.28px; height: 48.28px; left: 93.612px; top: 653.388px; min-width: 1px; min-height: 1px;" data-name="image-46c06c" data-block-id="46a9802d068e3954e1372b76842bf6e5"><div class="sl-block-style" style="z-index: 29; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 29; border-style: solid; border-width: 1px;"><img style="" data-natural-width="64" data-natural-height="64" data-lazy-loaded="" data-src="../ladonaciones/bb090bb29ca4b409dc0eaf6f69c71e7e.png"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 627.44px; height: 886.957px; left: -70.2199px; top: -32.1889px; min-width: 1px; min-height: 1px;" data-name="image-74e7ac" data-block-id="84ee3e7599974595ebffb3c0be1e9807"><div class="sl-block-style" style="z-index: 10; transform: rotate(-3deg);"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src="../ladonaciones/55ec6fa9f579f2a39171affce2173ea6.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 47.8637px; height: 48.0005px; left: 460px; top: 263.909px; min-width: 1px; min-height: 1px;" data-name="image-15f981" data-block-id="ff926948e7caee1bf1f25c5be59f6d7a"><div class="sl-block-style" style="z-index: 21; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 21;"><img style="" data-natural-width="350" data-natural-height="351" data-lazy-loaded="" data-src=".././ladonaciones/b47474578752e64700317d9d1ced65ac.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 48.0005px; height: 48.0005px; left: 69.7515px; top: 65.6908px; min-width: 1px; min-height: 1px;" data-name="image-906842" data-block-id="f6aebb50b848b0305185a87357f8f30f"><div class="sl-block-style" style="z-index: 22; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 22; border-style: solid; border-width: 1px;"><img style="" data-natural-width="64" data-natural-height="64" data-lazy-loaded="" data-src=".././ladonaciones/9246f5fe3638ab38a6d7a280442ce3eb.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 48.0005px; height: 48.0005px; left: 57.3711px; top: 226.623px; min-width: 1px; min-height: 1px;" data-name="image-d1ea1f" data-block-id="94275d7fad6fc79b061e7f2b4223fe9d"><div class="sl-block-style" style="z-index: 23; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 23; border-style: solid; border-width: 1px;"><img style="" data-natural-width="93" data-natural-height="93" data-lazy-loaded="" data-src=".././ladonaciones/116a418f0014b26f1ae362b5d4543f86.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 48.0005px; height: 48.0005px; left: 81.371px; top: 583.666px; min-width: 1px; min-height: 1px;" data-name="image-3a6491" data-block-id="fa525f625ba4768fce50fca28c09e16d"><div class="sl-block-style" style="z-index: 24; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 24; border-style: solid; border-width: 1px;"><img style="" data-natural-width="111" data-natural-height="111" data-lazy-loaded="" data-src=".././ladonaciones/30524d844e94b9854d220bf065093c09.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 48.0005px; height: 48.0005px; left: 224.408px; top: 452px; min-width: 1px; min-height: 1px;" data-name="image-4d2fd2" data-block-id="0e0ecc52e07008a84f5809779c50db5a"><div class="sl-block-style" style="z-index: 25; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 25; border-style: solid; border-width: 1px;"><img style="" data-natural-width="339" data-natural-height="339" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-src=".././ladonaciones/874f59c7a30e9ff381f2d86d314e9e5a.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 48.069px; height: 48.069px; left: 261.347px; top: 132.438px; min-width: 1px; min-height: 1px;" data-name="image-c106ad" data-block-id="bcf8998435704b92b0234161a0e1be5a"><div class="sl-block-style" style="z-index: 26; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 26; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src=".././ladonaciones/699c38927d4d8774eaf1fe5900f84872.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 48.0005px; height: 48.0005px; left: 415.61px; top: 615.02px; min-width: 1px; min-height: 1px;" data-name="image-204a3a" data-block-id="77a11cce7f964db2a7961883ab30332e"><div class="sl-block-style" style="z-index: 27; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 27; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src=".././ladonaciones/263d83fa7318ce34a1863dd715741144.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 48.024px; height: 48.024px; left: 362.128px; top: 188.009px; min-width: 1px; min-height: 1px;" data-name="image-09d299" data-block-id="2797f5f51f30ef4f2546baa56941c8a4"><div class="sl-block-style" style="z-index: 28; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 28; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src=".././ladonaciones/2952ebd2b3ab2af63bbf57c76d8c524a.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 48.28px; height: 48.28px; left: 93.612px; top: 653.388px; min-width: 1px; min-height: 1px;" data-name="image-46c06c" data-block-id="46a9802d068e3954e1372b76842bf6e5"><div class="sl-block-style" style="z-index: 29; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 29; border-style: solid; border-width: 1px;"><img style="" data-natural-width="64" data-natural-height="64" data-lazy-loaded="" data-src=".././ladonaciones/bb090bb29ca4b409dc0eaf6f69c71e7e.png"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 627.44px; height: 886.957px; left: -70.2199px; top: -32.1889px; min-width: 1px; min-height: 1px;" data-name="image-74e7ac" data-block-id="84ee3e7599974595ebffb3c0be1e9807"><div class="sl-block-style" style="z-index: 10; transform: rotate(-3deg);"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src=".././ladonaciones/55ec6fa9f579f2a39171affce2173ea6.jpg"></div></div></div>
 <div class="sl-block" data-block-type="shape" style="width: 142.833px; height: 22.9295px; left: 314.723px; top: 172.042px;" data-name="shape-46fdd1" data-block-id="dd5a14ff2d700742f15df4cdcb117f97"><div class="sl-block-style" style="z-index: 11; opacity: 0.45; transform: rotate(-3deg);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 0)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 143 23"><rect width="142.833" height="22.9295" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 0)"></rect></svg></div></div></div>
 <div class="sl-block" data-block-type="shape" style="width: 203.005px; height: 27.9226px; left: -4.153px; top: 45.4758px;" data-name="shape-e2d892" data-block-id="67f18f7e600bf7ac3f309c043186455b"><div class="sl-block-style" style="z-index: 12; opacity: 0.45; transform: rotate(-3deg);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 203 28"><rect width="203.005" height="27.9226" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 0)"></rect></svg></div></div></div>
 <div class="sl-block" data-block-type="shape" style="width: 163.922px; height: 27.9226px; left: 5.8089px; top: 268.179px;" data-name="shape-da4872" data-block-id="bedee0ad831ba4a9ae052b19cb896afa"><div class="sl-block-style" style="z-index: 13; opacity: 0.45; transform: rotate(-3deg);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 0)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 164 28"><rect width="163.922" height="27.9226" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 0)"></rect></svg></div></div></div>
@@ -174,7 +187,7 @@ de la historia…</p>
 documentos según<br>
 <strong>las relaciones</strong> entre<br>
 sus elementos.</p>
-</div></div></section><section data-id="f4cfa627c753d904ac5fb9c7d4d115fc" data-background-image="../ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg" data-auto-animate="">
+</div></div></section><section data-id="f4cfa627c753d904ac5fb9c7d4d115fc" data-background-image=".././ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg" data-auto-animate="">
 
 
 
@@ -214,7 +227,7 @@ sus elementos.</p>
 <p><span style="font-size:1.0em">pertenece a</span></p>
 </div></div></div>
 
-<div class="sl-block" data-block-type="image" style="width: 627.44px; height: 886.957px; left: -950.22px; top: -32.1889px; min-width: 1px; min-height: 1px;" data-name="image-74e7ac" data-block-id="46c7366b7032a9b2948645c15c305b9d"><div class="sl-block-style" style="z-index: 36; transform: rotate(-3deg); opacity: 0;"><div class="sl-block-content" style="z-index: 36;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src="../ladonaciones/55ec6fa9f579f2a39171affce2173ea6.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 627.44px; height: 886.957px; left: -950.22px; top: -32.1889px; min-width: 1px; min-height: 1px;" data-name="image-74e7ac" data-block-id="46c7366b7032a9b2948645c15c305b9d"><div class="sl-block-style" style="z-index: 36; transform: rotate(-3deg); opacity: 0;"><div class="sl-block-content" style="z-index: 36;"><img style="" data-natural-width="955" data-natural-height="1350" data-lazy-loaded="" data-src=".././ladonaciones/55ec6fa9f579f2a39171affce2173ea6.jpg"></div></div></div>
 
 <div class="sl-block" data-block-type="text" style="height: auto; width: 366px; left: 1054px; top: 136.349px;" data-name="text-fac1e5" data-block-id="038d290552e848da26f983e5140211db"><div class="sl-block-style" style="z-index: 37; opacity: 0.01;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 37; text-align: left;">
 <p>He identificado<br>
@@ -227,15 +240,15 @@ documentos según<br>
 <strong>las relaciones</strong> entre<br>
 sus elementos.</p>
 </div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 99.6653px; height: 99.6653px; left: 660.168px; top: 210.42px; min-width: 1px; min-height: 1px;" data-name="image-c5e68a" data-origin-id="9d4e023d2e5034f1b6a7ef3a97cbd9a9" data-block-id="9339f96b0763718c772f7e50d9caccf4"><div class="sl-block-style" style="z-index: 27; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 27; border-style: solid; border-width: 1px;"><img style="" data-natural-width="93" data-natural-height="93" data-lazy-loaded="" data-src="../ladonaciones/116a418f0014b26f1ae362b5d4543f86.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 99.899px; height: 99.899px; left: 449.101px; top: 519px; min-width: 1px; min-height: 1px;" data-name="image-33dfbe" data-origin-id="4062802cec6e7ab47005271354f542f2" data-block-id="2178d1f83eef21cedacecc7dec525bd3"><div class="sl-block-style" style="z-index: 28; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 28; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src="../ladonaciones/2952ebd2b3ab2af63bbf57c76d8c524a.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 100.227px; height: 100.227px; left: 519.773px; top: 70px; min-width: 1px; min-height: 1px;" data-name="image-4e89cd" data-origin-id="f1c3b7292d4c9e7aed51ee8c01bab8c5" data-block-id="8ea0438b25259537e5c2f43d0d218603"><div class="sl-block-style" style="z-index: 29; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 29; border-style: solid; border-width: 1px;"><img style="" data-natural-width="64" data-natural-height="64" data-lazy-loaded="" data-src="../ladonaciones/9246f5fe3638ab38a6d7a280442ce3eb.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 99.899px; height: 99.899px; left: 777.051px; top: 568.95px; min-width: 1px; min-height: 1px;" data-name="image-c13b48" data-origin-id="ab399478fca5d3933290c745b3ffe42d" data-block-id="91d1529228491402f9dbaf861c91005d"><div class="sl-block-style" style="z-index: 30; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 30; border-style: solid; border-width: 1px;"><img style="" data-natural-width="64" data-natural-height="64" data-lazy-loaded="" data-src="../ladonaciones/bb090bb29ca4b409dc0eaf6f69c71e7e.png"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 99.8863px; height: 99.8863px; left: 30px; top: 60px; min-width: 1px; min-height: 1px;" data-name="image-b5302a" data-origin-id="dcde5207cf78c5c13add385a3d9cfd91" data-block-id="7e7ad3f91f9ecbc047546208bdf9c889"><div class="sl-block-style" style="z-index: 31; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 31; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src="./ladonaciones/699c38927d4d8774eaf1fe5900f84872.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 99.9415px; height: 100.227px; left: 821px; top: 57.682px; min-width: 1px; min-height: 1px;" data-name="image-4b7022" data-origin-id="cd7aa868ece72bed81df599f4796c8af" data-block-id="70b684e56632509ea209adcdfe90c2b8"><div class="sl-block-style" style="z-index: 32; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 32;"><img style="" data-natural-width="350" data-natural-height="351" data-lazy-loaded="" data-src="./ladonaciones/b47474578752e64700317d9d1ced65ac.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 99.899px; height: 99.899px; left: 372.521px; top: 236.959px; min-width: 1px; min-height: 1px;" data-name="image-116e6b" data-origin-id="df139bba6603a01c2e92c56805f285d8" data-block-id="779c614fca28861f08897e401c51d35d"><div class="sl-block-style" style="z-index: 35; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 35; border-style: solid; border-width: 1px;"><img style="" data-natural-width="111" data-natural-height="111" data-lazy-loaded="" data-src="./ladonaciones/30524d844e94b9854d220bf065093c09.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 99.8863px; height: 99.8863px; left: 40px; top: 602.057px; min-width: 1px; min-height: 1px;" data-name="image-0025f6" data-origin-id="4faf51e6d29c4dfb528f9fdea54fcc5d" data-block-id="8042df95061e910a05d5371020dbc690"><div class="sl-block-style" style="z-index: 33; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 33; border-style: solid; border-width: 1px;"><img style="" data-natural-width="339" data-natural-height="339" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-src="./ladonaciones/874f59c7a30e9ff381f2d86d314e9e5a.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 100.006px; height: 100.006px; left: 132.464px; top: 280px; min-width: 1px; min-height: 1px;" data-name="image-208f4e" data-origin-id="5a27971bc88a23cae25c7e39265a6d9b" data-block-id="e40bd6d5f72f738ee33dca46f89fd4a7"><div class="sl-block-style" style="z-index: 34; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 34; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src="./ladonaciones/263d83fa7318ce34a1863dd715741144.jpg"></div></div></div></section><section data-background-image="./ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg" data-auto-animate="" data-id="7a9601a240b48ba1d50dc93c00d542f3">
+<div class="sl-block" data-block-type="image" style="width: 99.6653px; height: 99.6653px; left: 660.168px; top: 210.42px; min-width: 1px; min-height: 1px;" data-name="image-c5e68a" data-origin-id="9d4e023d2e5034f1b6a7ef3a97cbd9a9" data-block-id="9339f96b0763718c772f7e50d9caccf4"><div class="sl-block-style" style="z-index: 27; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 27; border-style: solid; border-width: 1px;"><img style="" data-natural-width="93" data-natural-height="93" data-lazy-loaded="" data-src=".././ladonaciones/116a418f0014b26f1ae362b5d4543f86.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 99.899px; height: 99.899px; left: 449.101px; top: 519px; min-width: 1px; min-height: 1px;" data-name="image-33dfbe" data-origin-id="4062802cec6e7ab47005271354f542f2" data-block-id="2178d1f83eef21cedacecc7dec525bd3"><div class="sl-block-style" style="z-index: 28; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 28; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src=".././ladonaciones/2952ebd2b3ab2af63bbf57c76d8c524a.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 100.227px; height: 100.227px; left: 519.773px; top: 70px; min-width: 1px; min-height: 1px;" data-name="image-4e89cd" data-origin-id="f1c3b7292d4c9e7aed51ee8c01bab8c5" data-block-id="8ea0438b25259537e5c2f43d0d218603"><div class="sl-block-style" style="z-index: 29; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 29; border-style: solid; border-width: 1px;"><img style="" data-natural-width="64" data-natural-height="64" data-lazy-loaded="" data-src=".././ladonaciones/9246f5fe3638ab38a6d7a280442ce3eb.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 99.899px; height: 99.899px; left: 777.051px; top: 568.95px; min-width: 1px; min-height: 1px;" data-name="image-c13b48" data-origin-id="ab399478fca5d3933290c745b3ffe42d" data-block-id="91d1529228491402f9dbaf861c91005d"><div class="sl-block-style" style="z-index: 30; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 30; border-style: solid; border-width: 1px;"><img style="" data-natural-width="64" data-natural-height="64" data-lazy-loaded="" data-src=".././ladonaciones/bb090bb29ca4b409dc0eaf6f69c71e7e.png"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 99.8863px; height: 99.8863px; left: 30px; top: 60px; min-width: 1px; min-height: 1px;" data-name="image-b5302a" data-origin-id="dcde5207cf78c5c13add385a3d9cfd91" data-block-id="7e7ad3f91f9ecbc047546208bdf9c889"><div class="sl-block-style" style="z-index: 31; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 31; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src="././ladonaciones/699c38927d4d8774eaf1fe5900f84872.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 99.9415px; height: 100.227px; left: 821px; top: 57.682px; min-width: 1px; min-height: 1px;" data-name="image-4b7022" data-origin-id="cd7aa868ece72bed81df599f4796c8af" data-block-id="70b684e56632509ea209adcdfe90c2b8"><div class="sl-block-style" style="z-index: 32; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 32;"><img style="" data-natural-width="350" data-natural-height="351" data-lazy-loaded="" data-src="././ladonaciones/b47474578752e64700317d9d1ced65ac.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 99.899px; height: 99.899px; left: 372.521px; top: 236.959px; min-width: 1px; min-height: 1px;" data-name="image-116e6b" data-origin-id="df139bba6603a01c2e92c56805f285d8" data-block-id="779c614fca28861f08897e401c51d35d"><div class="sl-block-style" style="z-index: 35; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 35; border-style: solid; border-width: 1px;"><img style="" data-natural-width="111" data-natural-height="111" data-lazy-loaded="" data-src="././ladonaciones/30524d844e94b9854d220bf065093c09.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 99.8863px; height: 99.8863px; left: 40px; top: 602.057px; min-width: 1px; min-height: 1px;" data-name="image-0025f6" data-origin-id="4faf51e6d29c4dfb528f9fdea54fcc5d" data-block-id="8042df95061e910a05d5371020dbc690"><div class="sl-block-style" style="z-index: 33; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 33; border-style: solid; border-width: 1px;"><img style="" data-natural-width="339" data-natural-height="339" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-src="././ladonaciones/874f59c7a30e9ff381f2d86d314e9e5a.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 100.006px; height: 100.006px; left: 132.464px; top: 280px; min-width: 1px; min-height: 1px;" data-name="image-208f4e" data-origin-id="5a27971bc88a23cae25c7e39265a6d9b" data-block-id="e40bd6d5f72f738ee33dca46f89fd4a7"><div class="sl-block-style" style="z-index: 34; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 34; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src="././ladonaciones/263d83fa7318ce34a1863dd715741144.jpg"></div></div></div></section><section data-background-image="././ladonaciones/ff8efa72eafb20b5856efee6bc5d7221.jpg" data-auto-animate="" data-id="7a9601a240b48ba1d50dc93c00d542f3">
 
 
 
@@ -310,25 +323,25 @@ sus elementos.</p>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 122px; left: 698.012px; top: 600.257px;" data-name="text-578543" data-origin-id="44b03d019e5187072ddabb5bebdf0bff" data-block-id="1c0dcbbe4589259b86a00b5c3f55d1a7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center; color: rgb(241, 194, 50); font-size: 50%;">
 <p><span style="font-size:1.0em">pertenece a</span></p>
 </div></div>
-<div class="sl-block" data-block-type="image" style="width: 42.4535px; height: 42.4535px; left: 597.973px; top: 598.53px; min-width: 1px; min-height: 1px;" data-name="image-ca0258" data-origin-id="18bbed914dcfe0e5b9240a8ad7fd61da" data-block-id="b9fef75f3d4011ce50f9cedbf4164f0c"><div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 15; border-style: solid; border-width: 1px;"><img style="" data-natural-width="111" data-natural-height="111" data-lazy-loaded="" data-src="./ladonaciones/30524d844e94b9854d220bf065093c09.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 42.4535px; height: 42.4535px; left: 877.691px; top: 598.541px; min-width: 1px; min-height: 1px;" data-name="image-eb41aa" data-origin-id="eef5b673fceeb9a44ecc354ef2d77712" data-block-id="daa04022a83fbcd994eac37d63c2a2a9"><div class="sl-block-style" style="z-index: 14; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 14; border-style: solid; border-width: 1px;"><img style="" data-natural-width="64" data-natural-height="64" data-lazy-loaded="" data-src="./ladonaciones/bb090bb29ca4b409dc0eaf6f69c71e7e.png"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 42.4535px; height: 42.4535px; left: 597.973px; top: 598.53px; min-width: 1px; min-height: 1px;" data-name="image-ca0258" data-origin-id="18bbed914dcfe0e5b9240a8ad7fd61da" data-block-id="b9fef75f3d4011ce50f9cedbf4164f0c"><div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 15; border-style: solid; border-width: 1px;"><img style="" data-natural-width="111" data-natural-height="111" data-lazy-loaded="" data-src="././ladonaciones/30524d844e94b9854d220bf065093c09.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 42.4535px; height: 42.4535px; left: 877.691px; top: 598.541px; min-width: 1px; min-height: 1px;" data-name="image-eb41aa" data-origin-id="eef5b673fceeb9a44ecc354ef2d77712" data-block-id="daa04022a83fbcd994eac37d63c2a2a9"><div class="sl-block-style" style="z-index: 14; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 14; border-style: solid; border-width: 1px;"><img style="" data-natural-width="64" data-natural-height="64" data-lazy-loaded="" data-src="././ladonaciones/bb090bb29ca4b409dc0eaf6f69c71e7e.png"></div></div></div>
 <div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 639.223px; top: 620.257px;" data-name="line-618d32" data-origin-id="684421ec6860b473b67a3379f6023fdc" data-block-id="431f408b45fff90914b2e15ec9d1b48c"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="238.567" data-line-y2="0" data-line-color="#f1c232" data-line-start-type="none" data-line-end-type="arrow" style="z-index: 13;" data-line-style="solid" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="238.567" height="1" viewbox="0 0 238.567 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="234.567" y2="0"></line><line class="line-element" stroke="#f1c232" stroke-width="2" x1="0" y1="0" x2="234.567" y2="0"></line><polygon fill="#f1c232" transform="translate(234.567,0) rotate(90)" points="0,-4 4,4 -4,4"></polygon></svg></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 122px; left: 698.012px; top: 494.225px;" data-name="text-7325da" data-origin-id="49922ab37ae95ffe835ce308c37bf897" data-block-id="e36c5c03850fa596ed9ec3c5944431b5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: center; color: rgb(241, 194, 50); font-size: 50%;">
 <p><span style="font-size:1.0em">paga a</span></p>
 </div></div>
-<div class="sl-block" data-block-type="image" style="width: 42.3542px; height: 42.3542px; left: 597.973px; top: 493.547px; min-width: 1px; min-height: 1px;" data-name="image-9123a4" data-origin-id="96676941818af4c2e2bf9c294dd10510" data-block-id="8105123e75e2b3f27b7dce9d76f44cbd"><div class="sl-block-style" style="z-index: 19; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 19; border-style: solid; border-width: 1px;"><img style="" data-natural-width="93" data-natural-height="93" data-lazy-loaded="" data-src="./ladonaciones/116a418f0014b26f1ae362b5d4543f86.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 42.4716px; height: 42.5929px; left: 877.673px; top: 493.439px; min-width: 1px; min-height: 1px;" data-name="image-cca696" data-origin-id="50efcb31ed57ff2eea94a102a8c3c73f" data-block-id="1bc3735619f79d04118ae36c06a2695b"><div class="sl-block-style" style="z-index: 18; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 18;"><img style="" data-natural-width="350" data-natural-height="351" data-lazy-loaded="" data-src="./ladonaciones/b47474578752e64700317d9d1ced65ac.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 42.3542px; height: 42.3542px; left: 597.973px; top: 493.547px; min-width: 1px; min-height: 1px;" data-name="image-9123a4" data-origin-id="96676941818af4c2e2bf9c294dd10510" data-block-id="8105123e75e2b3f27b7dce9d76f44cbd"><div class="sl-block-style" style="z-index: 19; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 19; border-style: solid; border-width: 1px;"><img style="" data-natural-width="93" data-natural-height="93" data-lazy-loaded="" data-src="././ladonaciones/116a418f0014b26f1ae362b5d4543f86.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 42.4716px; height: 42.5929px; left: 877.673px; top: 493.439px; min-width: 1px; min-height: 1px;" data-name="image-cca696" data-origin-id="50efcb31ed57ff2eea94a102a8c3c73f" data-block-id="1bc3735619f79d04118ae36c06a2695b"><div class="sl-block-style" style="z-index: 18; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 18;"><img style="" data-natural-width="350" data-natural-height="351" data-lazy-loaded="" data-src="././ladonaciones/b47474578752e64700317d9d1ced65ac.jpg"></div></div></div>
 <div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 639.223px; top: 514.224px;" data-name="line-9b4f35" data-origin-id="5e7998754a239c1702a2777571fee9f4" data-block-id="1a91faa5dea3502abac490ef5e16d10e"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="238.567" data-line-y2="0" data-line-color="#f1c232" data-line-start-type="none" data-line-end-type="arrow" style="z-index: 17;" data-line-style="solid" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="238.567" height="1" viewbox="0 0 238.567 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="234.567" y2="0"></line><line class="line-element" stroke="#f1c232" stroke-width="2" x1="0" y1="0" x2="234.567" y2="0"></line><polygon fill="#f1c232" transform="translate(234.567,0) rotate(90)" points="0,-4 4,4 -4,4"></polygon></svg></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 122px; left: 698.012px; top: 547.781px;" data-name="text-5e4706" data-origin-id="12ae6016fee022573bd8bef3bf37efbc" data-block-id="c8de771b10f739867215ddcdf9a51958"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; text-align: center; color: rgb(241, 194, 50); font-size: 50%;">
 <p><span style="font-size:1.0em">menciona a</span></p>
 </div></div>
-<div class="sl-block" data-block-type="image" style="width: 42.499px; height: 42.499px; left: 597.973px; top: 546.031px; min-width: 1px; min-height: 1px;" data-name="image-4ea202" data-origin-id="455194a31ea19077da6f43c7dd77c016" data-block-id="9bbc39f0423016a54488245665718228"><div class="sl-block-style" style="z-index: 23; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 23; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src="./ladonaciones/263d83fa7318ce34a1863dd715741144.jpg"></div></div></div>
-<div class="sl-block" data-block-type="image" style="width: 42.4481px; height: 42.4481px; left: 877.696px; top: 546.067px; min-width: 1px; min-height: 1px;" data-name="image-e2bc11" data-origin-id="1ced5e6c9dcd95ae8a2b60fefed58a9f" data-block-id="7f2ef10f5bb1f04850267f121aecb8bd"><div class="sl-block-style" style="z-index: 22; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 22; border-style: solid; border-width: 1px;"><img style="" data-natural-width="339" data-natural-height="339" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-src="./ladonaciones/874f59c7a30e9ff381f2d86d314e9e5a.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 42.499px; height: 42.499px; left: 597.973px; top: 546.031px; min-width: 1px; min-height: 1px;" data-name="image-4ea202" data-origin-id="455194a31ea19077da6f43c7dd77c016" data-block-id="9bbc39f0423016a54488245665718228"><div class="sl-block-style" style="z-index: 23; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 23; border-style: solid; border-width: 1px;"><img style="" data-natural-width="180" data-natural-height="180" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-lazy-loaded="" data-src="././ladonaciones/263d83fa7318ce34a1863dd715741144.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 42.4481px; height: 42.4481px; left: 877.696px; top: 546.067px; min-width: 1px; min-height: 1px;" data-name="image-e2bc11" data-origin-id="1ced5e6c9dcd95ae8a2b60fefed58a9f" data-block-id="7f2ef10f5bb1f04850267f121aecb8bd"><div class="sl-block-style" style="z-index: 22; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 22; border-style: solid; border-width: 1px;"><img style="" data-natural-width="339" data-natural-height="339" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="1" data-src="././ladonaciones/874f59c7a30e9ff381f2d86d314e9e5a.jpg"></div></div></div>
 <div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 639.223px; top: 568.286px;" data-name="line-c549fb" data-origin-id="29e8bec0aa9bf0961a19d4aa574a5a20" data-block-id="562234dd1b8806cc848ef36ebc0649e2"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="238.567" data-line-y2="0" data-line-color="#f1c232" data-line-start-type="none" data-line-end-type="arrow" style="z-index: 21;" data-line-style="solid" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="238.567" height="1" viewbox="0 0 238.567 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="234.567" y2="0"></line><line class="line-element" stroke="#f1c232" stroke-width="2" x1="0" y1="0" x2="234.567" y2="0"></line><polygon fill="#f1c232" transform="translate(234.567,0) rotate(90)" points="0,-4 4,4 -4,4"></polygon></svg></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 122px; left: 698.013px; top: 390.132px;" data-name="text-d483d1" data-origin-id="eb0b451f3a2666f789f89deb1b1a5d9d" data-block-id="5e2384c6e83941c229d6d4aa6b7daf6e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; text-align: center; color: rgb(241, 194, 50); font-size: 50%;">
 <p><span style="font-size:1.0em">controla</span></p>
 </div></div>
-<div class="sl-block" data-block-type="image" style="width: 42.4535px; height: 42.4535px; left: 597.974px; top: 388.406px; min-width: 1px; min-height: 1px;" data-name="image-038b2f" data-origin-id="4b6347624f3251dce6eefc342b265f18" data-block-id="aafb4a63071ff33448830998f0a88455"><div class="sl-block-style" style="z-index: 27; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 27; border-style: solid; border-width: 1px;"><img style="" data-natural-width="111" data-natural-height="111" data-lazy-loaded="" data-src="./ladonaciones/30524d844e94b9854d220bf065093c09.jpg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 42.4535px; height: 42.4535px; left: 597.974px; top: 388.406px; min-width: 1px; min-height: 1px;" data-name="image-038b2f" data-origin-id="4b6347624f3251dce6eefc342b265f18" data-block-id="aafb4a63071ff33448830998f0a88455"><div class="sl-block-style" style="z-index: 27; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 27; border-style: solid; border-width: 1px;"><img style="" data-natural-width="111" data-natural-height="111" data-lazy-loaded="" data-src="././ladonaciones/30524d844e94b9854d220bf065093c09.jpg"></div></div></div>
 <div class="sl-block" data-block-type="image" style="width: 42.5929px; height: 42.5929px; left: 877.552px; top: 388.347px; min-width: 1px; min-height: 1px;" data-name="image-d4aee0" data-origin-id="d700524877cbdc50db6d88ba0712153b" data-block-id="61de0047a253a5be54ff262d1858cf92"><div class="sl-block-style" style="z-index: 26; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content avatar" style="z-index: 26; border-style: solid; border-width: 1px;"><img style="" data-natural-width="64" data-natural-height="64" data-lazy-loaded="" data-src="./ladonaciones/9246f5fe3638ab38a6d7a280442ce3eb.jpg"></div></div></div>
 <div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 639.223px; top: 410.132px;" data-name="line-c084fd" data-origin-id="150510d7de48a4cd5c0d695b04ba629f" data-block-id="63b922c0789f3a30828484afc76a6362"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="238.567" data-line-y2="0" data-line-color="#f1c232" data-line-start-type="none" data-line-end-type="arrow" style="z-index: 25;" data-line-style="solid" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="238.567" height="1" viewbox="0 0 238.567 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="234.567" y2="0"></line><line class="line-element" stroke="#f1c232" stroke-width="2" x1="0" y1="0" x2="234.567" y2="0"></line><polygon fill="#f1c232" transform="translate(234.567,0) rotate(90)" points="0,-4 4,4 -4,4"></polygon></svg></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 122px; left: 698.012px; top: 442.69px;" data-name="text-496939" data-origin-id="3541aa54486d047163e2d58daf573e53" data-block-id="64a702278fa17e9574179f4e08278558"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 28; text-align: center; color: rgb(241, 194, 50); font-size: 50%;">
@@ -826,10 +839,10 @@ entre los elementos de la historia</p>
 
 
 <div class="sl-block" data-block-type="code" style="width: 1215px; height: auto; left: 589px; top: 252.25px;" data-name="code-roldan" data-block-id="7e02af8817f7a61103ab481486461087"><div class="sl-block-content no_scroll notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;" data-code-autoheight="true"><pre style="font-size: 16px; line-height: 19px;" class="javascript"><code style="padding: 10px;">{
-  id: "felix_sanz_roldan",
-  name: "Félix Sanz Roldán",
-  type: "individual",
-  gender: "male"
+id: "felix_sanz_roldan",
+name: "Félix Sanz Roldán",
+type: "individual",
+gender: "male"
 }</code></pre></div></div>
 <div class="sl-block" data-block-type="image" style="width: 182.5px; height: 182.5px; left: 133.422px; top: 237.5px; min-width: 1px; min-height: 1px;" data-name="image-89e2cc" data-block-id="41f4ed31467eb98b4d1e134a74557bbf"><div class="sl-block-content avatar" style="z-index: 11; border-width: 8px; border-style: solid;"><img style="" data-natural-width="612" data-natural-height="612" data-lazy-loaded="" data-src="./ladonaciones/af9c9e2b1006eb76978c83ba9e261be9.jpg"></div></div>
 
@@ -846,10 +859,10 @@ entre los elementos de la historia</p>
 
 
 <div class="sl-block" data-block-type="code" style="width: 1800px; height: auto; left: 0px; top: 70px;" data-name="code-roldan" data-block-id="c6cf7d2e704b044de64bc96db3ee0a81"><div class="sl-block-content no_scroll notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;" data-code-autoheight="true"><pre style="font-size: 16px; line-height: 19px;" class="javascript"><code style="padding: 10px;">{
-  id: "felix_sanz_roldan",
-  name: "Félix Sanz Roldán",
-  type: "individual",
-  gender: "male"
+id: "felix_sanz_roldan",
+name: "Félix Sanz Roldán",
+type: "individual",
+gender: "male"
 }</code></pre></div></div>
 <div class="sl-block" data-block-type="image" style="width: 120px; height: 120px; left: 840px; top: 60px; min-width: 1px; min-height: 1px;" data-name="image-89e2cc" data-block-id="e279c58701e3d41c2fbf7e4839713133"><div class="sl-block-style" style="z-index: 11; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px);"><div class="sl-block-content" style="z-index: 11; border-style: solid; border-radius: 200px; border-width: 6px;"><img style="" data-natural-width="612" data-natural-height="612" data-lazy-loaded="" data-src="./ladonaciones/af9c9e2b1006eb76978c83ba9e261be9.jpg"></div></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 863px; left: 49px; top: 287.5px;" data-name="text-bcb293" data-block-id="dd2622b59d6ac9620121e35f8549abf8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center; line-height: 1.625;" data-has-line-height="" dir="ui">
@@ -896,10 +909,10 @@ portales institucionales…</p>
 <p><strong>fuentes exclusivamente públicas:</strong></p>
 </div></div></div>
 <div class="sl-block" data-block-type="code" style="width: 1804px; height: auto; left: 0px; top: 70px;" data-name="code-roldan" data-block-id="4c3df2cab939f96902a06e11802d6e26"><div class="sl-block-content no_scroll notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;" data-code-autoheight="true"><pre style="font-size: 16px; line-height: 19px;" class="javascript"><code style="padding: 10px;">{
-  id: "felix_sanz_roldan",
-  name: "Félix Sanz Roldán",
-  type: "individual",
-  gender: "male"
+id: "felix_sanz_roldan",
+name: "Félix Sanz Roldán",
+type: "individual",
+gender: "male"
 }</code></pre></div></div></section><section data-background-color="#272822" data-auto-animate="" data-id="0284f6273f0c18116c3a1c5e1ce64f5f">
 
 
@@ -908,18 +921,18 @@ portales institucionales…</p>
 
 
 <div class="sl-block" data-block-type="code" style="width: 1803.07px; height: auto; left: 0px; top: 70px;" data-name="code-roldan" data-block-id="9999f4582e17b2bb07f65188785b0513"><div class="sl-block-content no_scroll notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;" data-code-autoheight="true"><pre style="font-size: 16px; line-height: 19px;" class="javascript"><code style="padding: 10px;">{
-  id: "felix_sanz_roldan",
-  name: "Félix Sanz Roldán",
-  type: "individual",
-  gender: "male",
-  nationality: "es",
-  birthdate: "1945-01-20",
-  roles: [
-    {
-      name: "JEMAD",
-      since: "2004-06-26"
-    }
-  ]
+id: "felix_sanz_roldan",
+name: "Félix Sanz Roldán",
+type: "individual",
+gender: "male",
+nationality: "es",
+birthdate: "1945-01-20",
+roles: [
+  {
+    name: "JEMAD",
+    since: "2004-06-26"
+  }
+]
 }</code></pre></div></div>
 
 
@@ -939,18 +952,18 @@ portales institucionales…</p>
 
 
 <div class="sl-block" data-block-type="code" style="width: 1803px; height: auto; left: 0px; top: 70px;" data-name="code-roldan" data-block-id="688da94110ef4faef6176fcbc9f5ddce"><div class="sl-block-content no_scroll notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10; border-width: 1px;" data-code-autoheight="true"><pre style="font-size: 16px; line-height: 19px;" class="javascript"><code style="padding: 10px;">{
-  id: "felix_sanz_roldan",
-  name: "Félix Sanz Roldán",
-  type: "individual",
-  gender: "male",
-  nationality: "es",
-  birthdate: "1945-01-20",
-  roles: [
-    {
-      name: "JEMAD",
-      since: "2004-06-26"
-    }
-  ]
+id: "felix_sanz_roldan",
+name: "Félix Sanz Roldán",
+type: "individual",
+gender: "male",
+nationality: "es",
+birthdate: "1945-01-20",
+roles: [
+  {
+    name: "JEMAD",
+    since: "2004-06-26"
+  }
+]
 }</code></pre></div></div>
 
 
@@ -967,24 +980,24 @@ portales institucionales…</p>
 
 
 <div class="sl-block" data-block-type="code" style="width: 1809px; height: auto; left: 0px; top: 70px;" data-name="code-roldan" data-block-id="9bd62c263d832be9791d5d7a1eee2908"><div class="sl-block-content no_scroll notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10; border-width: 1px;" data-code-autoheight="true"><pre style="font-size: 16px; line-height: 19px;" class="javascript"><code style="padding: 10px;">{
-  id: "felix_sanz_roldan",
-  name: "Félix Sanz Roldán",
-  type: "individual",
-  gender: "male",
-  nationality: "es",
-  birthdate: "1945-01-20",
-  roles: [
-    {
-      name: "JEMAD",
-      since: "2004-06-26",
-      until: "2009-07-02"
-    },
-    {
-      name: "director del CNI",
-      organization: "CNI",
-      since: "2009-07-03"
-    }
-  ]
+id: "felix_sanz_roldan",
+name: "Félix Sanz Roldán",
+type: "individual",
+gender: "male",
+nationality: "es",
+birthdate: "1945-01-20",
+roles: [
+  {
+    name: "JEMAD",
+    since: "2004-06-26",
+    until: "2009-07-02"
+  },
+  {
+    name: "director del CNI",
+    organization: "CNI",
+    since: "2009-07-03"
+  }
+]
 }</code></pre></div></div>
 
 
@@ -1003,24 +1016,24 @@ portales institucionales…</p>
 
 
 <div class="sl-block" data-block-type="code" style="width: 1801px; height: auto; left: 0px; top: 70px;" data-name="code-roldan" data-block-id="d9a41525e627d0163faefb7d8b535acb"><div class="sl-block-content no_scroll notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;" data-code-autoheight="true"><pre style="font-size: 16px; line-height: 19px;" class="javascript"><code style="padding: 10px;">{
-  id: "felix_sanz_roldan",
-  name: "Félix Sanz Roldán",
-  type: "individual",
-  gender: "male",
-  nationality: "es",
-  birthdate: "1945-01-20",
-  roles: [
-    {
-      name: "JEMAD",
-      since: "2004-06-26",
-      until: "2009-07-02"
-    },
-    {
-      name: "director del CNI",
-      organization: "CNI",
-      since: "2009-07-03"
-    }
-  ]
+id: "felix_sanz_roldan",
+name: "Félix Sanz Roldán",
+type: "individual",
+gender: "male",
+nationality: "es",
+birthdate: "1945-01-20",
+roles: [
+  {
+    name: "JEMAD",
+    since: "2004-06-26",
+    until: "2009-07-02"
+  },
+  {
+    name: "director del CNI",
+    organization: "CNI",
+    since: "2009-07-03"
+  }
+]
 }</code></pre></div></div>
 
 
@@ -1037,29 +1050,29 @@ portales institucionales…</p>
 
 <div class="sl-block" data-block-type="image" style="width: 637.844px; height: 125.102px; left: 340.275px; top: 291.086px; min-width: 1px; min-height: 1px;" data-name="image-1cf7f6" data-block-id="3baa8a2278e339edbded1b03da9d24b8"><div class="sl-block-style" style="z-index: 13; filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 5px); transform: rotate(-2deg);"><div class="sl-block-content" style="z-index: 13; border-width: 15px;"><img style="" data-natural-width="1448" data-natural-height="284" data-lazy-loaded="" data-src="./ladonaciones/d89427368bc45eade8aeef05605f15ad.png"></div></div></div>
 <div class="sl-block" data-block-type="code" style="width: 1800px; height: auto; left: 0px; top: 70px;" data-name="code-roldan" data-block-id="e191c26f4d6851063fd10f1c9defba30"><div class="sl-block-content no_scroll notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;" data-code-autoheight="true"><pre style="font-size: 16px; line-height: 19px;" class="javascript"><code style="padding: 10px;">{
-  id: "felix_sanz_roldan",
-  name: "Félix Sanz Roldán",
-  type: "individual",
-  gender: "male",
-  nationality: "es",
-  birthdate: "1945-01-20",
-  roles: [
-    {
-      name: "JEMAD",
-      since: "2004-06-26",
-      until: "2009-07-02"
-    },
-    {
-      name: "director del CNI",
-      organization: "CNI",
-      since: "2009-07-03",
-      until: "2020-06-28"
-    },
-    {
-      name: "asesor de Iberdrola",
-      since: "2020-06-29"
-    }
-  ]
+id: "felix_sanz_roldan",
+name: "Félix Sanz Roldán",
+type: "individual",
+gender: "male",
+nationality: "es",
+birthdate: "1945-01-20",
+roles: [
+  {
+    name: "JEMAD",
+    since: "2004-06-26",
+    until: "2009-07-02"
+  },
+  {
+    name: "director del CNI",
+    organization: "CNI",
+    since: "2009-07-03",
+    until: "2020-06-28"
+  },
+  {
+    name: "asesor de Iberdrola",
+    since: "2020-06-29"
+  }
+]
 }</code></pre></div></div>
 
 
@@ -1075,29 +1088,29 @@ portales institucionales…</p>
 
 
 <div class="sl-block" data-block-type="code" style="width: 1798px; height: auto; left: 0px; top: 70px;" data-name="code-roldan" data-block-id="9e3525ac871b1f3375686f974fb3b14b"><div class="sl-block-content no_scroll notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;" data-code-autoheight="true"><pre style="font-size: 16px; line-height: 19px;" class="javascript"><code style="padding: 10px;">{
-  id: "felix_sanz_roldan",
-  name: "Félix Sanz Roldán",
-  type: "individual",
-  gender: "male",
-  nationality: "es",
-  birthdate: "1945-01-20",
-  roles: [
-    {
-      name: "JEMAD",
-      since: "2004-06-26",
-      until: "2009-07-02"
-    },
-    {
-      name: "director del CNI",
-      organization: "CNI",
-      since: "2009-07-03",
-      until: "2020-06-28"
-    },
-    {
-      name: "asesor de Iberdrola",
-      since: "2020-06-29"
-    }
-  ]
+id: "felix_sanz_roldan",
+name: "Félix Sanz Roldán",
+type: "individual",
+gender: "male",
+nationality: "es",
+birthdate: "1945-01-20",
+roles: [
+  {
+    name: "JEMAD",
+    since: "2004-06-26",
+    until: "2009-07-02"
+  },
+  {
+    name: "director del CNI",
+    organization: "CNI",
+    since: "2009-07-03",
+    until: "2020-06-28"
+  },
+  {
+    name: "asesor de Iberdrola",
+    since: "2020-06-29"
+  }
+]
 }</code></pre></div></div>
 
 
@@ -1294,60 +1307,16 @@ Se trata de una iniciativa personal para construir herramientas que den   <stro
 <div class="sl-block" data-block-type="text" style="height: auto; width: 266px; left: 373.573px; top: 221px;" data-block-id="fc2f5755e613691d0d9ac22abeb9024e" data-name="text-87291c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; text-align: center; color: rgb(39, 40, 34); background-color: rgb(255, 255, 255); font-size: 90%;" dir="ui">
 <p><strong>más transparencia</strong></p>
 </div></div></section>
-			</div>
-		</div>
+          </div>
+      </div>
 
-		<script>
-			var SLConfig = {"deck": {"id":2006417,"slug":"ladonaciones","title":"ladonacion.es","description":"En 2012 el rey de España, Juan Carlos I, transfiere a una amiga 65 millones de euros desde una cuenta secreta en Suiza. ¿Qué hay detrás de esta extraña donación?","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/9119a10f08512d7ed9b966d4f7529ba8/thumb.jpg?1616085371","view_count":6542,"user":{"id":1468254,"username":"jaimeobregon","name":"Jaime Gómez-Obregón","description":"","thumbnail_url":"https://www.gravatar.com/avatar/c0017fa3d31579ae692a92c1fc47f235?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"pro","team_id":null,"settings":{"id":6646074,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"opensans","theme_color":"black-orange","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":31,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":3,"data_updated_at":1616239178273,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"notes":{}}};
+      
 
+      
 
-			// Use local fonts
-			SLConfig.fonts_url = './lib/fonts/';
-		</script>
-
-		<script src="./lib/reveal.js"></script>
-		<script src="./lib/reveal-plugins.js"></script>
-		<script src="./lib/offline.js"></script>
-
-		<!-- Initialize the presentation -->
-		<script>
-			Reveal.initialize({
-				width: 960,
-				height: 700,
-				margin: 0.05,
-				
-
-				hash: true,
-				controls: true,
-				progress: true,
-				mouseWheel: false,
-				showNotes: false,
-				slideNumber: false,
-				fragmentInURL: true,
-
-				autoSlide: 0,
-				autoSlideStoppable: true,
-
-				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
-
-				center: false,
-				shuffle: false,
-				loop: false,
-				rtl: false,
-				navigationMode: "default",
-
-				transition: "slide",
-				backgroundTransition: "slide",
-
-				highlight: {
-					escapeHTML: false
-				},
-
-				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
-			});
-		</script>
-
-		
-
-	</body>
+  </body>
 </html>
+
+`
+
+export default metodologiaData
