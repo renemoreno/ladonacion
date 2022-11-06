@@ -339,25 +339,26 @@ customElements.define(
         year: 'numeric',
         month: 'long',
         day: 'numeric',
+        timeZone: 'UTC',
       }
       if (item.birthdate && item.deathdate) {
         const birth = new Date(item.birthdate)
         const death = new Date(item.deathdate)
         const years = Math.floor((death - birth) / 1000 / 60 / 60 / 24 / 365)
-        dates = `${birth.toLocaleDateString('es-ES', dateFormat)} —
-            ${death.toLocaleDateString('es-ES', dateFormat)} (${years} años)`
+        dates = `${birth.toLocaleDateString('es-MX', dateFormat)} —
+            ${death.toLocaleDateString('es-MX', dateFormat)} (${years} años)`
       } else if (item.birthdate) {
         const birth = new Date(item.birthdate)
         const years = Math.floor(
           (new Date() - birth) / 1000 / 60 / 60 / 24 / 365
         )
         dates = `${birth.toLocaleDateString(
-          'es-ES',
+          'es-MX',
           dateFormat
         )} (${years} años)`
       } else if (item.deathdate) {
         dates = `? — ${new Date(item.deathdate).toLocaleDateString(
-          'es-ES',
+          'es-MX',
           dateFormat
         )}`
       }

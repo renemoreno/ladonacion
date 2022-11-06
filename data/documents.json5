@@ -2262,13 +2262,113 @@
     ],
   },
   {
-    id: 'reserva_SSPE',
-    file: 'file:documents/reserva_SSPE.pdf',
-    title: 'Acuerdo de Clasificación de Información de la SSPE',
-    description: 'Aquí vamos a explicar de que se trata esta marranada',
+    id: 'ACR_01_2022',
+    file: 'file:documents/ACR_01_2022.pdf',
+    title: 'La Secretaría de Seguridad Pública reservó por 5 años toda la información de la Plataforma Centinela',
+    description: 'Acuerdo de Clasificación de Información de la Plataforma Centinela por Seguridad Pública',
     date: '2022-03-25',
     lang: 'es',
-    origin: '#/articles/elconfidencial_2702531',
-    relations: [],
+    origin: {
+       url: 'https://tinyurl.com/2pj6gybw',
+       date: '2022-03-25',
+       source: '#/sources/pnt',
+    },
+    relations: [
+      {
+        object: '#/entities/sspe_chihuahua',
+        subject:  '#/documents/ACR_01_2022',
+        type: '#/relations/mentions',
+      },
+    ],
+  },
+  {
+    id: 'wim_shimon',
+    file: 'file:documents/wim_shimon.pdf',
+    title:  'Passion for Progress',
+    date: '2019-03-11',
+    description:  'Shimon junto a su hijo Ariel',
+    lang: 'en',
+    origin: {
+      url:  'https://www.weizmann-france.com/wp-content/uploads/WIM-Spring-2019.pdf',
+      date: '2019-03-11',
+      source: '#/sources/weizzman',
+    },
+    relations:  [
+      {
+        object: '#/persons/ariel_picker',
+        subject:  '#/persons/simon_picker',
+        type: '#/relations/parent',
+      },
+      {
+        object: '#/entities/seguritech',
+        subject:  '#/persons/simon_picker',
+        type: '#/relations/controls',
+      },
+      {
+        object: '#/entities/seguritech',
+        subject:  '#/documents/wim_shimon',
+        type: '#/relations/mentions',
+      },
+    ],
+  },
+  {
+    id: 'convenio_marca',
+    file: 'file:documents/convenio_marca_seguritech.pdf',
+    title:  'Seguritech crea un convenio interno para uso de la marca "C5i"',
+    date: '2017-01-16',
+    description:  '<a href="#/entities/seguritech">Seguritech</a> creó un convenio interno para uso de la marca "C5i".',
+    lang: 'es',
+    origin: {
+      url:  'https://acervomarcas.impi.gob.mx:8181/marcanet/UCMServlet?info=MXwxfDE5ODV8MTg1NTc1NA==',
+      date: '2017-01-16',
+      source: '#/sources/impi',
+    },
+    relations:  [
+      {
+        object: '#/places/oficinas_seguritech',
+        subject:  '#/entities/seguritech',
+        type: '#/relations/owns',
+      },
+      {
+        object: '#/entities/seguritech',
+        subject:  '#/documents/convenio_marca',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/entities/seguritech',
+        subject:  '#/persons/rene_bustos',
+        type: '#/relations/manages',
+      },
+      {
+        object: '#/documents/convenio_marca',
+        subject:  '#/persons/rene_bustos',
+        type: '#/relations/authors',
+      },
+    ],
+  },
+  {
+    id: 'poder_impi',
+    file: 'file:documents/poder_impi_ariel.pdf',
+    title:  'Ariel Picker delega poder a 2 trabajadores de Seguritech para temas de marcas',
+    date: '2021-05-07',
+    description:  '<a href="#/persons/ariel_picker">Ariel Picker</a> le dio poder a 2 personas de <a href="#/entities/seguritech">Seguritech</a> para que le den seguimiento a temas de marcas y propiedad industrial.',
+    lang: 'es',
+    origin: {
+      url:  'https://acervomarcas.impi.gob.mx:8181/marcanet/UCMServlet?info=MnwxNDA2MTd8MjAyMQ==',
+      date: '2021-05-07',
+      source: '#/sources/impi',
+    },
+    relations:  [
+      {
+        object: '#/documents/poder_impi',
+        subject:  '#/persons/ariel_picker',
+        type: '#/relations/authors',
+      },
+      {
+        object: '#/places/corporativo_seguritech',
+        subject:  '#/documents/poder_impi',
+        type: '#/relations/mentions',
+      },
+    ],
   },
 ]

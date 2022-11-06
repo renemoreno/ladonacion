@@ -28,9 +28,10 @@ customElements.define(
     }
 
     connectedCallback() {
+
       // Path containing the presentation exported from slides.com, unzipped.
       // See https://help.slides.com/knowledgebase/articles/546541
-      const src = `/slides/index.html`
+      const src = 'slides/index.html'
 
       // See https://stackoverflow.com/a/29859214
       const iframe = document.createElement('iframe')
@@ -49,6 +50,7 @@ customElements.define(
           once: true,
         })
       })
+
 
       this.addEventListener('deactivate', () => iframe.removeAttribute('src'))
 

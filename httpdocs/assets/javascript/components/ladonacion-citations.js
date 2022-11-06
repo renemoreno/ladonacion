@@ -281,11 +281,12 @@ customElements.define(
                             <figcaption>
                               <time datetime="${source.date}">
                                   ${new Date(source.date).toLocaleDateString(
-                                    'es-ES',
+                                    'es-MX',
                                     {
                                       year: 'numeric',
                                       month: 'long',
                                       day: 'numeric',
+                                      timeZone: 'UTC',
                                     }
                                   )}
                               </time>

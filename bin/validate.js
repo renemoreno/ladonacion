@@ -275,10 +275,11 @@ const config = {
                 (item) =>
                   item.id === article.source.match(/^#\/sources\/(.+)$/)[1]
               ).name
-          } el ${new Date(article.date).toLocaleDateString('es-ES', {
+          } el ${new Date(article.date).toLocaleDateString('es-MX', {
             year: 'numeric',
             month: 'long',
             day: 'numeric',
+            timeZone: 'UTC',
           })}.`,
           image: `https://ladonacion.es/resources/${article.thumbnail}`,
         },

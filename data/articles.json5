@@ -4531,4 +4531,34 @@
       },
     ],
   },
+  {
+    id: 'yociudadano_piedracentinela',
+    url: 'https://yociudadano.com.mx/noticias/colocan-primera-piedra-de-torre-centinela/',
+    source: '#/sources/yociudadano',
+    title: 'Colocan primera piedra de Torre Centinela; costará 4 mmdp y estaría lista en año y medio',
+    date: '2022-08-10',
+    lang: 'es',
+    relations: [
+      {
+        subject: '#/persons/ariel_picker',
+        object: '#/events/primerapiedra',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/entities/sspe_chihuahua',
+        object: '#/events/primerapiedra',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/entities/seguritech',
+        object: '#/events/primerapiedra',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/entities/sspe_chihuahua',
+        object: '#/entities/seguritech',
+        type: '#/relations/pays',
+      },
+    ],
+  },
 ]

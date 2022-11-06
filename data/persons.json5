@@ -1298,4 +1298,81 @@
       'صباح الأحمد الجابر الصباح',
     ],
   },
+  {
+    id: 'ariel_picker',
+    title: 'Ariel Zeev Picker Schatz',
+    alias:  'Ariel Picker',
+    avatar: 'file:persons/avatars/ariel_picker.jpg',
+    description:  'Empresario mexicano dueño de <a href="#/entities/seguritech">Seguritech</a> empresa integradora de sistemas de seguridad que le ha vendido a diferentes gobiernos estatales de México.',
+    gender: 'male',
+    linkedin: 'https://mx.linkedin.com/in/arielpickermx',
+    nationality: 'mx',
+    residence:  'mx',
+    birthdate: '1974-04-07',
+    signatures: [
+      {
+        file: 'file:persons/signatures/ariel_picker.jpg',
+        source: '#/documents/poder_impi',
+      },
+    ],
+    pictures: [
+      {
+        file: 'file:persons/pictures/ariel_picker.png',
+        source: {
+          name: 'Telefórmula',
+          link: 'https://www.youtube.com/watch?v=9r1qzM9RXac',
+        },
+        caption:  'Ariel Picker en entrevista con Ciro Gómez Leyva explicando el proyecto Estadio Seguro de Seguritech.',
+      },
+    ],
+  },
+  {
+    id: 'simon_picker',
+    title: 'Shimon Picker Gottlieb',
+    alias: 'Simon Picker',
+    gender: 'male',
+    nationality:  'us',
+    country: 'il',
+    residence:  'mx',
+    description:  'Empresario fundador de <a href="#/entities/seguritech">Seguritech</a>, nació en Tel Aviv, Israel. Es padre de <a href="#/persons/ariel_picker">Ariel Picker</a>.',
+    avatar: 'file:persons/avatars/simon_picker.png',
+    pictures: [
+      {
+        file: 'file:persons/pictures/simon_picker.jpg',
+        source: {
+          name: 'Weizzman Institute of Science',
+          link: 'https://www.weizmann-france.com/wp-content/uploads/WIM-Spring-2019.pdf',
+        },
+        caption:  'Shimon y Golde Picker en una ceremonia en su honor al entrar al Consejo Internacional del Instituto Weizzman de Ciencias',
+      },
+    ],
+  },
+  {
+    id: 'rene_bustos',
+    title: 'René Bustos Soler',
+    alias:  'René Bustos',
+    avatar: 'file:persons/avatars/rene_bustos.jpg',
+    description:  'Administrador único de <a href="#/entities/seguritech">Seguritech</a>, empresa integradora de sistemas de seguridad que le ha vendido a diferentes gobiernos estatales de México. Desde 2010 trabaja con la empresa.',
+    gender: 'male',
+    linkedin: 'https://mx.linkedin.com/in/rene-bustos-1563653a',
+    nationality: 'mx',
+    residence:  'mx',
+    birthdate: '1972-05-19',
+    signatures: [
+      {
+        file: 'file:persons/signatures/rene_bustos.jpg',
+        source: '#/documents/convenio_marca',
+      },
+    ],
+    pictures: [
+      {
+        file: 'file:persons/pictures/rene_bustos.jpg',
+        source: {
+          name: 'facebook',
+          link: 'https://www.facebook.com/rene.bustos',
+        },
+        caption:  'René Bustos en práctica de tiro.',
+      },
+    ],
+  },
 ]

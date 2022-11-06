@@ -27,6 +27,7 @@ export const router = {
       element.tagName.match(/^PAGE-/)
     )
 
+
     pages
       .find((page) => !page.hidden)
       ?.dispatchEvent(

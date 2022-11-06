@@ -228,7 +228,7 @@ template.innerHTML = `
       display: inline-block;
       height: 1.25em;
       vertical-align: middle;
-      filter: saturate(0%) invert(50%) brightness(75%);
+      filter: saturate(0%) invert(90%) brightness(75%);
     }
 
     :host > div {
@@ -408,10 +408,11 @@ customElements.define(
     ])
 
     formatDate(date) {
-      const text = new Date(date).toLocaleDateString('es-ES', {
+      const text = new Date(date).toLocaleDateString('es-MX', {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
+        timeZone: 'UTC',
       })
       return text.charAt(0).toUpperCase() + text.slice(1)
     }
@@ -577,9 +578,10 @@ customElements.define(
             data-date="${item.date}"></span>
             <article class="${item.model} ${i % 2 ? `even` : ''}">
               <time slot="date" datetime="${item.date}">
-                ${new Date(item.date).toLocaleDateString('es-ES', {
+                ${new Date(item.date).toLocaleDateString('es-MX', {
                   month: 'long',
                   day: 'numeric',
+                  timeZone: 'UTC',
                 })}
               </time>
               ${components[item.model]()}

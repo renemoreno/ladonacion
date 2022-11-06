@@ -541,4 +541,44 @@
     country: 'sa',
     gender: 'female',
   },
+  {
+    id: 'seguritech',
+    avatar: 'file:entities/avatars/seguritech.png',
+    title:  'Seguritech Privada, SA de CV',
+    alias: 'Seguritech',
+    description: 'Es una empresa mexicana que desde 2003 realiza servicios de integración de tecnología para videovigilancia con varios gobiernos estatales del país. Su domicilio de oficinas para contratos con gobierno se ubica en <a href="#/places/oficinas_seguritech">CDMX</a>.',
+    country: 'mx',
+    website: 'https://seguritech.com/',
+    gender: 'female',
+    pictures: [
+      {
+        file: 'file:entities/pictures/seguritech.png',
+        source: {
+          name: 'Seguritech',
+          link: 'https://seguritech.com/post/centros-de-control-y-monitoreo-fundamentales-para-seguridad-ciudadana',
+        },
+        caption: 'Uno de los Centros de Control, Comando, Comunicaciones, Cómputo, Contacto Ciudadano e Inteligencia (C5i) construidos por Seguritech.',
+      },
+    ],
+  },
+  {
+    id: 'sspe_chihuahua',
+    avatar: 'file:entities/avatars/sspe_chihuahua.png',
+    title:  'Secretaría de Seguridad Pública del Estado de Chihuahua',
+    alias: 'SSPE Chihuahua',
+    description: 'Aquí va algo',
+    country: 'mx',
+    website: 'https://sspe.chihuahua.gob.mx/',
+    gender: 'female',
+    pictures: [
+      {
+        file: 'file:entities/pictures/sspe_chihuahua.jpg',
+        source: {
+          name: 'Gobierno del Estado de Chihuahua',
+          link: 'https://chihuahua.gob.mx/prensa/presenta-maru-campos-plataforma-centinela-en-ciudad-juarez-para-garantizar-cobertura-total',
+        },
+        caption: 'Elementos de la Secretaría de Seguridad Pública del Estado de Chihuahua durante la presentación en Juárez de la Plataforma Centinela.',
+      },
+    ],
+  },
 ]

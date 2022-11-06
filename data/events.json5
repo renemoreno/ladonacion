@@ -986,4 +986,11 @@
       },      
     ],      
     },
+    {
+    id: 'primerapiedra',
+    title: 'Colocan primera piedra de Torre Centinela',
+    date: '2022-08-10',
+    description: 'En ceremonia oficial, se ve en el presidium a <a href="#/persons/ariel_picker">Ariel Picker</a> junto a trabajadores de <a href="#/entities/seguritech">Seguritech</a> en la colocación de la primera piedra de la Torre Centinela, parte del proyecto más importante de la <a href="#/entities/sspe_chihuahua">Secretaría de Seguridad Pública de Chihuahua</a> durante la administración 2021-2027.',
+    document: '#/articles/yociudadano_piedracentinela',     
+    },
 ]

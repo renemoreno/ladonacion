@@ -172,7 +172,7 @@ template.innerHTML = `
     aside#fuentes img {
       height: 2rem;
       padding: 1.25rem 2rem;
-      filter: saturate(0%) invert(90%);
+      filter: saturate(0%) invert(100%) contrast(.5) sepia(.1);
     }
 
     section#colaborar figure {

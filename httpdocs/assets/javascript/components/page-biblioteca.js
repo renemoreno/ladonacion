@@ -244,7 +244,7 @@ template.innerHTML = `
     list-item img[slot="source"] {
       margin-left: 1em;
       height: 1em;
-      filter: saturate(0%) invert(100%);
+      filter: saturate(0%) invert(100%) brightness(100%) contrast(.5);
     }
 
     biblioteca-panel {
@@ -511,6 +511,7 @@ customElements.define(
         year: 'numeric',
         month: 'long',
         day: 'numeric',
+        timeZone: 'UTC',
       }
 
       const item = this.visible.find((item) => item.id === id)
@@ -577,7 +578,7 @@ customElements.define(
           src="/resources/${item.source.logo}"
           alt="${item.source.name}" />
         <time slot="date" datetime="${item.date}">
-          ${new Date(item.date).toLocaleDateString('es-ES', dateFormat)}
+          ${new Date(item.date).toLocaleDateString('es-MX', dateFormat)}
         </time>
         <span slot="links">${links.join(' | ')}</span>
         ${relations.join('')}`
@@ -623,6 +624,7 @@ customElements.define(
         year: 'numeric',
         month: grid ? '2-digit' : 'long',
         day: grid ? '2-digit' : 'numeric',
+        timeZone: 'UTC',
       }
       const items = []
 
@@ -646,7 +648,7 @@ customElements.define(
                 ${item.title}
               </a>
               <time slot="time" datetime="${item.date}">
-                  ${new Date(item.date).toLocaleDateString('es-ES', dateFormat)}
+                  ${new Date(item.date).toLocaleDateString('es-MX', dateFormat)}
               </time>
               <a slot="thumbnail" href="/biblioteca/${item.id}" id="${item.id}">
                 <img
@@ -686,7 +688,7 @@ customElements.define(
               <grid-item>
                 <span slot="title">${item.title}</span>
                 <time slot="time" datetime="${item.date}">
-                  ${new Date(item.date).toLocaleDateString('es-ES', dateFormat)}
+                  ${new Date(item.date).toLocaleDateString('es-MX', dateFormat)}
                 </time>
                 <img
                   slot="thumbnail"
