@@ -647,6 +647,11 @@
         subject:  '#/documents/pressconference_click2houston',
         type: '#/relations/mentions',
       },
+      {
+        object: '#/persons/ignacio_zavala',
+        subject:  '#/documents/pressconference_click2houston',
+        type: '#/relations/mentions',
+      },
     ],
   },
 ]
