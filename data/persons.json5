@@ -310,7 +310,6 @@
     id: 'ignacio_zavala',
     title: 'Ignacio Zavála Cerón',
     alias:  'Ignacio Zavála',
-    avatar: 'file:persons/avatars/ignacio_zavala.png',
     description:  'Administrador único de Telemática LEFIC.',
     gender: 'male',
     wikipedia: '',
