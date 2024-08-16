@@ -317,4 +317,15 @@
     residence:  'mx',
     birthdate: '1957-02-03',
   },
+  {
+    id: 'ignacio_roman',
+    title: 'José Ignacio Román Moreno',
+    alias:  'Ignacio Román',
+    description:  'Administrador único de INT Intelligence and Telecom Technologies.',
+    gender: 'male',
+    wikipedia: '',
+    nationality: 'mx',
+    residence:  'mx',
+    birthdate: '1974-06-04',
+  },
 ]
