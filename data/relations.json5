@@ -106,6 +106,23 @@
     objects: ['entities'],
   },
   {
+    id: 'governs',
+    type: 'business',
+    description: 'Cuando una encabeza gobierna una institución de gobierno.',
+    templates: {
+      direct: {
+        male: 'encabeza',
+        female: 'encabeza',
+      },
+      reverse: {
+        male: 'encabezado por',
+        female: 'encabezadada por',
+      },
+    },
+    subjects: ['persons'],
+    objects: ['entities'],
+  },
+  {
     id: 'represents',
     type: 'business',
     description: 'Cuando una persona o sociedad representan a otras. Por ejemplo, un abogado o un gestor de cuentas que toman representación de sus clientes, o un delegado en una misión comercial.',
@@ -168,6 +185,23 @@
       reverse: {
         male: 'emplea a',
         female: 'emplea a',
+      },
+    },
+    subjects: ['entities', 'persons'],
+    objects: ['entities', 'persons'],
+  },
+  {
+    id: 'endorses',
+    type: 'business',
+    description: 'Una persona respalda a otra.',
+    templates: {
+      direct: {
+        male: 'es respaldado por',
+        female: 'es respaldada por',
+      },
+      reverse: {
+        male: 'respalda a',
+        female: 'respalda a',
       },
     },
     subjects: ['entities', 'persons'],

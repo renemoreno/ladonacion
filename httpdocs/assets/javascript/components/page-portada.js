@@ -53,22 +53,22 @@ template.innerHTML = `
 
     section a[href*="entramado"] {
       background-image: radial-gradient(transparent 70%, #1c1917a0 120%),
-        url(/assets/images/entramado.jpg);
+        url(/assets/images/entramado.png);
     }
 
     section a[href*="cronologia"] {
       background-image: radial-gradient(transparent 70%, #1c1917a0 120%),
-        url(/assets/images/cronologia.jpg);
+        url(/assets/images/cronologia.png);
     }
 
     section a[href*="mapa"] {
       background-image: radial-gradient(transparent 70%, #1c1917a0 120%),
-        url(/assets/images/mapa.jpg);
+        url(/assets/images/mapa.png);
     }
 
     section a[href*="biblioteca"] {
       background-image: radial-gradient(transparent 70%, #1c1917a0 120%),
-        url(/assets/images/biblioteca.jpg);
+        url(/assets/images/biblioteca.png);
     }
 
     section a[href*="metodologia"] {
@@ -213,10 +213,11 @@ template.innerHTML = `
     }
   </style>
   <h1>
-    En 2012 el rey de España, Juan Carlos I,<br />
-    transfiere a una amiga 65 millones de euros<br />
-    desde una cuenta secreta en Suiza.<br />
-    <strong>¿Qué hay detrás de esta extraña donación?</strong>
+    En el estado de Chihuahua,<br />
+    a nivel municipal y estatal<br /> 
+    están operando proyectos de vigilancia masiva<br />
+    y hay evidencia de que se quieren usar<br />
+    <strong>para ser el muro fronterizo virtual</strong>
   </h1>
 
   <section>
@@ -224,9 +225,8 @@ template.innerHTML = `
       <footer>
         <h2>Quién es quién</h2>
         <p>
-          Explora las biografías de jefes de Estado y personalidades de los
-          negocios, sus relaciones de poder con la familia real española y las
-          sociedades que controlan por todo el mundo.
+          Explora las biografías de funcionariado público y empresariado, sus relaciones y las
+          sociedades que controlan para operar estos sistemas de vigilancia masiva.
         </p>
       </footer>
     </a>
@@ -235,7 +235,7 @@ template.innerHTML = `
         <h2>Los hechos</h2>
         <p>
           Visualiza la línea de tiempo con todos los sucesos relevantes que han
-          trascendido desde que los escándalos salieron a la luz, conectados con
+          trascendido desde que la información salió a la luz, conectados con
           las evidencias documentales.
         </p>
       </footer>
@@ -245,8 +245,8 @@ template.innerHTML = `
         <h2>Los lugares</h2>
         <p>
           Navega por todos los escenarios donde transcurre la historia: desde
-          paraísos fiscales como Panamá a los bufetes en Suiza y los inmuebles de
-          lujo adquiridos con fondos opacos.
+          corporativos en ciudad de México a los inmuebles
+          adquiridos.
         </p>
       </footer>
     </a>
@@ -255,7 +255,7 @@ template.innerHTML = `
         <h2>La biblioteca</h2>
         <p>
           Accede a todos los documentos y contrasta las informaciones que han
-          publicado medios de comunicación tanto españoles como extranjeros,
+          publicado medios de comunicación tanto mexicanos como extranjeros,
           registros públicos y boletines oficiales.
         </p>
       </footer>
@@ -274,16 +274,15 @@ template.innerHTML = `
       <footer>
         <h2>El autor</h2>
         <p>
-          Soy un ingeniero especialista en datos que trabaja para dar más
-          transparencia a las instituciones españolas. Me apoyan muchas personas
-          en un <i>crowdfunding</i> ciudadano.
+          Soy una persona interesada en trabajar datos para dar más
+          transparencia a las instituciones en México.
         </p>
       </footer>
     </a>
   </section>
   <footer>
     <a href="https://twitter.com/JaimeObregon" target="_blank">
-      Un proyecto de
+      Basado en un proyecto de
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
         <path
           style="fill: #1da1f2"
