@@ -181,19 +181,19 @@ async function screenshot(filename, url, options) {
       },
     }
 
-    Object.entries(payloads).forEach(([regex, payload]) => {
-      if (url.match(new RegExp(regex, 'i'))) {
-        payload()
-      }
-    })
-  }, url)
+    const matchingPayload = Object.entries(payloads).find(([regex]) => url.match(new RegExp(regex, 'i')));
+
+    if (matchingPayload) {
+      matchingPayload[1]();
+    }
+  }, url);
 
   await page.screenshot({
     path: filename,
     fullPage: options.fullPage,
-  })
+  });
 
-  await browser.close()
+  await browser.close();
 }
 
 screenshot(process.argv[2], process.argv[3], {

@@ -574,7 +574,7 @@ template.innerHTML = `
     </p>
   </section>
 
-  <aside id="patronos"></aside>
+  <!-- <aside id="patronos"></aside> --> <!-- Sección de patronos eliminada -->
 
   <hr />
 
@@ -627,7 +627,7 @@ template.innerHTML = `
       documentalmente sostenidos y las propuestas de correcciones.
     </p>
 
-    <ladonacion-details hidden>
+    <ladonacion-details>
       <span slot="summary">Tabla de relaciones</span>
       <div slot="contents">
         <p>
@@ -693,17 +693,17 @@ customElements.define(
         })
         .join('')
 
-      this.shadowRoot.getElementById('patronos').innerHTML =
-        patrons
-          .sort((a, b) =>
-            a.name.localeCompare(b.name, undefined, { ignorePunctuation: true })
-          )
-          .map((patron) => {
-            return patron.link
-              ? `<a href="${patron.link}" target="_blank">${patron.name}</a>`
-              : `<span>${patron.name}</span>`
-          })
-          .join('') + `…y muchos valientes más ❤️💪`
+      //this.shadowRoot.getElementById('patronos').innerHTML =
+      //  patrons
+      //    .sort((a, b) =>
+      //      a.name.localeCompare(b.name, undefined, { ignorePunctuation: true })
+      //    )
+      //    .map((patron) => {
+      //      return patron.link
+      //        ? `<a href="${patron.link}" target="_blank">${patron.name}</a>`
+      //        : `<span>${patron.name}</span>`
+      //    })
+      //    .join('') + `…y muchos valientes más ❤️💪`
 
       this.shadowRoot.querySelectorAll('h2').forEach((heading) => {
         const link = document.createElement('a')

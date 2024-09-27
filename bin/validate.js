@@ -91,6 +91,8 @@ const config = {
   },
   takeScreenshots: async (items) => {
     for (const item of items) {
+      const modules = config.payloads[item.source] ? [config.payloads[item.source]] : []; //agregamos esta función
+      
       const screenshotInfo = await cache.fetch(
         `screenshots:${item.url}`,
         async () => {
@@ -100,7 +102,7 @@ const config = {
             height: 800,
             fullPage: true,
             timeout: 180,
-            modules: [config.payloads[item.source]],
+            scripts: modules.length > 0 ? modules : undefined,  // Usar 'scripts' si hay módulos disponibles
           })
         }
       )
@@ -275,11 +277,10 @@ const config = {
                 (item) =>
                   item.id === article.source.match(/^#\/sources\/(.+)$/)[1]
               ).name
-          } el ${new Date(article.date).toLocaleDateString('es-MX', {
+          } el ${new Date(article.date).toLocaleDateString('es-ES', {
             year: 'numeric',
             month: 'long',
             day: 'numeric',
-            timeZone: 'UTC',
           })}.`,
           image: `https://ladonacion.es/resources/${article.thumbnail}`,
         },

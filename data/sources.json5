@@ -415,4 +415,28 @@
     country: 'mx',
     origin: 'https://www.youtube.com/',
   },
+  {
+    id: 'siger',
+    name: 'Registro Público de Comercio SIGER 2.0',
+    logo: 'file:sources/logos/siger.svg',
+    avatar: 'file:sources/avatars/siger.png',
+    country: 'mx',
+    origin: 'https://rpc.economia.gob.mx/siger2/xhtml/consulta/consultaPublica/consultaPublica.xhtml',
+  },
+  {
+    id: 'municipio_juarez',
+    name: 'Municipio de Juárez',
+    logo: 'file:sources/logos/municipio_juarez.svg',
+    avatar: 'file:sources/avatars/municipio_juarez.png',
+    country: 'mx',
+    origin: 'https://www.juarez.gob.mx/',
+  },
+  {
+    id: 'municipio_chihuahua',
+    name: 'Municipio de Chihuahua',
+    logo: 'file:sources/logos/municipio_chihuahua.svg',
+    avatar: 'file:sources/avatars/municipio_chihuahua.png',
+    country: 'mx',
+    origin: 'https://www.municipiochihuahua.gob.mx/',
+  },
 ]

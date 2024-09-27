@@ -159,4 +159,144 @@
       },
     ],
   },
+  {
+    id: 'int_intelligence',
+    avatar: 'file:entities/avatars/int_intelligence.png',
+    title:  'INT Intelligence and Telecom Technologies',
+    alias: 'INT',
+    description: 'Es una empresa mexicana constituida en 2010 que realiza servicios de integración de tecnología para videovigilancia con varios gobiernos del país.',
+    country: 'mx',
+    website: 'https://intt2.com.mx/',
+    gender: 'female',
+    pictures: [
+      {
+        file: '',
+        source: {
+          name: '',
+          link: '',
+        },
+        caption: '',
+      },
+    ],
+  },
+  {
+    id: 'telematica_lefic',
+    avatar: 'file:entities/avatars/telematica_lefic.png',
+    title:  'Telemática LEFIC',
+    alias: 'Telemática LEFIC',
+    description: 'Es una empresa mexicana constituida en 1993 que realiza servicios de integración de tecnología para videovigilancia con varios gobiernos del país. Responsable de la Plataforma Escudo Chihuahua desde 2017.',
+    country: 'mx',
+    website: 'https://www.telematicalefic.com.mx/',
+    gender: 'female',
+    pictures: [
+      {
+        file: '',
+        source: {
+          name: '',
+          link: '',
+        },
+        caption: '',
+      },
+    ],
+  },
+  {
+    id: 'municipio_chihuahua',
+    avatar: 'file:entities/avatars/municipio_chihuahua.png',
+    title:  'Gobierno Municipal de Chihuahua',
+    alias: 'Municipio Chihuahua',
+    description: 'El gobierno municipal de Chihuahua.',
+    country: 'mx',
+    website: 'https://www.municipiochihuahua.gob.mx/',
+    gender: 'male',
+    pictures: [
+      {
+        file: '',
+        source: {
+          name: '',
+          link: '',
+        },
+        caption: '',
+      },
+    ],
+  },
+  {
+    id: 'municipio_juarez',
+    avatar: 'file:entities/avatars/municipio_juarez.png',
+    title:  'Gobierno Municipal de Juárez',
+    alias: 'Municipio Juárez',
+    description: 'El gobierno municipal de Juárez.',
+    country: 'mx',
+    website: 'https://juarez.gob.mx/',
+    gender: 'male',
+    pictures: [
+      {
+        file: '',
+        source: {
+          name: '',
+          link: '',
+        },
+        caption: '',
+      },
+    ],
+  },
+  {
+    id: 'hacienda_chihuahua',
+    avatar: '',
+    title:  'Secretaría de Hacienda del Estado de Chihuahua',
+    alias: 'SH Chihuahua',
+    description: 'La Secretaría de Hacienda de Chihuahua.',
+    country: 'mx',
+    website: 'https://chihuahua.gob.mx/hacienda',
+    gender: 'female',
+    pictures: [
+      {
+        file: '',
+        source: {
+          name: '',
+          link: '',
+        },
+        caption: '',
+      },
+    ], 
+  },
+  {
+    id: 'plataforma_escudo_chihuahua',
+    avatar: '',
+    title:  'Plataforma Escudo Chihuahua',
+    alias: 'PECUU',
+    description: 'La Plataforma Escudo Chihuahua (PECUU) es una iniciativa tecnológica del Gobierno Municipal de Chihuahua enfocada en videovigilancia. Presentada inicialmente por la entonces alcaldesa Maru Campos Galván y el director de Seguridad Pública Municipal, Gilberto Loya Chávez, PECUU ha evolucionado en su tercera etapa bajo el alcalde Marco Bonilla y el jefe de la Policía Municipal, Julio César Salas. Con una inversión total que supera los 376 millones de pesos a precios actuales, la plataforma integra más de 1,195 cámaras de vigilancia, drones, tótems con botones de emergencia y cámaras con reconocimiento facial, patrullas con cámaras de reconocimiento facial y sistemas avanzados de reconocimiento de placas vehiculares.',
+    country: 'mx',
+    website: '',
+    gender: 'female',
+    pictures: [
+      {
+        file: '',
+        source: {
+          name: '',
+          link: '',
+        },
+        caption: '',
+      },
+    ], 
+  },
+  {
+    id: 'plataforma_centinela',
+    avatar: '',
+    title:  'Plataforma Centinela',
+    alias: 'Centinela',
+    description: 'La Plataforma Centinela XXXX.',
+    country: 'mx',
+    website: '',
+    gender: 'female',
+    pictures: [
+      {
+        file: '',
+        source: {
+          name: '',
+          link: '',
+        },
+        caption: '',
+      },
+    ], 
+  },
 ]

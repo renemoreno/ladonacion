@@ -642,16 +642,346 @@
         subject:  '#/documents/pressconference_click2houston',
         type: '#/relations/mentions',
       },
+    ],
+  },
+  {
+    id: 'contrato01_telematica',
+    file: 'file:documents/contratoDSPM012017.pdf',
+    title:  'Contrato entre Municipio de Chihuahua y Telematica LEFIC',
+    date: '2017-11-23',
+    description:  'Contrato de Prestación de Servicios para el suministro e instalación de bienes para la implementación de la Plataforma Escudo Chihuahua.',
+    lang: 'es',
+    origin: {
+      url:  'https://www.youtube.com/watch?v=WnHysSc0NIg',
+      date: '2022-04-14',
+      source: '#/sources/municipio_chihuahua',
+    },
+    relations:  [
       {
-        object: '#/documents/memorandum_chihuahua',
-        subject:  '#/documents/pressconference_click2houston',
-        type: '#/relations/mentions',
+        object: '#/persons/maru_campos',
+        subject:  '#/documents/contrato01_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/persons/cesar_jauregui',
+        subject:  '#/documents/contrato01_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/persons/gilberto_loya',
+        subject:  '#/documents/contrato01_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/persons/aida_cordova',
+        subject:  '#/documents/contrato01_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/persons/jose_granillo',
+        subject:  '#/documents/contrato01_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/persons/veronica_rodulfo',
+        subject:  '#/documents/contrato01_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/persons/carlos_orozco',
+        subject:  '#/documents/contrato01_telematica',
+        type: '#/relations/takes_part',
       },
       {
         object: '#/persons/ignacio_zavala',
-        subject:  '#/documents/pressconference_click2houston',
+        subject:  '#/documents/contrato01_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/entities/municipio_chihuahua',
+        subject:  '#/persons/maru_campos',
+        type: '#/relations/governs',
+      },
+      {
+        object: '#/entities/municipio_chihuahua',
+        subject:  '#/documents/contrato01_telematica',
         type: '#/relations/mentions',
       },
+      {
+        object: '#/entities/telematica_lefic',
+        subject:  '#/documents/contrato01_telematica',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/entities/municipio_chihuahua',
+        subject:  '#/persons/cesar_jauregui',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/persons/maru_campos',
+        subject:  '#/persons/cesar_jauregui',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/entities/municipio_chihuahua',
+        subject:  '#/persons/gilberto_loya',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/persons/maru_campos',
+        subject:  '#/persons/gilberto_loya',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/entities/municipio_chihuahua',
+        subject:  '#/persons/aida_cordova',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/persons/maru_campos',
+        subject:  '#/persons/aida_cordova',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/entities/municipio_chihuahua',
+        subject:  '#/persons/jose_granillo',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/persons/maru_campos',
+        subject:  '#/persons/jose_granillo',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/entities/municipio_chihuahua',
+        subject:  '#/persons/veronica_rodulfo',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/persons/maru_campos',
+        subject:  '#/persons/veronica_rodulfo',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/entities/municipio_chihuahua',
+        subject:  '#/persons/carlos_orozco',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/persons/maru_campos',
+        subject:  '#/persons/carlos_orozco',
+        type: '#/relations/planilla_with',
+      },
+      {
+        object: '#/entities/telematica_lefic',
+        subject:  '#/persons/ignacio_zavala',
+        type: '#/relations/manages',
+      },
+      {
+        object: '#/entities/telematica_lefic',
+        subject:  '#/entities/municipio_chihuahua',
+        type: '#/relations/pays',
+      },
+      {
+        object: '#/places/oficina_telematica01',
+        subject:  '#/documents/contrato01_telematica',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/places/oficina_telematica01',
+        subject:  '#/entities/telematica_lefic',
+        type: '#/relations/owns',
+      },           
+    ],
+  },
+  {
+    id: 'contrato01_int',
+    file: 'file:documents/contratodcaSSPM1612022.pdf',
+    title:  'Contrato entre Municipio de Juárez e INT Intelligence and Telecom Technologies México',
+    date: '2022-03-12',
+    description:  'Contrato de Prestación de Servicios para el servicio integral al C-E-R-I 911 para la implementación de Juárez Vigilante.',
+    lang: 'es',
+    origin: {
+      url:  'https://www.youtube.com/watch?v=WnHysSc0NIg',
+      date: '2022-03-12',
+      source: '#/sources/municipio_juarez',
+    },
+    relations:  [
+      {
+        object: '#/persons/ignacio_roman',
+        subject:  '#/documents/contrato01_int',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/persons/cesar_munoz',
+        subject:  '#/documents/contrato01_int',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/documents/contrato01_int',
+        subject:  '#/persons/cruz_perez',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/documents/contrato01_int',
+        subject:  '#/persons/hector_ortiz',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/documents/contrato01_int',
+        subject:  '#/persons/dayira_fernandez',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/documents/contrato01_int',
+        subject:  '#/persons/arturo_rivera',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/documents/contrato01_int',
+        subject:  '#/persons/ana_estrada',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/documents/contrato01_int',
+        subject:  '#/persons/tomas_vivaldo',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/entities/municipio_juarez',
+        subject:  '#/persons/cruz_perez',
+        type: '#/relations/governs',
+      },
+      {
+        object: '#/entities/municipio_juarez',
+        subject:  '#/documents/contrato01_int',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/entities/int_intelligence',
+        subject:  '#/documents/contrato01_int',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/entities/municipio_juarez',
+        subject:  '#/persons/hector_ortiz',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/persons/cruz_perez',
+        subject:  '#/persons/hector_ortiz',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/entities/municipio_juarez',
+        subject:  '#/persons/dayira_fernandez',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/persons/cruz_perez',
+        subject:  '#/persons/dayira_fernandez',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/entities/municipio_juarez',
+        subject:  '#/persons/arturo_rivera',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/persons/cruz_perez',
+        subject:  '#/persons/arturo_rivera',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/entities/municipio_juarez',
+        subject:  '#/persons/ana_estrada',
+        type: '#/relations/works_for',
+      },
+      {
+        object: '#/persons/cruz_perez',
+        subject:  '#/persons/ana_estrada',
+        type: '#/relations/planilla_with',
+      },
+      {
+        object: '#/entities/int_intelligence',
+        subject:  '#/persons/tomas_vivaldo',
+        type: '#/relations/represents',
+      },
+      {
+        object: '#/entities/int_intelligence',
+        subject:  '#/entities/municipio_juarez',
+        type: '#/relations/pays',
+      },
+      {
+        object: '#/places/municipio_juarez',
+        subject:  '#/documents/contrato01_int',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/places/oficinas_int',
+        subject:  '#/entities/int_intelligence',
+        type: '#/relations/owns',
+      },           
+    ],
+  },
+  {
+    id: 'constitucion_int',
+    file: 'file:documents/int-intelligence_testado.pdf',
+    title:  'Constitución de Sociedad de INT Intelligence and Telecom Technologies México',
+    date: '2010-12-14',
+    description:  'El documento de constitución de sociedad de INT Intelligence and Telecom Technologies.',
+    lang: 'es',
+    origin: {
+      url:  'https://www.youtube.com/watch?v=WnHysSc0NIg',
+      date: '2022-04-14',
+      source: '#/sources/siger',
+    },
+    relations:  [
+      {
+        object: '#/documents/constitucion_int',
+        subject:  '#/persons/ignacio_roman',
+        type: '#/relations/takes_part',
+      },
+      {
+        object: '#/entities/int_intelligence',
+        subject:  '#/persons/ignacio_roman',
+        type: '#/relations/owns',
+      },     
+    ],
+  },
+   {
+    id: 'poder_int',
+    file: 'file:documents/poder_int.pdf',
+    title:  'INT Intelligence and Telecom Technologies México da Poder General a Tomás Vivaldo Velázquez',
+    date: '2021-04-09',
+    description:  'El documento le da Poder General a Tomás Vivaldo Velázquez sobre INT Intelligence and Telecom Technologies a pedido de Ignacio Román.',
+    lang: 'es',
+    origin: {
+      url:  'https://www.youtube.com/watch?v=WnHysSc0NIg',
+      date: '2022-04-14',
+      source: '#/sources/siger',
+    },
+    relations:  [
+      {
+        object: '#/persons/ignacio_roman',
+        subject:  '#/documents/poder_int',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/persons/tomas_vivaldo',
+        subject:  '#/documents/poder_int',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/entities/int_intelligence',
+        subject:  '#/persons/tomas_vivaldo',
+        type: '#/relations/represents',
+      },
+      {
+        object: '#/persons/ignacio_roman',
+        subject:  '#/persons/tomas_vivaldo',
+        type: '#/relations/works_for',
+      },      
     ],
   },
 ]

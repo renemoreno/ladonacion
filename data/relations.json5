@@ -116,7 +116,7 @@
       },
       reverse: {
         male: 'encabezado por',
-        female: 'encabezadada por',
+        female: 'encabezada por',
       },
     },
     subjects: ['persons'],
@@ -189,6 +189,23 @@
     },
     subjects: ['entities', 'persons'],
     objects: ['entities', 'persons'],
+  },
+  {
+    id: 'planilla_with',
+    type: 'business',
+    description: 'Una persona que trabaja con otra en una planilla de gobierno.',
+    templates: {
+      direct: {
+        male: 'hace equipo en cabildo con',
+        female: 'hace equipo en cabildo con',
+      },
+      reverse: {
+        male: 'hace equipo en cabildo con',
+        female: 'hace equipo en cabildo con',
+      },
+    },
+    subjects: ['persons'],
+    objects: ['persons'],
   },
   {
     id: 'endorses',

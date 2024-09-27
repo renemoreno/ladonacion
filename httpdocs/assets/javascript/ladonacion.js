@@ -1,6 +1,6 @@
 import { router } from '/assets/javascript/modules/router.js'
 import '/assets/javascript/components/ladonacion-header.js'
-import '/assets/javascript/components/ladonacion-popup.js'
+//import '/assets/javascript/components/ladonacion-popup.js'
 import '/assets/javascript/components/ladonacion-search.js'
 
 const site = {
@@ -33,9 +33,9 @@ const site = {
       }
     })
 
-    setTimeout(() => {
-      document.body.append(document.createElement('ladonacion-popup'))
-    }, popupTimeout)
+//    setTimeout(() => {
+//      document.body.append(document.createElement('ladonacion-popup'))
+//    }, popupTimeout)
 
     document.addEventListener('keydown', (event) => {
       const actions = {
@@ -55,8 +55,8 @@ const site = {
 
     document.addEventListener('close', (event) => {
       ;({
-        'LADONACION-POPUP': () =>
-          document.querySelector('ladonacion-popup').remove(),
+        //'LADONACION-POPUP': () =>
+        //  document.querySelector('ladonacion-popup').remove(),
         'LADONACION-SEARCH': () =>
           document.querySelector('ladonacion-search').remove(),
       }[event.target.tagName]())
@@ -85,7 +85,7 @@ document.querySelector('body').innerHTML += `
     <a href="/mapa">Los lugares</a>
     <a href="/biblioteca">La biblioteca</a>
     <a href="/metodologia">La metodología</a>
-    <a href="/autor">El autor</a>
+    <a href="/autor">Acerca de</a>
   </ladonacion-header>
 `
 

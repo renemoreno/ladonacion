@@ -272,10 +272,9 @@ template.innerHTML = `
     </a>
     <a href="/autor">
       <footer>
-        <h2>El autor</h2>
+        <h2>Acerca de</h2>
         <p>
-          Soy una persona interesada en trabajar datos para dar más
-          transparencia a las instituciones en México.
+          Porque decimos generar este proyecto.
         </p>
       </footer>
     </a>
