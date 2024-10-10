@@ -136,7 +136,7 @@
   },
   {
     id: 'oficina_telematica01',
-    title:  'Oficina de Telematica LEFIC',
+    title:  'Oficina Anterior de Telematica LEFIC',
     address: 'Kelvin 27 piso 7, Anzures',
     town: 'Miguel Hidalgo, CDMX',
     zip:  '11590',
@@ -254,4 +254,19 @@
     },
     description:  'Edificio donde se localizan las dirección legal de INT Intelligence and Telecom Technologies.',
   },
+  {
+    id: 'oficinas_telematica02',
+    title:  'Oficina nueva de Telemática LEFIC',
+    address: 'Calzada Melchor Ocampo 193, Torre Privanza, interior 14, Anzures',
+    town: 'Miguel Hidalgo, CDMX',
+    zip:  '11300',
+    country:  'mx',
+    coords: [19.435726977985905, -99.1705655945714],
+    zoom:17,
+    google: {
+      link: 'https://maps.app.goo.gl/x2rLFWeXxLRpePNy8',
+      embed: 'https://www.google.com/maps/embed?pb=!4v1728336315712!6m8!1m7!1siuybelb7H_G1tEpaC4bIiw!2m2!1d19.43580559653207!2d-99.17018899610672!3f269.8004491407427!4f24.35870050270033!5f0.7820865974627469',
+    },
+    description:  'Edificio donde se localizan las nuevas oficinas de <a href="#/entities/telematica_lefic">Telemática LEFIC</a>.',
+  }
 ]

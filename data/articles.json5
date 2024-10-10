@@ -117,12 +117,18 @@
   },
   {
     id: 'inseguridad_noroeste',
-    url: 'https://especiales.noroeste.com.mx/seguridad-la-mina-de-oro/',
+    url: 'https://web.archive.org/web/20210618074558/https://especiales.noroeste.com.mx/seguridad-la-mina-de-oro/',
     source: '#/sources/noroeste',
     title: 'Inseguridad: La mina de oro',
     date: '2018-01-25',
     lang: 'es',
+    description: 'En este artículo se habla sobre los contratos millonarios que han beneficiado a <a href="#/entities/seguritech">Seguritech</a>.',
     relations: [
+      {
+        subject: '#/articles/inseguridad_noroeste',
+        object: '#/entities/seguritech',
+        type: '#/relations/mentions',
+      },
     ],
   },
   {
@@ -360,4 +366,175 @@
       }, 
     ],
   },
+  {
+    id: 'cooperacionjuarezcentinela_nortedigital',
+    url: 'https://nortedigital.mx/videovigilancia-empalma-esfuerzos-e-inversion-y-genera-pobres-resultados-en-seguridad/',
+    source: '#/sources/norte',
+    title: 'Se empalman esfuerzos e inversión y generan pobres resultados en seguridad.',
+    date: '2024-09-09',
+    lang: 'es',
+    relations: [
+      {
+        subject: '#/articles/cooperacionjuarezcentinela_nortedigital',
+        object: '#/persons/lucina_fierro',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/persons/lucina_fierro',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/manages_project',
+      },
+      {
+        subject: '#/articles/cooperacionjuarezcentinela_nortedigital',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/articles/cooperacionjuarezcentinela_nortedigital',
+        object: '#/entities/plataforma_centinela',
+        type: '#/relations/mentions',
+      },
+    ]
+  },
+  {
+    id: 'premios_esri',
+    url: 'https://events.esri.com/conference/sagList/?fa=Detail&SID=7622',
+    source: '#/sources/esri',
+    title: 'Premio Especial a la Innovación en la Gestión de Información Geográfica a Juárez Vigilante.',
+    date: '2023-07-13',
+    lang: 'en',
+    relations: [
+      {
+        subject: '#/articles/premios_esri',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/articles/premios_esri',
+        object: '#/entities/municipio_juarez',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/articles/premios_esri',
+        object: '#/entities/sspm_juarez',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/articles/premios_esri',
+        object: '#/persons/cruz_perez',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/articles/premios_esri',
+        object: '#/persons/cesar_munoz',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/articles/premios_esri',
+        object: '#/persons/lucina_fierro',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/persons/cesar_munoz',
+        object: '#/entities/sspm_juarez',
+        type: '#/relations/governs',
+      },
+      {
+        subject: '#/persons/lucina_fierro',
+        object: '#/entities/sspm_juarez',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/lucina_fierro',
+        object: '#/entities/cesar_munoz',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/cesar_munoz',
+        object: '#/persons/cruz_perez',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/entities/esri',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/provides_technology_to',
+      },
+    ]
+  },
+  {
+    id: 'toma_protesta_julio_salas',
+    url: 'https://www.elheraldodechihuahua.com.mx/local/chihuahua/rinde-protesta-julio-cesar-salas-como-titular-de-la-dspm-titular-seguridad-toma-de-protesta-gobierno-7202833.html',
+    source: '#/sources/elheraldodechihuahua',
+    title: 'Rinde protesta Julio César Salas como titular de la DSPM.',
+    date: '2021-09-11',
+    lang: 'es',
+    relations: [
+      {
+        subject: '#/persons/julio_salas',
+        object: '#/articles/toma_protesta_julio_salas',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/marco_bonilla',
+        object: '#/articles/toma_protesta_julio_salas',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/julio_salas',
+        object: '#/persons/marco_bonilla',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/marco_bonilla',
+        object: '#/entities/municipio_chihuahua',
+        type: '#/relations/governs',
+      },
+      {
+        subject: '#/persons/julio_salas',
+        object: '#/entities/dspm',
+        type: '#/relations/governs',
+      },  
+    ]
+  },
+  {
+    id: 'firma_oim_sspe',
+    url: 'https://chihuahua.gob.mx/prensa/firman-convenio-de-colaboracion-sspe-y-organizacion-de-la-onu-en-tema-migratorio',
+    source: '#/sources/gobierno_chihuahua',
+    title: 'Firman convenio de colaboración SSPE y Organización de la ONU en tema migratorio',
+    date: '2022-10-07',
+    lang: 'es',
+    description: 'La <a href="#/entities/sspe_chihuahua">Secretaría de Seguridad Pública del Estado de Chihuahua</a> y la <a href="#/entities/oim_mexico">Organización Internacional para las Migraciones</a> firman un convenio de colaboración para tratar el tema migratorio. Entre las acciones, ambas instancias colaborarán en la capacitación y actualización de albergues y personal de la sociedad civil que apoya a personas migrantes, e incentivarán la actualización en la materia, a través de la prevención del delito, la divulgación de información y el desarrollo de material vinculado con este segmento de la población.',
+    relations: [
+      {
+        subject: '#/persons/gilberto_loya',
+        object: '#/articles/firma_oim_sspe',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/dana_graber',
+        object: '#/articles/firma_oim_sspe',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/dana_graber',
+        object: '#/entities/oim_mexico',
+        type: '#/relations/governs',
+      },
+      {
+        subject: '#/persons/dana_graber',
+        object: '#/persons/gilberto_loya',
+        type: '#/relations/knows',
+      },
+      {
+        subject: '#/articles/firma_oim_sspe',
+        object: '#/entities/oim_mexico',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/articles/firma_oim_sspe',
+        object: '#/entities/sspe_chihuahua',
+        type: '#/relations/mentions',
+      },
+    ]
+  }
 ]

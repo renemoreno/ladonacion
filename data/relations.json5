@@ -401,4 +401,72 @@
     subjects: ['events'],
     objects: ['places'],
   },
+  {
+    id: 'builds_infrastructure_for',
+    type: 'business',
+    description: 'Cuando una entidad o persona construye o provee la infraestructura para otra entidad.',
+    templates: {
+      direct: {
+        male: 'construye infraestructura para',
+        female: 'construye infraestructura para',
+      },
+      reverse: {
+        male: 'tiene infraestructura construida por',
+        female: 'tiene infraestructura construida por',
+      },
+    },
+    subjects: ['persons', 'entities'],
+    objects: ['entities'],
+  },
+  {
+    id: 'manages_project',
+    type: 'business',
+    description: 'Cuando una persona administra o es encargada de un proyecto o entidad.',
+    templates: {
+      direct: {
+        male: 'administra',
+        female: 'administra',
+      },
+      reverse: {
+        male: 'administrado por',
+        female: 'administrada por',
+      },
+    },
+    subjects: ['persons'],
+    objects: ['entities'],
+  },
+  {
+    id: 'interconnects_with',
+    type: 'business',
+    description: 'Cuando una entidad se interconecta o integra con otra entidad o sistema.',
+    templates: {
+      direct: {
+        male: 'se interconecta con',
+        female: 'se interconecta con',
+      },
+      reverse: {
+        male: 'está interconectado con',
+        female: 'está interconectada con',
+      },
+    },
+    subjects: ['entities'],
+    objects: ['entities'],
+  },
+  {
+    id: 'provides_technology_to',
+    type: 'business',
+    description: 'Cuando una entidad provee tecnología o servicios tecnológicos a otra entidad.',
+    templates: {
+      direct: {
+        male: 'provee tecnología a',
+        female: 'provee tecnología a',
+      },
+      reverse: {
+        male: 'recibe tecnología de',
+        female: 'recibe tecnología de',
+      },
+    },
+    subjects: ['entities'],
+    objects: ['entities'],
+  },
 ]

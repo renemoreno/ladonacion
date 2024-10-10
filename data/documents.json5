@@ -668,6 +668,11 @@
         type: '#/relations/takes_part',
       },
       {
+        subject: '#/documents/contrato01_telematica',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/mentions',
+      },
+      {
         object: '#/persons/gilberto_loya',
         subject:  '#/documents/contrato01_telematica',
         type: '#/relations/takes_part',
@@ -791,7 +796,27 @@
         object: '#/places/oficina_telematica01',
         subject:  '#/entities/telematica_lefic',
         type: '#/relations/owns',
-      },           
+      },
+      {
+        subject: '#/entities/telematica_lefic',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/builds_infrastructure_for',
+      },
+      {
+        subject: '#/entities/municipio_chihuahua',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/owns',
+      },
+      {
+        subject: '#/persons/gilberto_loya',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/manages_project',
+      },
+      {
+        subject: '#/documents/contrato01_telematica',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/mentions',
+      }    
     ],
   },
   {
@@ -921,7 +946,22 @@
         object: '#/places/oficinas_int',
         subject:  '#/entities/int_intelligence',
         type: '#/relations/owns',
-      },           
+      },
+      {
+        subject: '#/entities/int_intelligence',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/builds_infrastructure_for',
+      },
+      {
+        subject: '#/entities/municipio_juarez',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/owns',
+      },
+      {
+        subject: '#/documents/contrato01_int',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/mentions',
+      }           
     ],
   },
   {
@@ -984,4 +1024,349 @@
       },      
     ],
   },
+  {
+    id: 'contrato_seguritech',
+    file: 'file:documents/contrato_centinela.pdf',
+    title:  'Contrato de prestación de servicios para la instalación de la Plataforma Centinela en el Estado de Chihuahua',
+    date: '2022-07-06',
+    description:  'El contrato para la instalación de la Plataforma Centinela en el Estado de Chihuahua entre la Secretaría de Seguridad Pública y Seguritech.',
+    lang: 'es',
+    origin: {
+      url:  'https://zonafree.mx/2024/04/29/seguritech-cobra-204-millones-al-trimestre-por-la-plataforma-centinela-2-26-millones-diarios/',
+      date: '2024-05-05',
+      source: '#/sources/zonafree',
+    },
+    relations:  [
+      {
+        object: '#/entities/seguritech',
+        subject:  '#/documents/contrato_seguritech',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/entities/sspe_chihuahua',
+        subject:  '#/documents/contrato_seguritech',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/entities/plataforma_centinela',
+        subject:  '#/documents/contrato_seguritech',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/entities/seguritech',
+        object: '#/entities/plataforma_centinela',
+        type: '#/relations/builds_infrastructure_for',
+      },
+      {
+        subject: '#/entities/sspe_chihuahua',
+        object: '#/entities/plataforma_centinela',
+        type: '#/relations/owns',
+      },
+      {
+        subject: '#/persons/luis_garcia',
+        object: '#/documents/contrato_seguritech',
+        type: '#/relations/authors',
+      },
+      {
+        subject: '#/persons/luis_garcia',
+        object: '#/entities/sspe_chihuahua',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/entities/sspe_chihuahua',
+        object: '#/entities/seguritech',
+        type: '#/relations/pays',
+      },
+      {
+        subject: '#/persons/luis_garcia',
+        object: '#/entities/plataforma_centinela',
+        type: '#/relations/manages_project',
+      },
+      {
+        subject: '#/persons/rene_bustos',
+        object: '#/documents/contrato_seguritech',
+        type: '#/relations/authors',
+      },
+      {
+        subject: '#/persons/rene_bustos',
+        object: '#/entities/seguritech',
+        type: '#/relations/represents',
+      },
+      {
+        subject: '#/persons/gilberto_loya',
+        object: '#/documents/contrato_seguritech',
+        type: '#/relations/authors',
+      },
+      {
+        subject: '#/persons/luis_garcia',
+        object: '#/persons/maru_campos',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/gilberto_loya',
+        object: '#/persons/maru_campos',
+        type: '#/relations/works_for',
+      },
+    ],
+  },
+  {
+    id: 'interconexion_centinela',
+    file: 'file:documents/inter_centinela_pecuu.pdf',
+    title:  'Interconexión de la Plataforma Centinela con Escudo Chihuahua',
+    date: '2023-10-16',
+    description:  'Un resumen de una rueda de prensa donde Gilberto Loya habla de la interconexión de la Plataforma Centinela con la PlataformaEscudo Chihuahua.',
+    lang: 'es',
+    origin: {
+      url:  'https://www.facebook.com/secretariadeseguridadpublicachihuahua/videos/1040874696905354',
+      date: '2023-10-16',
+      source: '#/sources/sspe_chihuahua',
+    },
+    relations:  [
+      {
+        object: '#/entities/plataforma_centinela',
+        subject:  '#/documents/interconexion_centinela',
+        type: '#/relations/mentions',
+      },
+      {
+        object: '#/entities/plataforma_escudo_chihuahua',
+        subject:  '#/documents/interconexion_centinela',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/entities/plataforma_centinela',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/interconnects_with', 
+      },
+      {
+        subject: '#/persons/gilberto_loya',
+        object: '#/documents/interconexion_centinela',
+        type: '#/relations/takes_part',
+      },
+    ],
+  },
+  {
+    id: 'ceri_direccion',
+    file: 'file:documents/reformaCERI.pdf',
+    origin: {
+      url:  'https://chihuahua.gob.mx/sites/default/atach2/periodico-oficial/periodicos/2024-03/PO20_2024.pdf',
+      date: '2024-09-09',
+      source: '#/sources/poe_chihuahua',
+    },
+    title: 'El Centro de Emergencia y Respuesta Inmediata de la Secretaría de Seguridad Pública del Municipio de Juárez se convierte en Dirección.',
+    date: '2024-09-09',
+    lang: 'es',
+    description: 'El documento eleva al Centro de Emergencias y Respuesta Inmediata (CERI 911) a la categoría de Dirección, ampliando sus capacidades de vigilancia en Juárez. Esto puede afectar a los ciudadanos porque el CERI usa tecnologías como videovigilancia masiva e inteligencia artificial para monitorear movimientos y rostros en tiempo real. Aunque se presenta como una medida de seguridad, estos sistemas pueden rastrear actividades de personas sin su conocimiento, crear perfiles y hasta cometer errores que impacten a individuos inocentes. La falta de transparencia y controles adecuados puede llevar a un uso abusivo, poniendo en riesgo la privacidad y generando una sensación de vigilancia constante.',
+    relations: [
+      {
+        subject: '#/documents/ceri_direccion',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/documents/ceri_direccion',
+        object: '#/entities/sspm_juarez',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/entities/juarez_vigilante',
+        object: '#/entities/sspm_juarez',
+        type: '#/relations/part_of',
+      },
+    ]
+  },
+  {
+   id: 'contrato03_telematica',
+    file: 'file:documents/contrato_telematica_3raetapa.pdf',
+    title:  'Tercera Etapa del contrato entre Municipio de Chihuahua y Telematica LEFIC',
+    date: '2022-05-09',
+    description:  'Contrato de Prestación de Servicios para el suministro e instalación de bienes para la implementación de la Tercera Etapa de la Plataforma Escudo Chihuahua.',
+    lang: 'es',
+    origin: {
+      url:  'https://www.municipiochihuahua.gob.mx/TransparenciaArchivos/DSPM/2022/Respuestas/10.%20DSPM022022%20Testado.pdf',
+      date: '2022-06-14',
+      source: '#/sources/municipio_chihuahua',
+    },
+    relations: [
+      {
+        subject: '#/documents/contrato03_telematica',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/documents/contrato03_telematica',
+        object: '#/entities/municipio_chihuahua',
+        type: '#/relations/mentions',
+      },
+      {
+       subject: '#/persons/julio_salas',
+       object: '#/documents/contrato03_telematica',
+       type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/julio_salas',
+        object: '#/entities/dspm',
+        type: '#/relations/governs',
+      },
+      {
+        subject: '#/persons/julio_salas',
+        object: '#/entities/municipio_chihuahua',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/julio_salas',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/manages_project',
+      },
+      {
+        subject: '#/persons/marcela_piedra',
+        object: '#/documents/contrato03_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/marcela_piedra',
+        object: '#/entities/municipio_chihuahua',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/marcela_piedra',
+        object: '#/persons/marco_bonilla',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/francisco_turati',
+        object: '#/documents/contrato03_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/francisco_turati',
+        object: '#/entities/municipio_chihuahua',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/francisco_turati',
+        object: '#/persons/marco_bonilla',
+        type: '#/relations/planilla_with',
+      },
+      {
+        subject: '#/persons/veronica_rodulfo',
+        object: '#/documents/contrato03_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/veronica_rodulfo',
+        object: '#/entities/municipio_chihuahua',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/veronica_rodulfo',
+        object: '#/persons/marco_bonilla',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/aida_cordova',
+        object: '#/documents/contrato03_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/aida_cordova',
+        object: '#/entities/municipio_chihuahua',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/aida_cordova',
+        object: '#/persons/marco_bonilla',
+        type: '#/relations/works_for',
+      },
+      {
+        subject: '#/persons/ignacio_zavala',
+        object: '#/documents/contrato03_telematica',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/ignacio_zavala',
+        object: '#/entities/telematica_lefic',
+        type: '#/relations/manages',
+      },
+      {
+        subject: '#/entities/telematica_lefic',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/builds_infrastructure_for',
+      },
+      {
+        subject: '#/documents/contrato03_telematica',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/entities/municipio_chihuahua',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/owns',
+      },
+      {
+        subject: '#/entities/municipio_chihuahua',
+        object: '#/entities/telematica_lefic',
+        type: '#/relations/pays',
+      },
+      {
+        subject: '#/documents/contrato03_telematica',
+        object: '#/entities/telematica_lefic',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/documents/contrato03_telematica',
+        object: '#/places/oficinas_telematica02',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/entities/telematica_lefic',
+        object: '#/places/oficinas_telematica02',
+        type: '#/relations/owns',
+      }
+    ]
+  },
+  {
+    id: 'letter_bregman',
+    file: 'file:documents/letter_bernalillo_chihuahua.pdf',
+    title: 'Carta de Entendimiento entre la Fiscalía del Segundo Distrito Judicial de Nuevo México y la Secretaría de Seguridad Pública del Estado de Chihuahua',
+    date: '2023-06-21',
+    description: 'Ambas entidades reconocen la existencia de organizaciones criminales transnacionales que operan en ambos lados de la frontera y acuerdan cooperar para entender la estructura y operación de dichas organizaciones, buscar y detener a fugitivos internacionales y realizar cursos de capacitación para fiscales y personal de seguridad. Firmado el 21 de junio de 2023, el acuerdo se enfoca en mejorar la seguridad y combatir el crimen organizado en sus respectivas jurisdicciones.',
+    lang: 'en',
+    origin: {
+      url:  'https://abqraw.com/post/da-bregman-works-with-mexican-authorities-to-address-fentanyl-illegal-guns-human-trafficking/',
+      date: '2024-06-28',
+      source: '#/sources/abqraw',
+    },
+    relations: [
+      {
+        subject: '#/documents/letter_bregman',
+        object: '#/entities/sspe_chihuahua',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/persons/sam_bregman',
+        object: '#/documents/letter_bregman',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/gilberto_loya',
+        object: '#/documents/letter_bregman',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/persons/sam_bregman',
+        object: '#/persons/gilberto_loya',
+        type: '#/relations/knows',
+      },
+      {
+        subject: '#/persons/sam_bregman',
+        object: '#/entities/newmexico_district',
+        type: '#/relations/governs',
+      },
+      {
+        subject: '#/documents/letter_bregman',
+        object: '#/entities/newmexico_district',
+        type: '#/relations/mentions',
+      }   
+    ]
+  }
 ]
