@@ -248,7 +248,7 @@
   },
   {
     id: 'cdc_nyt',
-    url: 'https://embamex.sre.gob.mx/eua/index.php/es/boletines/1647-iniciativa-conjunta-de-mexico-y-estados-unidos-para-combatir-la-pandemia-de-covid-19',
+    url: 'https://www.nytimes.com/2020/12/16/us/politics/cdc-trump.html',
     source: '#/sources/nyt',
     title: '‘Like a Hand Grasping’: Trump Appointees Describe the Crushing of the C.D.C.',
     date: '2020-12-16',
@@ -398,7 +398,7 @@
   },
   {
     id: 'premios_esri',
-    url: 'https://events.esri.com/conference/sagList/?fa=Detail&SID=7622',
+    url: 'https://events.esri.com/conference/sagList/?fa=Detail&SID=7622&awardyear=2023',
     source: '#/sources/esri',
     title: 'Premio Especial a la Innovación en la Gestión de Información Geográfica a Juárez Vigilante.',
     date: '2023-07-13',
@@ -446,7 +446,7 @@
       },
       {
         subject: '#/persons/lucina_fierro',
-        object: '#/entities/cesar_munoz',
+        object: '#/persons/cesar_munoz',
         type: '#/relations/works_for',
       },
       {

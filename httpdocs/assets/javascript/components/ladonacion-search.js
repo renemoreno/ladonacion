@@ -52,7 +52,7 @@ template.innerHTML = `
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
       transition: transform 350ms;
       z-index: var(--z-index-search);
-      overflow: scroll;
+      overflow: hidden;
     }
 
     input {
@@ -84,7 +84,8 @@ template.innerHTML = `
 
     section {
       max-height: calc(100vh - 2 * var(--vertical-padding) - var(--input-height));
-      overflow: scroll;
+      overflow-y: scroll;
+      overflow-x: hidden;
       border-top: 1px solid var(--color-warmGray-200);
     }
 

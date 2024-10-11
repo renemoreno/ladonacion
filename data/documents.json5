@@ -972,7 +972,7 @@
     description:  'El documento de constitución de sociedad de INT Intelligence and Telecom Technologies.',
     lang: 'es',
     origin: {
-      url:  'https://www.youtube.com/watch?v=WnHysSc0NIg',
+      url:  'https://rpc.economia.gob.mx/siger2/xhtml/consulta/consultaPublica/consultaPublica.xhtml',
       date: '2022-04-14',
       source: '#/sources/siger',
     },
@@ -997,7 +997,7 @@
     description:  'El documento le da Poder General a Tomás Vivaldo Velázquez sobre INT Intelligence and Telecom Technologies a pedido de Ignacio Román.',
     lang: 'es',
     origin: {
-      url:  'https://www.youtube.com/watch?v=WnHysSc0NIg',
+      url:  'https://rpc.economia.gob.mx/siger2/xhtml/consulta/consultaPublica/consultaPublica.xhtml',
       date: '2022-04-14',
       source: '#/sources/siger',
     },
@@ -1367,6 +1367,41 @@
         object: '#/entities/newmexico_district',
         type: '#/relations/mentions',
       }   
+    ]
+  },
+  {
+    id: 'telematica_2009',
+    file: 'file:documents/telematica_2009.pdf',
+    title: 'Aumento de Capital de Telematica LEFIC',  
+    date: '2009-07-21',
+    description: 'El documento de aumento de capital de <a href="#/entities/telematica_lefic">Telematica LEFIC</a> donde <a href="#/persons/ignacio_zavala">Ignacio Zavala</a> se queda con el 75% de las acciones.',
+    lang: 'es',
+    origin: {
+      url:  'https://rpc.economia.gob.mx/siger2/xhtml/consulta/consultaPublica/consultaPublica.xhtml',
+      date: '2009-08-14',
+      source: '#/sources/siger',
+    },
+    relations: [
+      {
+        subject: '#/documents/telematica_2009',
+        object: '#/entities/telematica_lefic',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/persons/ignacio_zavala',
+        object: '#/documents/telematica_2009',
+        type: '#/relations/takes_part',
+      },
+      {
+        subject: '#/documents/telematica_2009',
+        object: '#/persons/ignacio_zavala',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/persons/ignacio_zavala',
+        object: '#/entities/telematica_lefic',
+        type: '#/relations/controls',
+      }
     ]
   }
 ]

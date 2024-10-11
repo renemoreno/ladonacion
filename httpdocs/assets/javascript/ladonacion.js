@@ -80,6 +80,7 @@ const site = {
 
 document.querySelector('body').innerHTML += `
   <ladonacion-header scrollOffset="50">
+    <a href="/introduccion">Introducción</a>
     <a href="/entramado">Quién es quién</a>
     <a href="/cronologia">Los hechos</a>
     <a href="/mapa">Los lugares</a>
@@ -98,6 +99,12 @@ site.init({
       regex: '^/$',
       payload: async () =>
         await import('/assets/javascript/components/page-portada.js'),
+    },
+    {
+      page: 'introduccion',
+      regex: '^/introduccion(/(\\w*))?$',
+      payload: async () =>
+        await import('/assets/javascript/components/page-introduccion.js'),
     },
     {
       page: 'metodologia',

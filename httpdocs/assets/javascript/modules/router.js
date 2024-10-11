@@ -9,11 +9,19 @@ export const router = {
     document.body.innerHTML = content
     document.head.innerHTML = `
       <style>
-        ${document.body.querySelector('style').innerText}
+        ${document.body.querySelector('style')?.innerText || ''}
       </style>
     `
-    document.body.querySelector('style').remove()
+    document.body.querySelector('style')?.remove()
     document.title = 'Error'
+
+    const errorElement = document.querySelector('ladonacion-error')
+    if (errorElement && errorElement.innerText !== undefined) {
+      errorElement.innerText = 'Página no encontrada'
+    } else {
+      console.error('Página no encontrada y elemento de error no disponible')
+    }
+
     return false
   },
 

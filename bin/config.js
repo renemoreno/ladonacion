@@ -141,9 +141,71 @@ module.exports = {
     eldiario: `
       document.querySelector('a.sibbo-cmp-button[data-accept-all]').click()
     `,
-    nyt: `
-      document.querySelector('button[data-testid=GDPR-accept]').click()
-      document.querySelectorAll('iframe').forEach(iframe => iframe.style.display = 'none')
+    propublica: `
+      (function() {
+        console.log('Iniciando script para ProPublica');
+        
+        function closeDialog() {
+          const closeButton = document.querySelector('button.close-btn[aria-label="Close this dialog"]');
+          if (closeButton) {
+            console.log('Botón de cierre encontrado, haciendo clic...');
+            closeButton.click();
+            return true;
+          }
+          return false;
+        }
+
+        function checkPageLoaded() {
+          // Ajusta estos selectores según los elementos clave de la página de ProPublica
+          const keyElements = [
+            'article.article-body',
+            'div.lead-art',
+            'h1.hed'
+          ];
+          return keyElements.every(selector => document.querySelector(selector));
+        }
+
+        function waitForPageLoad(maxWait = 10000) {
+          return new Promise((resolve) => {
+            const checkInterval = 500; // Revisar cada 500ms
+            let elapsedTime = 0;
+
+            const intervalId = setInterval(() => {
+              if (checkPageLoaded()) {
+                clearInterval(intervalId);
+                console.log('Página completamente cargada');
+                resolve();
+              } else if (elapsedTime >= maxWait) {
+                clearInterval(intervalId);
+                console.log('Tiempo máximo de espera alcanzado');
+                resolve();
+              }
+              elapsedTime += checkInterval;
+            }, checkInterval);
+          });
+        }
+
+        async function preparePageForScreenshot() {
+          if (closeDialog()) {
+            console.log('Diálogo cerrado, esperando a que la página se actualice...');
+            await new Promise(resolve => setTimeout(resolve, 2000));
+          }
+
+          console.log('Esperando a que todos los elementos carguen...');
+          await waitForPageLoad();
+
+          console.log('Página lista para captura');
+        }
+
+        const observer = new MutationObserver((mutations, obs) => {
+          if (document.body) {
+            obs.disconnect();
+            preparePageForScreenshot();
+          }
+        });
+
+        observer.observe(document.documentElement, { childList: true, subtree: true });
+      })();
     `,
     nius: `
       document.querySelector('button#didomi-notice-agree-button').click()

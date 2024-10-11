@@ -15,6 +15,7 @@ template.innerHTML = `
       font-size: 2.15em;
       line-height: 1.35;
       margin: 6em 0;
+      margin-bottom: 4em;
     }
 
     h1 strong {
@@ -34,6 +35,8 @@ template.innerHTML = `
       flex-wrap: wrap;
       justify-content: space-between;
       margin: var(--gap) 0;
+      padding: 0;
+      width: 100%;
     }
 
     section a {
@@ -49,6 +52,15 @@ template.innerHTML = `
       color: var(--color-white);
       transition: 1s;
       box-shadow: 0 0 2px var(--color-black);
+    }
+
+    section a[href*="introduccion"] {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+      flex-basis: 100%;
+      background-image: radial-gradient(transparent 70%, #1c1917a0 120%),
+        url(https://vignette2.wikia.nocookie.net/lotr/images/8/8e/Mordor.jpg/revision/latest?cb=20080218173458&path-prefix=de);
     }
 
     section a[href*="entramado"] {
@@ -211,6 +223,26 @@ template.innerHTML = `
         font-size: 1em;
       }
     }
+
+    section a.introduccion {
+      width: calc(100% - var(--gap));
+    }
+
+    @media (max-width: 768px) {
+      section a.introduccion {
+        width: var(--width);
+      }
+    }
+
+    section a[href*="introduccion"] footer {
+      padding: 2em;
+      width: 100%;  /* Asegura que el footer ocupe todo el ancho disponible */
+      box-sizing: border-box;  /* Incluye el padding en el cálculo del ancho */
+    }
+
+    section a[href*="introduccion"] p {
+      max-width: 100%;  /* Permite que el texto ocupe todo el ancho si es necesario */
+    }
   </style>
   <h1>
     En el estado de Chihuahua,<br />
@@ -221,6 +253,14 @@ template.innerHTML = `
   </h1>
 
   <section>
+    <a href="/introduccion" class="introduccion">
+      <footer>
+        <h2>Introducción</h2>
+        <p>
+          Descubre los antecedentes y el contexto de la vigilancia masiva transfronteriza en el estado de Chihuahua.
+        </p>
+      </footer>
+    </a>
     <a href="/entramado">
       <footer>
         <h2>Quién es quién</h2>
