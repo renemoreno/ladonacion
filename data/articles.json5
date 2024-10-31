@@ -536,5 +536,26 @@
         type: '#/relations/mentions',
       },
     ]
+  },
+  {
+    id: 'reducira_centinela',
+    url: 'https://diario.mx/juarez/2022/oct/27/reducira-centinela-casi-90-los-homicidios-910685.html',
+    source: '#/sources/diario_juarez',
+    title: 'Reducirá Centinela casi 90% de los homicidios',
+    date: '2022-10-27',
+    lang: 'es',
+    description: 'El secretario de Seguridad Pública del Estado de Chihuahua, <a href="#/persons/gilberto_loya">Gilberto Loya</a>, anunció que la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a> reducirá casi 90% de los homicidios en la ciudad de Juárez tras 5 años de su implementación.',
+    relations: [
+      {
+        subject: '#/articles/reducira_centinela',
+        object: '#/persons/gilberto_loya',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/articles/reducira_centinela',
+        object: '#/entities/plataforma_centinela',
+        type: '#/relations/mentions',
+      },
+    ]
   }
 ]

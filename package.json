@@ -24,8 +24,9 @@
   "author": "Jaime Gómez-Obregón",
   "main": "index.html",
   "scripts": {
-    "build": "npx snowpack build",
-    "dev": "npx snowpack dev",
+    "dev": "vite --host --open",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "prettier": {
@@ -34,13 +35,18 @@
     "singleQuote": true
   },
   "dependencies": {
-    "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "snowpack-plugin-imagemin": "^1.0.0",
-    "snowpack-plugin-terser": "^0.1.0",
-    "terser": "^5.6.0"
+    "got": "^12.0.0",
+    "http-cache-semantics": "^4.1.1",
+    "isolated-vm": "^5.0.1",
+    "node-fetch": "^3.3.2",
+    "pdfjs-dist": "^4.7.76",
+    "tough-cookie": "^4.1.3"
   },
   "devDependencies": {
-    "snowpack": "^3.0.11"
+    "vite": "^5.0.0",
+    "vite-plugin-image-optimizer": "^1.1.7",
+    "@vitejs/plugin-legacy": "^5.0.0",
+    "terser": "^5.36.0",
+    "sharp": "^0.33.0"
   }
 }

@@ -8,6 +8,7 @@ const util = require('util')
 const cpy = require('cpy')
 const fs = require('fs')
 const gm = require('gm')
+const sharp = require('sharp')
 
 cache.fetch = async (key, callback) => {
   const info = await cache.get.info(config.cache.path, key)
@@ -91,7 +92,7 @@ const config = {
   },
   takeScreenshots: async (items) => {
     for (const item of items) {
-      const modules = config.payloads[item.source] ? [config.payloads[item.source]] : []; //agregamos esta función
+      const modules = config.payloads[item.source] ? [config.payloads[item.source]] : [];
       
       const screenshotInfo = await cache.fetch(
         `screenshots:${item.url}`,
@@ -102,7 +103,7 @@ const config = {
             height: 800,
             fullPage: true,
             timeout: 180,
-            scripts: modules.length > 0 ? modules : undefined,  // Usar 'scripts' si hay módulos disponibles
+            scripts: modules.length > 0 ? modules : undefined,
           })
         }
       )
@@ -111,17 +112,10 @@ const config = {
         `optimized:${item.url}`,
         async () => {
           console.log(`Optimizing ${item.url}...`)
-          return await new Promise((resolve, reject) =>
-            gm(screenshotInfo.path)
-              .resize(1280)
-              .quality(75)
-              .toBuffer('JPG', (error, thumbnail) => {
-                if (error) {
-                  reject(error)
-                }
-                resolve(Buffer.from(thumbnail, 'binary'))
-              })
-          )
+          return await sharp(screenshotInfo.path)
+            .resize(1280)
+            .jpeg({ quality: 75 })
+            .toBuffer()
         }
       )
 
@@ -131,19 +125,14 @@ const config = {
         `thumbnails:${item.url}`,
         async () => {
           console.log(`Making thumbnail of ${screenshotInfo.path}...`)
-          return await new Promise((resolve, reject) =>
-            gm(screenshotInfo.path)
-              .trim()
-              .resize(640)
-              .crop(640, 400, 0, 0)
-              .quality(75)
-              .toBuffer('JPG', (error, thumbnail) => {
-                if (error) {
-                  reject(error)
-                }
-                resolve(Buffer.from(thumbnail, 'binary'))
-              })
-          )
+          return await sharp(screenshotInfo.path)
+            .trim()
+            .resize(640, 400, {
+              fit: 'cover',
+              position: 'top'
+            })
+            .jpeg({ quality: 75 })
+            .toBuffer()
         }
       )
 

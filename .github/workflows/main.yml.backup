@@ -1,0 +1,23 @@
+name: Deploy to Netlify on commits to master
+on:
+  push:
+    branches: main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repo
+      - uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm install && npm ls && npx snowpack build && cp httpdocs/resources/ladonacion.js build/twitter/
+
+      - name: Build site
+        run: npm run build
+
+      # Deploy the site with netliy-cli
+      - name: Deploy site
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: netlify deploy --build --dir=httpdocs --prod --open

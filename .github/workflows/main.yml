@@ -9,15 +9,27 @@ jobs:
       # Checkout repo
       - uses: actions/checkout@v2
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
       - name: Install Dependencies
-        run: npm install && npm ls && npx snowpack build && cp httpdocs/resources/ladonacion.js build/twitter/
+        run: |
+          npm install
+          npm ls
 
       - name: Build site
-        run: npm run build
+        run: |
+          npm run build
+          mkdir -p build/twitter
+          cp httpdocs/resources/ladonacion.js build/twitter/
 
-      # Deploy the site with netliy-cli
+      - name: Install Netlify CLI
+        run: npm install -g netlify-cli
+
       - name: Deploy site
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        run: netlify deploy --build --dir=httpdocs --prod --open
+        run: netlify deploy --dir=httpdocs --prod --open

@@ -268,5 +268,20 @@
       embed: 'https://www.google.com/maps/embed?pb=!4v1728336315712!6m8!1m7!1siuybelb7H_G1tEpaC4bIiw!2m2!1d19.43580559653207!2d-99.17018899610672!3f269.8004491407427!4f24.35870050270033!5f0.7820865974627469',
     },
     description:  'Edificio donde se localizan las nuevas oficinas de <a href="#/entities/telematica_lefic">Telemática LEFIC</a>.',
+  },
+  {
+    id: 'filtrocentinela_ojinaga',
+    title:  'Filtro Centinela Ojinaga',
+    address: 'Carretera Camargo-Ojinaga Km 230',
+    town: 'Ojinaga, Chihuahua',
+    zip:  '',
+    country:  'mx',
+    coords: [29.44340991958753, -104.40451078537534],
+    zoom:17,
+    google: {
+      link: 'https://maps.app.goo.gl/YRFj89rQzk1bbiFQ8',
+      embed: 'https://www.google.com/maps/embed?pb=!4v1729544629730!6m8!1m7!1sErIhs604Fomv-LfgEaRmJg!2m2!1d29.4435399884325!2d-104.4045501558233!3f353.9644565716312!4f-15.637180598960057!5f0.7820865974627469',
+    },
+    description:  'Estructura donde se localiza el Filtro Centinela Ojinaga.',
   }
 ]

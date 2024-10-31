@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>PDF.js viewer</title>
+
+    <link rel="stylesheet" href="pdf_viewer.css">
+    <style>
+      :root {
+        --toolbar-height: 48px;
+        --color-warmGray-50: #fafaf9;
+      }
+
+      html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: 'Inter var', sans-serif;
+      }
+
+      .toolbar {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: var(--toolbar-height);
+        background: #474747;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        z-index: 100;
+        flex-shrink: 0;
+      }
+
+      .toolbar button {
+        background: none;
+        border: none;
+        color: white;
+        padding: 8px 12px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .toolbar button:hover {
+        background: rgba(255,255,255,0.1);
+      }
+
+      .toolbar .spacer {
+        flex: 1;
+      }
+
+      #viewerContainer {
+        position: absolute;
+        top: var(--toolbar-height);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+        background: #525659;
+    }
+
+      #viewer.pdfViewer {
+        margin: 0 auto;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #viewer.pdfViewer .page {
+        margin: 16px auto;
+        border: 1px solid #333;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        background-color: white;
+        max-width: none;
+        width: auto;
+      }
+
+      #loadingBar {
+        position: absolute;
+        top: var(--toolbar-height);
+        left: 0;
+        right: 0;
+        height: 4px;
+        background-color: rgba(51,51,51,0.2);
+      }
+
+      #loadingBar .progress {
+        position: absolute;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #1a73e8;
+        transition: width 200ms;
+      }
+
+      #pageNumber {
+        font-size: 0.9em;
+        color: var(--color-warmGray-50);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="toolbar">
+      <button id="zoomOut">-</button>
+      <button id="zoomIn">+</button>
+      <div class="spacer"></div>
+      <span id="pageNumber"></span>
+    </div>
+
+    <div id="viewerContainer">
+      <div id="viewer" class="pdfViewer"></div>
+    </div>
+
+    <div id="loadingBar">
+      <div class="progress"></div>
+    </div>
+
+    <script type="module">
+      import * as pdfjsLib from "../build/pdf.mjs";
+      import { PDFViewer, EventBus, ProgressBar } from "./pdf_viewer.mjs";
+
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "../build/pdf.worker.mjs";
+
+      const eventBus = new EventBus();
+      const viewer = new PDFViewer({
+        container: document.getElementById("viewerContainer"),
+        viewer: document.getElementById("viewer"),
+        eventBus,
+        textLayerMode: 1,
+        renderInteractiveForms: true,
+        enableScripting: false
+      });
+
+      document.getElementById('zoomIn').addEventListener('click', () => {
+        viewer.currentScale = (viewer.currentScale * 1.1);
+      });
+
+      document.getElementById('zoomOut').addEventListener('click', () => {
+        viewer.currentScale = (viewer.currentScale / 1.1);
+      });
+
+      eventBus.on('pagechanging', (evt) => {
+        document.getElementById('pageNumber').textContent = 
+          `Página ${evt.pageNumber} de ${viewer.pagesCount}`;
+      });
+
+      const params = new URLSearchParams(window.location.search);
+      const url = params.get("file");
+
+      if (url) {
+        pdfjsLib.getDocument(url).promise.then(function(pdfDocument) {
+          viewer.setDocument(pdfDocument);
+          
+          eventBus.on("pagesloaded", function() {
+            const container = document.getElementById("viewerContainer");
+            const firstPage = document.querySelector(".page");
+            if (firstPage) {
+              const isMobile = window.matchMedia("(max-width: 768px)").matches;
+              const containerWidth = container.clientWidth - (isMobile ? 32 : 64);
+              const pageWidth = firstPage.clientWidth;
+              const scale = containerWidth / pageWidth;
+              viewer.currentScale = scale;
+            }
+          });
+
+          const loadingBar = new ProgressBar(document.getElementById("loadingBar"));
+          
+          eventBus.on("progress", function(evt) {
+            loadingBar.percent = (evt.loaded / evt.total) * 100;
+          });
+          
+          eventBus.on("documentloaded", function() {
+            loadingBar.hide();
+          });
+        }).catch(function(error) {
+          console.error("Error loading PDF:", error);
+        });
+      }
+    </script>
+  </body>
+</html>

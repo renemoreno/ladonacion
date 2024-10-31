@@ -423,6 +423,15 @@ template.innerHTML = `
         padding: 0.2em 0;
       }  
     }
+
+    li {
+      width: fit-content;
+      block-size: fit-content;
+      max-width: 35em;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+      margin-bottom: 1em;
+    }
   </style>
 
   <!-- Título Principal de la Página -->
@@ -442,7 +451,7 @@ template.innerHTML = `
     </figure>
 
     <p>
-      En 2017, la ciudad de Chihuahua se embarcó en un proyecto de seguridad sin precedentes que, a primera vista, parecía un esfuerzo legítimo por combatir la creciente violencia y el crimen organizado. Sin embargo, a medida que se construían los cimientos de lo que oficialmente se presentó como la “Plataforma Escudo Chihuahua”, los verdaderos objetivos de esta infraestructura comenzaron a revelarse. Esta es la historia de cómo un proyecto de vigilancia masiva se expandió más allá de las fronteras estatales, convirtiéndose en un complejo sistema de espionaje con conexiones internacionales, que incluso afecta las políticas de seguridad en Estados Unidos.
+      En 2017, la ciudad de Chihuahua se embarcó en un proyecto de seguridad sin precedentes que, a primera vista, parecía un esfuerzo legítimo por combatir la creciente violencia y el crimen organizado. Sin embargo, a medida que se construían los cimientos de lo que oficialmente se presentó como la <a href="/entramado/plataforma_escudo_chihuahua">"Plataforma Escudo Chihuahua",</a> los verdaderos objetivos de esta infraestructura comenzaron a revelarse. Esta es la historia de <strong>cómo un proyecto de vigilancia masiva se expandió más allá de las fronteras estatales,</strong> convirtiéndose en un complejo sistema de espionaje con conexiones internacionales, que incluso toca las políticas de seguridad en Estados Unidos.
     </p>
   </section>
 
@@ -451,11 +460,23 @@ template.innerHTML = `
     <h2>Primera Capa: La Superficie Visible</h2>
     
     <p>
-      La narrativa comienza con la presentación oficial de la Torre Centinela, un edificio icónico que se alza como símbolo de modernidad y seguridad en el centro de Ciudad Juárez. La gobernadora Maru Campos, al anunciar la expansión de la Plataforma Centinela a todo el estado y su colaboración con Ciudad Juárez, destacó los beneficios de un sistema de vigilancia que, según el discurso oficial, permitiría prevenir crímenes y proteger a la población.
+      La narrativa comienza en 2017 con la presentación de la <a href="/entramado/plataforma_escudo_chihuahua">"Plataforma Escudo Chihuahua"</a> en el municipio de Chihuahua, argumentando falta de inteligencia en el accionar de la policía municipal. <em>Esto dio pie a una inversión constante de recursos en tecnología de vigilancia masiva que ha trascendido las administraciones municipales</em> iniciándose con <a href="/entramado/maru_campos">Maru Campos</a> y continuando con <a href="/entramado/marco_bonilla">Marco Bonilla.</a>
     </p>
     
     <p>
-      Sin embargo, tras el discurso político y los titulares de los medios, comienzan a surgir las primeras preguntas: ¿Por qué un proyecto de seguridad cuesta tanto? ¿Por qué la opacidad en el uso de fondos y la falta de detalles técnicos sobre las empresas involucradas?
+      Al ganar la gubernatura en 2021, la gobernadora <a href="/entramado/maru_campos">Maru Campos</a> anuncia la expansión del proyecto de videovigilancia masiva a todo el estado con el nombre de <a href="/entramado/plataforma_centinela">"Plataforma Centinela".</a> Esto movilizó las alarmas de grupos que se oponen a la vigilancia masiva centrando las preocupaciones en la construcción de una torre donde se va a concentrar toda la inteligencia generada denominada <a href="/mapa/torre_centinela">"Torre Centinela".</a>
+    </p>
+
+    <p>
+      Es en ese mismo periodo de tiempo que el nuevo presidente municipal de Ciudad Juárez, <a href="/entramado/cruz_perez_cuellar">Cruz Pérez Cuellar,</a> le quiso hacer la competencia a Maru Campos en el campo de vigilancia masiva con el proyecto <a href="/entramado/juarez_vigilante">"Juárez Vigilante".</a>
+    </p>
+
+    <p>
+      Sin embargo, tras el discurso político y <a href="/biblioteca/reducira_centinela">los titulares de los medios</a>, comienzan a surgir las primeras preguntas: ¿Por qué un proyecto de seguridad cuesta tanto? <em>¿Por qué la opacidad en el uso de fondos y la falta de detalles técnicos sobre las empresas involucradas?</em>
+    </p>
+
+    <p>
+      🤔<a href="/entramado">¿Quiénes están detrás de todo esto?</a>
     </p>
   </section>
 
@@ -464,41 +485,68 @@ template.innerHTML = `
     <h2>Segunda Capa: Los Integradores Tecnológicos</h2>
     
     <p>
-      Al analizar más a fondo los contratos y las escasas declaraciones oficiales disponibles, la investigación revela que la Torre Centinela y el proyecto de vigilancia no se limitan sólo a cámaras de seguridad. Detrás de estas infraestructuras, encontramos un entramado de empresas tecnológicas especializadas en procesamiento de datos, reconocimiento facial e integración de plataformas con Inteligencia Artificial (IA).
+      Al analizar más a fondo los contratos, las escasas declaraciones oficiales disponibles <a href="/biblioteca">y demás documentos,</a> se pudo llegar a los intermediarios que instalaron distintas tecnologías de vigilancia masiva en las 3 plataformas. 
     </p>
     
     <p>
-      Entre los integradores involucrados destacan compañías como Herta, que no solo proveen software para análisis de patrones delictivos, sino que también facilitan la conexión de esta información con bases de datos privadas y, lo más inquietante, con redes de seguridad al otro lado de la frontera. La presencia de integradores con experiencia en tecnología militar y seguridad nacional sugiere que el verdadero alcance del proyecto va más allá de la vigilancia urbana.
+      Los integradores involucrados son las compañías <a href="/entramado/seguritech">Seguritech,</a> <a href="/entramado/telematica">Telemática LEFIC</a> e <a href="/entramado/int_intelligence">Int Intelligence and Telecom Technologies,</a> que se dedican a armar proyectos con tecnología de terceros para la vigilancia masiva.
     </p>
   </section>
 
-  <!-- Tercera Capa: Los Fabricantes y el Contexto Transfronterizo -->
+  <!-- Tercera Capa: Los Fabricantes -->
   <section id="tercera-capa">
-    <h2>Tercera Capa: Los Fabricantes y el Contexto Transfronterizo</h2>
-    
+    <h2>Tercera Capa: Los Fabricantes</h2>
     <p>
-      A medida que desenmarañamos esta red de integradores, llegamos a los verdaderos fabricantes de la tecnología. Aquí es donde se revela la conexión con fabricantes de hardware y software que operan a nivel global. Empresas como Hikvision, TKH Security, Ubiquiti, Radwin, IndigoVision, Milestone Systems, Dahua y DJI emergen como proveedores clave de dispositivos y componentes que permiten la implementación de vigilancia avanzada, capaz de identificar patrones de comportamiento y rastrear objetivos en tiempo real.
+      A medida que desenmarañamos esta red de integradores, llegamos a los verdaderos fabricantes de la tecnología. <em>Normalmente las investigaciones de este tipo solo llegan en algunos casos a conocer quienes son los integradores,</em> pero no es común que se profundice en saber qué clase de tecnología están instalando. <a href="/metodología">Al realizar estudios de campo, revisiones hemerográficas, estudio de gabinete, entre otras formas de investigación, se nos revela la conexión con fabricantes de hardware y software que operan a nivel global.</a> 
     </p>
-    
+
     <p>
-      La implicación de estos actores internacionales no solo levanta banderas rojas sobre la posible transferencia de datos sensibles, sino que también pone en entredicho la soberanía de la información recopilada por estas plataformas. La narrativa adquiere un tono transfronterizo cuando se descubre que, a través de colaboraciones con la administración de Greg Abbott en Texas, parte de los datos recolectados podrían estar siendo utilizados para fines de control migratorio y operaciones conjuntas a lo largo de la frontera entre México y Estados Unidos.
+      <em>Empresas como Hikvision, TKH Security, Invengo, Ubiquiti, Radwin, IndigoVision, Milestone Systems, Dahua, DJI y Droneshield emergen como proveedores clave de dispositivos y componentes que permiten la implementación de vigilancia masiva </em> mediante tecnologías como: 
+      <li>Cámaras con lectura de placas de vehículos así como reconocimiento del tipo de vehículo, marca, modelo y color.</li> 
+      <li>Radares de lectores de RFDI para leer chips agregados a las placas de los vehículos para contrastar con la información que recolectan las cámaras.</li> 
+      <li>Puntos de control carreteros con cámaras con reconocimiento facial para revisar a los pasajeros de los vehículos.</li> 
+      <li>Puntos de monitoreo en plazas públicas que contienen cámaras con reconocimiento facial.</li>
+      <li>Enlaces por radio punto a punto para la comunicación entre puntos de monitoreo y los centros de comando y control.</li>
+      <li>Patrullas equipadas con cámaras con reconocimiento facial.</li>
+      <li>Software de gestión de video para la integración de todas las cámaras y puntos de monitoreo.</li>
+      <li>Videoanáliticos para reconocimiento facial y reconocimiento de vehículos.</li>
+      <li>Drones equipados con cámaras térmicas, medidores laser y cámaras de alta definición esparcidas por el territorio estatal.</li> 
+      <li>Equipos antidrones utilizados para neutralizar otros drones que se consideran como enemigos.</li>
     </p>
+
+    <ladonacion-details>
+      <span slot="summary">¿Cómo funcionan estas plataformas?</span>
+      <aside slot="contents">
+        <p>
+          <a href="/biblioteca/escudo_chihuahua_explicado">Plataforma Escudo Chihuahua</a>
+        </p>
+        <p>
+          <a href="/biblioteca/centinela_explicado">Plataforma Centinela</a>
+        </p>
+        <p>
+          <a href="/biblioteca/juarez_vigilante_explicado">Juárez Vigilante</a>
+        </p>
+      </aside>
+    </ladonacion-details>
   </section>
 
   <!-- Cuarta Capa: La Amenaza Oculta y las Implicaciones Éticas -->
   <section id="cuarta-capa">
     <h2>Cuarta Capa: La Amenaza Oculta y las Implicaciones Éticas</h2>
-    
     <p>
-      Finalmente, la narrativa llega a la capa más profunda: el verdadero impacto de la Plataforma Centinela en la privacidad de los ciudadanos y la amenaza que representa para la libertad de expresión y el derecho a la protesta.
+      La narrativa adquiere un tono transfronterizo cuando se descubre que, a través de colaboraciones con la administración de <a href="/entramado/greg_abbott">Greg Abbott</a> en el estado de Texas, de la fiscalía de distrito a cargo de <a href="/entramado/sam_bregman">Sam Bregman</a> en Albuquerque, Nuevo México y del embajador de los Estados Unidos de América en México <a href="/entramado/ken_salazar">Ken Salazar,</a> <em>los datos recolectados están siendo utilizados para fines de control migratorio y operaciones conjuntas a lo largo de la frontera entre México y Estados Unidos.</em>
     </p>
     
     <p>
-      A través de la colaboración con organismos como la Organización Internacional para las Migraciones (OIM) y la expansión de programas como Juárez Vigilante, la vigilancia masiva se extiende no solo a delincuentes, sino también a activistas, periodistas y cualquier persona considerada “sospechosa”.
+      Esto se liga con el Plan Estatal de Seguridad Ciudadana y Procuración de Justicia 2022-2027, donde se busca suscribir convenios de colaboración e intercambio de información con instancias de Estados Unidos de Ámerica y de otros países de la región.
     </p>
     
     <p>
-      El proyecto, que al inicio parecía ser una simple mejora de infraestructura de seguridad, ha evolucionado en una red de espionaje masivo con implicaciones éticas y legales preocupantes. La narrativa cierra con un llamado a la acción, destacando la necesidad de un control ciudadano sobre estas tecnologías y la importancia de cuestionar el verdadero propósito de estas plataformas.
+      El muro virtual también existe cuando se habla de convenios de colaboración con organismos como la <a href="/entramado/oim_mexico">Organización Internacional para las Migraciones (OIM),</a> donde <em>se busca que las agencias de seguridad del estado de Chihuahua apoyen en la actualización de albergues de migrantes muy probablemente introduciendo estas tecnologías de vigilancia masiva en los mismos</em>.
+    </p>
+    
+    <p>
+      El proyecto, que al inicio parecía ser una simple mejora de infraestructura de seguridad, ha evolucionado en una potencial red de espionaje masivo con implicaciones éticas y legales preocupantes.
     </p>
   </section>
 

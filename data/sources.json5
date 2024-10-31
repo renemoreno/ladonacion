@@ -485,5 +485,13 @@
     avatar: 'file:sources/avatars/abqraw.png',
     country: 'us',
     origin: 'https://abqraw.com/',
+  },
+  {
+    id: 'diario_juarez',
+    name: 'El Diario de Juárez',
+    logo: 'file:sources/logos/diario_juarez.svg',
+    avatar: 'file:sources/avatars/diario_juarez.png',
+    country: 'mx',
+    origin: 'https://diario.mx/',
   }
 ]

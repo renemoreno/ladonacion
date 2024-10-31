@@ -10,6 +10,7 @@ import '/assets/javascript/components/ladonacion-relation.js'
 import '/assets/javascript/components/ladonacion-excerpt.js'
 import '/assets/javascript/components/ladonacion-country.js'
 import '/assets/javascript/components/biblioteca-panel.js'
+import '/assets/javascript/components/pdf-viewer.js'
 
 const template = document.createElement('template')
 
@@ -553,7 +554,7 @@ customElements.define(
 
       const preview = {
         articles: `<img src="/resources/${item.screenshot}" alt="${item.title}">`,
-        documents: `<embed src="/resources/${item.file}" type="application/pdf">`,
+        documents: `<pdf-viewer src="/resources/${item.file}"></pdf-viewer>`,
       }[item.model]
 
       const description = item.description
