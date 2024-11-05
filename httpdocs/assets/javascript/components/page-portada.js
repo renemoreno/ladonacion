@@ -350,12 +350,23 @@ customElements.define(
         event.target.href && window.scrollTo({ top: 0 })
       })
 
-      const header = document.querySelector('ladonacion-header')
-      this.addEventListener('activate', () => (header.style.display = 'none'))
-      this.addEventListener(
-        'deactivate',
-        () => (header.style.display = 'block')
-      )
+      this.addEventListener('activate', () => {
+        document.dispatchEvent(new Event('activate'))
+      })
+
+      document.addEventListener('keydown', (event) => {
+        const actions = {
+          '?': () => {
+            if (!document.querySelector('ladonacion-search')) {
+              document.body.append(document.createElement('ladonacion-search'))
+              event.preventDefault()
+            }
+          },
+        }
+
+        const action = event.key.toLowerCase()
+        actions[action] && actions[action]()
+      })
 
       this.shadowRoot.querySelectorAll('a').forEach((a) =>
         a.addEventListener('click', () => {

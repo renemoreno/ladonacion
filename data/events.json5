@@ -25,7 +25,7 @@
     id: 'presentacioncentinela',
     title: 'Gobierno del Estado presenta en Juárez la Plataforma Centinela',
     date: '2022-04-20',
-    description: '26 días después de que la <a href="#/entities/sspe_chihuahua">Secretaría de Seguridad Pública</a> reservó por 5 años toda la información relacionada con la <a href="#/places/torre_centinela">Torre Centinela</a>, la gobernadora María Eugenia Campos presentó en la <a href="#/places/ubicacionanterior_centinela">Plaza Misión de Guadalupe</a> la "Plataforma Centinela".',
+    description: '26 días después de que la <a href="#/entities/sspe_chihuahua">Secretaría de Seguridad Pública</a> reservó por 5 años toda la información relacionada con la <a href="#/places/torre_centinela">Torre Centinela</a>, la gobernadora María Eugenia Campos presentó en la <a href="#/places/ubicacionanterior_centinela">Plaza Misión de Guadalupe</a> la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a>.',
     pictures: [
       {
         file: 'file:events/pictures/marucampos_centinela.jpeg',
@@ -83,9 +83,9 @@
     },
     {
       id: 'reeleccion_maru_campos',
-      title: 'Maru Campos es reelecta presidenta municipal de Chihuahua',
+      title: 'Maru Campos gana por la reelección como presidenta municipal de Chihuahua',
       date: '2018-07-01',
-      description: '<a href="#/persons/maru_campos">Maru Campos</a> es reelecta para un segundo periodo como presidenta municipal de Chihuahua.',
+      description: '<a href="#/persons/maru_campos">Maru Campos</a> es reelecta con 203,613 votos para un segundo periodo como presidenta municipal de Chihuahua.',
       pictures: [
         {
           file: 'file:events/pictures/marusereelige.jpg',
@@ -101,13 +101,13 @@
       id: 'firman_escudo_chihuahua_2daetapa',
       title: 'Firman el contrato para la Segunda Etapa de la Plataforma "Escudo Chihuahua"',
       date: '2019-11-25',
-      description: 'El <a href="#/entramado/municipio_chihuahua">Gobierno Municipal de Chihuahua</a> firmó el contrato para la ampliación de la <a href="#/entramado/plataforma_escudo_chihuahua">Plataforma Escudo Chihuahua (PECUU)</a> con el proveedor <a href="#/entramado/telematica_lefic">Telemática LEFIC, S.A. de C.V.</a>, asegurando la continuación del proyecto de seguridad pública. Esta segunda etapa incluirá la instalación de 200 cámaras PTZ adicionales y 350 cámaras fijas, así como 100 licencias adicionales para el sistema de detección de placas en tiempo real. La integración de estos equipos permitirá cubrir áreas de alta incidencia delictiva, paraderos de transporte y escuelas. La contratación directa al proveedor de la primera fase fue justificada para proteger información sensible y mantener la seguridad operativa. La inversión total de $80,000,000 MXN fortalece la capacidad de respuesta y vigilancia en la ciudad.',
+      description: 'El <a href="#/entities/municipio_chihuahua">Gobierno Municipal de Chihuahua</a> firmó el contrato para la ampliación de la <a href="#/entities/plataforma_escudo_chihuahua">Plataforma Escudo Chihuahua (PECUU)</a> con el proveedor <a href="#/entities/telematica_lefic">Telemática LEFIC, S.A. de C.V.</a>, asegurando la continuación del proyecto de seguridad pública. Esta segunda etapa incluirá la instalación de 200 cámaras PTZ adicionales y 350 cámaras fijas, así como 100 licencias adicionales para el sistema de detección de placas en tiempo real. La integración de estos equipos permitirá cubrir áreas de alta incidencia delictiva, paraderos de transporte y escuelas. La contratación directa al proveedor de la primera fase fue justificada para proteger información sensible y mantener la seguridad operativa. La inversión total de $80,000,000 MXN fortalece la capacidad de respuesta y vigilancia en la ciudad.',
     },
     {
       id: 'escudo_chihuahua_2daetapa',
       title: 'Presentan la Segunda Etapa de la Plataforma "Escudo Chihuahua"',
       date: '2020-11-17',
-      description: 'El <a href="#/entramado/municipio_chihuahua">Gobierno Municipal de Chihuahua</a> presentó en transmisión en vivo la Segunda Etapa de la <a href="#/entramado/plataforma_escudo_chihuahua">Plataforma Escudo Chihuahua (PECUU)</a>, donde enseñan las nuevas adquisiciones de drones DJI, el software de detección de placas en tiempo real de TKH Security, los postes de botones de alerta Fanvill en los paraderos de autobuses.',
+      description: 'El <a href="#/entities/municipio_chihuahua">Gobierno Municipal de Chihuahua</a> presentó en transmisión en vivo la Segunda Etapa de la <a href="#/entities/plataforma_escudo_chihuahua">Plataforma Escudo Chihuahua (PECUU)</a>, donde enseñan las nuevas adquisiciones de drones DJI, el software de detección de placas en tiempo real de TKH Security, los postes de botones de alerta Fanvill en los paraderos de autobuses.',
       pictures: [
         {
           file: 'file:events/pictures/escudosegundaetapa.png',
@@ -118,5 +118,215 @@
           },
         },
       ],
-    }     
+    },
+    {
+      id: 'maru_campos_2016',
+      title: 'Maru Campos toma protesta como presidenta municipal de Chihuahua (2016-2018)',
+      date: '2016-10-10',
+      description: '<a href="#/persons/maru_campos">Maru Campos</a> toma protesta como presidenta del <a href="#/entities/municipio_chihuahua">Municipio de Chihuahua</a>.',
+      pictures: [
+        {
+          file: 'file:events/pictures/maruasume2016.jpg',
+          caption: '',
+          source: {
+            name: 'Norte Digital',
+            link: 'https://nortedigital.mx/maru-campos-rinde-protesta-alcaldesa-chihuahua/',
+          },
+        },
+      ],
+    },
+    {
+      id: 'maruprotestareeleccion',
+      title: 'Maru Campos toma protesta como presidenta municipal (2018-2021)',
+      date: '2018-09-10',
+      description: '<a href="#/persons/maru_campos">Maru Campos</a> toma protesta como presidenta del <a href="#/entities/municipio_chihuahua">Municipio de Chihuahua</a> por un segundo periodo.',
+      pictures: [
+        {
+          file: 'file:events/pictures/maruasume2018.png',
+          caption: '',
+          source: {
+            name: 'Maru Campos Galván Fanpage',
+            link: 'https://www.facebook.com/photo?fbid=2699680460049420&set=a.2699672570050209',
+          },
+        },
+      ],
+    },
+    {
+      id: 'maru_campos_promesas2021',
+      title: 'Maru Campos promete llevar Plataforma Escudo a otros municipios',
+      date: '2021-05-12',
+      description: 'La candidata a la <a href="#/entities/gobierno_chihuahua">Gubernatura de Chihuahua</a> <a href="#/persons/maru_campos">Maru Campos</a> promete instalar la <a href="#/entities/plataforma_escudo_chihuahua">Plataforma Escudo</a> en los municipios con mayores problemas de seguridad. Con un sistema de videovigilancia e inteligencia para disminuir los tiempos de respuesta y reducir los índices delictivos.',
+      pictures: [
+        {
+          file: 'file:events/pictures/marupropuesta.jpg',
+          caption: '',
+          source: {
+            name: 'El Heraldo de Chihuahua',
+            link: 'https://www.elheraldodechihuahua.com.mx/local/el-gobierno-del-estado-resulto-incapaz-de-resolver-los-problemas-maru-campos-noticias-de-chihuahua-elecciones-pan-2021-6708016.html',
+          },
+        },
+      ],
+    },
+    {
+      id: 'maru_campos_promesas2018',
+      title: 'Maru Campos promete continuar con la plataforma tecnológica Escudo Chihuahua',
+      date: '2018-06-17',
+      description: 'La candidata a la <a href="#/entities/municipio_chihuahua">Presidencia Municipal de Chihuahua</a> <a href="#/persons/maru_campos">Maru Campos</a> promete ampliar la <a href="#/entities/plataforma_escudo_chihuahua">Plataforma Escudo Chihuahua</a> en el municipio pues dice que la <a href="#/entities/dspm">Dirección de Seguridad Pública de Chihuahua</a> antes de su presidencia tenía un rezago en este tema.',
+      pictures: [
+        {
+          file: 'file:events/pictures/marudebate18.png',
+          caption: '',
+          source: {
+            name: 'Instituto Estatal Electoral de Chihuahua',
+            link: 'https://www.youtube.com/watch?v=p7zmBxznL1c',
+          },
+        },
+      ],
+    },
+    {
+      id: 'maru_campos_gana2021',
+      title: 'Maru Campos gana la gubernatura de Chihuahua',
+      date: '2021-06-06',
+      description: '<a href="#/persons/maru_campos">Maru Campos</a> gana la <a href="#/entities/gobierno_chihuahua">Gubernatura de Chihuahua</a> por el periodo 2021-2027.',
+      pictures: [
+        {
+          file: 'file:events/pictures/maru2021.jpg',
+          caption: '',
+          source: {
+            name: 'Maru Campos Galván Fanpage',
+            link: 'https://www.facebook.com/MaruCamposG/posts/pfbid02UmkrVpidVaBiS9otZ5vvrQvQyiaDdFq5z3pRwNcneAE13uyPjXaTG5br7TtrQfQ8l',
+          },
+        },
+      ],
+    },
+    {
+      id: 'maru_campos_protesta2021',
+      title: 'Maru Campos toma protesta como gobernadora de Chihuahua',
+      date: '2021-09-08',
+      description: '<a href="#/persons/maru_campos">Maru Campos</a> toma protesta como <a href="#/entities/gobierno_chihuahua">gobernadora de Chihuahua</a> por el periodo 2021-2027. En este primer acto pone como uno de sus ejes prioritarios la seguridad y en el mismo habla de la creación de la <a href="#/entities/plataforma_centinela">"Plataforma Centinela"</a> y de la protección desde el gobierno estatal a migrantes, enfatizando a niñas y niños migrantes.',
+      pictures: [
+        {
+          file: 'file:events/pictures/maruprotesta_2021.png',
+          caption: '',
+          source: {
+            name: 'Maru Campos Galván Fanpage',
+            link: 'https://www.facebook.com/MaruCamposG/videos/1093024101469633',
+          },
+        },
+      ],
+    },
+    {
+      id: 'contrato_centinela',
+      title: 'Firman el contrato para la Plataforma Centinela',
+      date: '2022-07-06',
+      description: 'El <a href="#/entities/gobierno_chihuahua">Gobierno del Estado de Chihuahua</a> firma con <a href="#/entities/seguritech">Seguritech Privada S.A. de C.V.</a> el contrato para la construcción de la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a> por un monto de $4,709,885,681 MXN.',
+    },
+    {
+      id: 'abbott_postula2021',
+      title: 'Greg Abbott se postula por tercera vez a la gubernatura de Texas',
+      date: '2021-11-23',
+      description: '<a href="#/persons/greg_abbott">Greg Abbott</a> se postula por tercera vez a la <a href="#/entities/gobierno_texas">gubernatura de Texas</a> usando como plataforma política el proteger y asegurar la frontera con México.',
+      pictures: [
+        {
+          file: 'file:events/pictures/abbottpostula_2021.png',
+          caption: '',
+          source: {
+            name: 'Greg Abbott Twitter',
+            link: 'https://x.com/GregAbbott_TX/status/1463277120315138054',
+          },
+        },
+      ],
+    },
+    {
+      id: 'cdc_terminatitulo42_2022',
+      title: 'CDC termina el uso del Título 42',
+      date: '2022-04-01',
+      description: 'El <a href="#/entities/cdc">Centro para el Control y Prevención de Enfermedades</a> de los Estados Unidos de América pide terminar la orden para usar el Título 42, la cual permite suspender la entrada de personas migrantes por motivos de salud pública a los Estados Unidos. Hasta ese momento se habían expulsado a 1,677,367 personas migrantes del Estado de Texas usando tanto los Títulos 42 como el 8; de ellas 830,037 personas (49.48%) fueron expulsadas por el uso del Título 42.',
+    },
+    {
+      id: 'acciones42_2022',
+      title: 'Greg Abbott anuncia acciones contra el fin del uso del Título 42',
+      date: '2022-04-06',
+      description: 'El gobernador de Texas <a href="#/persons/greg_abbott">Greg Abbott</a> anuncia acciones contra el fin del uso del Título 42, la cual permite suspender la entrada de personas migrantes por motivos de salud pública a los Estados Unidos. Alega que el fin de esta medida permitirá que los carteles de drogas inunden a los Estados Unidos, además de que el aumento de migrantes colapsaría la respuesta de las instituciones en Texas. En este momento se encontraba en campaña política para su tercera reelección como <a href="#/entities/gobierno_texas">gobernador de Texas</a>. Las medidas fueron un segundo filtro de inspecciones a vehículos comerciales que entraban a Texas desde la frontera con México así como enviar por autobus o avión fuera del Estado de Texas a las personas migrantes que terminen su custodia por parte del gobierno federal.',
+      pictures: [
+        {
+          file: 'file:events/pictures/greg_abbot_acciones_42.png',
+          caption: '',
+          source: {
+            name: 'Office of the Texas Governor',
+            link: 'https://gov.texas.gov/news/post/governor-abbott-takes-aggressive-action-to-secure-the-border-as-president-biden-ends-title-42-expulsions',
+          },
+        },
+      ],
+    },
+    {
+      id: 'maruvideo',
+      title: 'Maru Campos lanza mensaje por inspecciones en la frontera',
+      date: '2022-04-12',
+      description: 'La gobernadora <a href="#/persons/maru_campos">Maru Campos</a> da mensaje público sobre las inspecciones adicionales al transporte comercial en Texas que representa pérdidas millonarias por los retrasos causados, para evitar estas inspecciones propone dar acceso a la  <a href="#/entities/plataforma_centinela">Plataforma Centinela</a> al <a href="#/entities/gobierno_texas">Gobierno de Texas</a> que incluye información desde la salida de mercancía de las maquilas en Juárez hasta el cruce en los puentes fronterizos.',
+      pictures: [
+        {
+          file: 'file:events/pictures/marumensaje.png',
+          caption: '',
+          source: {
+            name: 'Comunicación Social Chihuahua',
+            link: 'https://www.youtube.com/watch?v=RtbVyfeRIiA',
+          },
+        },
+      ],
+    },
+    {
+      id: 'memorandum_maru',
+      title: 'Maru Campos envía memorando al gobernador Greg Abbott para que Texas pueda usar la Plataforma Centinela',
+      date: '2022-04-13',
+      description: 'La gobernadora <a href="#/persons/maru_campos">Maru Campos</a> firma un memorando para que el <a href="#/entities/gobierno_texas">Gobierno de Texas</a> pueda usar la información de la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a>. Para ese momento aún no se había firmado el contrato de la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a> ni se había presentado al público en México el proyecto. El documento refleja una postura política de derecha, enfocada en la seguridad fronteriza y el control migratorio, temas clave en agendas conservadoras. La gobernadora de Chihuahua destaca su compromiso con la seguridad mediante la <a href="#/entities/plataforma_centinela">"Plataforma Centinela"</a>, que incluye cámaras, drones y tecnología avanzada para rastrear el tráfico comercial y combatir el narcotráfico y el tráfico de personas. La colaboración con Texas y la protección de los flujos comerciales ($ 60,000,000,000 USD) fortalecen esta postura, priorizando el orden y la relación comercial con Estados Unidos. Además, la dignificación de la policía y la coordinación interinstitucional refuerzan el enfoque en la seguridad y la autoridad estatal.',
+    },
+    {
+      id: 'alan_bersin',
+      title: 'Alan Bersin es nombrado asesor en Seguridad Pública del Gobierno de Chihuahua',
+      date: '2022-04-05',
+      description: 'El excomisionado de la <a href="#/entities/cbp">Customs and Border Protection</a> durante el gobierno de Barack Obama, <a href="#/persons/alan_bersin">Alan Bersin</a> es nombrado como asesor en Seguridad Pública del <a href="#/entities/gobierno_chihuahua">Gobierno del Estado de Chihuahua</a>.',
+      pictures: [
+        {
+          file: 'file:events/pictures/alan_bersin.png',
+          caption: '',
+          source: {
+            name: 'Gobierno de Chihuahua',
+            link: 'https://chihuahua.gob.mx/prensa/colaborara-agregado-de-seguridad-del-departamento-de-eu-en-mexico-con-estrategia-del',
+          },
+        },
+      ],
+    },
+    {
+      id: 'maru_magnus',
+      title: 'Maru Campos y Chris Magnus acuerdan convenios de colaboración',
+      date: '2022-03-18',
+      description: 'La gobernadora <a href="#/persons/maru_campos">Maru Campos</a> y el comisionado de la <a href="#/entities/cbp">Customs and Border Protection</a> <a href="#/persons/chris_magnus">Chris Magnus</a> acuerdan convenios de colaboración para la seguridad fronteriza.',
+      pictures: [
+        {
+          file: 'file:events/pictures/maru_magnus.png',
+          caption: '',
+          source: {
+            name: 'Gobierno de Chihuahua',
+            link: 'https://www.chihuahua.gob.mx/prensa/acuerdan-estrategia-de-seguridad-en-conjunto-para-juarez-comisionado-de-aduanas',
+          },
+        },
+      ],
+    },
+    {
+      id: 'maru_ken',
+      title: 'Maru Campos y Ken Salazar acuerdan colaboración en seguridad fronteriza',
+      date: '2022-03-17',
+      description: 'La gobernadora <a href="#/persons/maru_campos">Maru Campos</a> y el embajador en México de Estados Unidos <a href="#/persons/ken_salazar">Ken Salazar</a> acordaron un colaboración para la seguridad fronteriza.',
+      pictures: [
+        {
+          file: 'file:events/pictures/maru_ken.png',
+          caption: '',
+          source: {
+            name: 'Gobierno de Chihuahua',
+            link: 'https://chihuahua.gob.mx/prensa/acuerdan-gobernadora-y-embajador-ken-salazar-cooperacion-en-seguridad-fronteriza-y-atencion',
+          },
+        },
+      ],
+    }
 ]
