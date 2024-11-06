@@ -60,7 +60,7 @@ template.innerHTML = `
       margin-left: 0;
       flex-basis: 100%;
       background-image: radial-gradient(transparent 70%, #1c1917a0 120%),
-        url(https://vignette2.wikia.nocookie.net/lotr/images/8/8e/Mordor.jpg/revision/latest?cb=20080218173458&path-prefix=de);
+        url(/assets/images/intro.png);
     }
 
     section a[href*="entramado"] {
@@ -85,12 +85,12 @@ template.innerHTML = `
 
     section a[href*="metodologia"] {
       background-image: radial-gradient(transparent 70%, #1c1917a0 120%),
-        url(/assets/images/metodologia.jpg);
+        url(/assets/images/metodologia.png);
     }
 
     section a[href*="autor"] {
       background-image: radial-gradient(transparent 70%, #1c1917a0 120%),
-        url(/assets/images/autor.jpg);
+        url(/assets/images/autor.png);
     }
 
     section a:hover {
