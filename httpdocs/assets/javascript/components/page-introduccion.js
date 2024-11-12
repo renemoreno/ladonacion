@@ -432,6 +432,72 @@ template.innerHTML = `
       text-indent: -1.5em;
       margin-bottom: 1em;
     }
+
+    aside .platforms-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    aside .platform-item {
+      text-align: center;
+      flex: 1;
+      max-width: 300px;
+    }
+
+    aside .platform-item a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      background: none !important;
+      padding: 0 !important;
+    }
+
+    aside .platform-item img {
+      width: 100%;
+      height: auto;
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    aside p {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    aside .platforms-description {
+      display: block;
+      text-align: center;
+      margin: 1rem 0;
+      width: 100%;
+    }
+
+    aside h2 a {
+      background: var(--color-warmGray-100) !important;
+    }
+
+    @media (max-width: 768px) {
+      aside h2 {
+        background: none !important;
+        color: var(--color-white) !important;
+      }
+    }
+
+    #platforms-title a {
+      background: var(--color-warmGray-100) !important;
+    }
+
+    @media (max-width: 768px) {
+      #platforms-title a {
+        background: none !important;
+        color: var(--color-white) !important;
+        text-indent: 0 !important;
+        margin-left: 0 !important;
+      }
+    }
   </style>
 
   <!-- Título Principal de la Página -->
@@ -515,25 +581,28 @@ template.innerHTML = `
     </p>
   </section>
   <aside>
-    <p>
-    ¿Como funcionan las tecnologías de estas plataformas?
-    </p>
+    <h2 id="platforms-title">¿Como funcionan las tecnologías de estas plataformas?</h2>
+    <span class="platforms-description">Da click en el nombre de la plataforma para ver el análisis detallado.</span>
 
-    <p>
-    Da click en el nombre de la plataforma para ver el análisis detallado.
-    </p>
-
-    <p>
-    Plataforma Escudo Chihuahua
-    </p>
-    
-    <p>
-    Plataforma Centinela
-    </p>
-
-    <p>
-    Juárez Vigilante
-    </p>
+    <div class="platforms-container">
+      <div class="platform-item">
+        <a href="/entramado/plataforma_escudo_chihuahua">
+          <img src="/assets/logos/pecuu.svg" alt="Logo Plataforma Escudo Chihuahua" />
+        </a>
+      </div>
+      
+      <div class="platform-item">
+        <a href="/entramado/juarez_vigilante">
+          <img src="/assets/logos/juarez.svg" alt="Logo Juárez Vigilante" />
+        </a>
+      </div>
+      
+      <div class="platform-item">
+        <a href="/entramado/plataforma_centinela">
+          <img src="/assets/logos/centinela.svg" alt="Logo Plataforma Centinela" />
+        </a>
+      </div>
+    </div>
   </aside>
 
   <!-- Cuarta Capa: La Amenaza Oculta y las Implicaciones Éticas -->
