@@ -137,7 +137,7 @@ template.innerHTML = `
       border: none;
     }
 
-    section#hipotesis figure {
+    section#porque figure {
       position: relative;
       float: right;
       width: 20em;
@@ -161,7 +161,7 @@ template.innerHTML = `
         -16px 16px 4px 1px rgba(0, 0, 0, 0.01);
     }
 
-    section#hipotesis figure img {
+    section#porque figure img {
       display: block;
       padding: 1.5em;
       width: 100%;
@@ -175,22 +175,22 @@ template.innerHTML = `
       filter: saturate(0%) invert(100%) contrast(.5) sepia(.1);
     }
 
-    section#colaborar figure {
+    section#quienes figure {
       float: right;
       width: 25em;
       margin: 0 0 0 var(--figure-margin);
       box-sizing: border-box;
     }
 
-    section#colaborar figure div {
-      border-image: url("/assets/images/frame.png") 75 74 97 96 stretch stretch;
+    section#quienes figure div {
+      /* border-image: url("/assets/images/frame.png") 75 74 97 96 stretch stretch;
       border-style: inset;
-      border-width: 3em;
+      border-width: 3em; */
       transform-origin: top;
       animation: swing 3s ease-in-out alternate infinite;
     }
 
-    section#colaborar figure img {
+    section#quienes figure img {
       display: block;
       margin: 0 1px -6px 0;
       width: 100%;
@@ -198,7 +198,7 @@ template.innerHTML = `
       background-color: var(--color-warmGray-100);
     }
 
-    section#colaborar figure figcaption {
+    section#quienes figure figcaption {
       line-height: 1.25;
       text-align: center;
       font-size: 0.75em;
@@ -383,10 +383,10 @@ template.innerHTML = `
   </style>
   <h1>El autor</h1>
 
-  <section id="hipotesis">
-    <h2>Mi hipótesis</h2>
+  <section id="porque">
+    <h2>Por qué el proyecto</h2>
 
-    <figure>
+    <!-- <figure>
       <div>
         <img
           src="/assets/images/jaime.jpg"
@@ -394,37 +394,33 @@ template.innerHTML = `
           loading="lazy"
         />
       </div>
-    </figure>
+    </figure> -->
 
     <p>
-      España tiene <em>un problema endémico de corrupción</em> en la política y en
-      las instituciones. Pero, ¿qué podemos hacer desde la ciudadanía, desde la
-      sociedad civil?
+      En México hay muy poca información sobre los proyectos de vigilancia masiva
+      que están en marcha. Y la poca información que hay es dispersa y poco
+      accesible.
     </p>
 
     <p>
-      <strong>Me llamo Jaime Gómez-Obregón</strong> y soy un ingeniero
-      especializado en datos. Todos observamos cómo la tecnología está
-      transformando el mundo, y mi hipótesis es que la tecnología puede
-      transformar también la forma de exponer y combatir la corrupción.
+      El gran problema es que no sabemos qué es lo que se está haciendo y hasta el 
+      momento las investigaciones en el país no llegan a conocer los detalles de la tecnología 
+      que se está implementando para espiar a sus ciudadanas.
     </p>
 
     <p>
-      Las filtraciones masivas de datos, como la lista Falciani o los papeles de
-      Panamá, han expuesto por primera vez la vulnerabilidad de la maquinaria
-      global de lavado de dinero, evasión de impuestos y crimen organizado. Y la
-      ciencia de datos hace aflorar evidencias tangibles de un vasto océano de
-      información que de otra manera sería insondable al esfuerzo humano.
+      Esta investigación busca reunir la información disponible sobre los proyectos de vigilancia masiva en Chihuahua y 
+      mostrar cómo la tecnología está siendo implementada para fines más allá de la prevención del crimen con connotaciones
+      como ser el control migratorio de Estados Unidos de América.
     </p>
 
     <p>
-      Interesado en este reto intelectual, he aplicado
-      <a href="/metodologia">una metodología</a> a la exploración de los
-      escándalos recientes en torno a la Casa Real española.
+      Sin información las sociedades no pueden ser realmente libres. Lo que sucede es preocupante y <strong>es necesario que la 
+      ciudadanía sepa y pueda actuar para evitar que seamos un país de vigilancia masiva.</strong>
     </p>
   </section>
 
-  <section id="reto">
+  <!-- <section id="reto">
     <h2>El reto</h2>
 
     <p>
@@ -494,40 +490,42 @@ template.innerHTML = `
         </p>
       </aside>
     </ladonacion-details>
-  </section>
+  </section> -->
 
   <aside id="fuentes"></aside>
 
   <hr />
 
-  <section id="colaborar">
-    <h2>Cómo colaborar</h2>
+  <section id="quienes">
+    <h2>Quiénes somos</h2>
 
     <figure>
       <div>
-        <img src="/assets/images/loroloko.jpg" alt="Loroloko" loading="lazy" />
+        <img src="/assets/images/r3d.png" alt="Red en Defensa de los Derechos Digitales" loading="lazy" />
       </div>
       <figcaption>
-        ¡Sirva este público tributo, oh mi alado y esponjoso amigo, de
-        agradecimiento a tantas horas compartidas al teclado!
+        <!-- ¡Sirva este público tributo, oh mi alado y esponjoso amigo, de
+        agradecimiento a tantas horas compartidas al teclado! -->
       </figcaption>
     </figure>
 
     <p>
-      Este proyecto solo ha sido posible gracias al comprometido patrocinio de las
-      personas que están apoyando mi <i>crowdfunding</i> ciudadano.
+      Este proyecto solo ha sido posible gracias a la subvención creada por la Red en Defensa de los Derechos Digitales denominada <strong>Fondo de Fortalecimiento para la Defensa de los Derechos Digitales</strong>, financiada por la Unión Europea.
     </p>
 
     <p>
-      Personas independientes que compartimos una misma visión: que
-      <strong>la transparencia</strong> en las instituciones es el más efectivo
-      desinfectante de la vida pública. Y que desde la sociedad civil podemos
-      cambiar las cosas utilizando datos y tecnología. Que es posible enviar un
-      mensaje a los poderes del Estado e influir.
+      Este fondo busca apoyar el desarrollo de proyectos que permitan avanzar 
+      en el involucramiento de un mayor número de organizaciones, colectivos, 
+      agrupaciones, periodistas independientes y activistas de la defensa de los 
+      derechos humanos, especialmente a nivel local, en acciones de resistencia e 
+      incidencia relacionadas al impulso de una agenda de reforma legislativa y de políticas 
+      públicas para <strong>establecer controles democráticos al ejercicio de facultades de vigilancia 
+      de comunicaciones y en el espacio público</strong>, así como respecto de medidas que puedan entorpecer 
+      el flujo informativo en línea. 
     </p>
 
     <p>
-      A todos ellos, mi profundo agradecimiento.
+      Para ver más del trabajo de R3D,
       <svg
         class="arrow"
         xmlns="http://www.w3.org/2000/svg"
@@ -542,8 +540,8 @@ template.innerHTML = `
 
     <p>
       👉
-      <a href="https://patreon.com/jaime_gomez_obregon" target="_blank"
-        >Aquí puedes ayudarme en mi próximo proyecto</a
+      <a href="https://r3d.mx/" target="_blank"
+        >puedes dar click aquí para visitar su página web</a
       >
     </p>
 
@@ -551,7 +549,7 @@ template.innerHTML = `
       También puedes seguir a
       <a
         class="nowrap"
-        href="https://twitter.com/jaimeobregon"
+        href="https://twitter.com/R3Dmx"
         rel="nofollow"
         target="_blank"
         ><!--
@@ -565,12 +563,11 @@ template.innerHTML = `
             d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23"
           />
         </svg>
-        <code>@JaimeObregon</code
+        <code>@R3Dmx</code
         ><!--
         --></a
       >
-      en Twitter, donde escribo sobre la evolución de este proyecto y los próximos
-      que quiero abordar.
+      en Twitter, donde escriben sobre los últimos acontecimientos en México sobre amenazas a los derechos digitales.
     </p>
   </section>
 
@@ -583,8 +580,7 @@ template.innerHTML = `
 
     <p>
       Este proyecto tiene una finalidad exclusivamente investigativa y
-      divulgativa. Pretende abordar desde una perspectiva innovadora un fenómeno
-      de interés público que afecta a la primera institución del Estado.
+      divulgativa.
     </p>
 
     <p>
@@ -601,33 +597,20 @@ template.innerHTML = `
 
     <p>
       Con la excepción de los materiales de terceros que pudieran estar
-      licenciados de otra forma, los contenidos de este proyecto elaborados por el
-      autor se publican bajo licencia
+      licenciados de otra forma, los contenidos de este proyecto elaborados por quien
+      publica quedan bajo licencia
       <a
         href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"
         rel="nofollow"
         target="_blank"
         >Creative Commons Atribución-NoComercial-CompartirIgual 4.0</a
       >. Esto significa que puedes reutilizar dichos contenidos del autor como
-      desees para fines no comerciales, pero has de citar que es un trabajo de
-      Jaime Gómez-Obregón y proporcionar un enlace a
+      desees para fines no comerciales, pero has de citar que es un trabajo derivado
+      de la obra de Jaime Gómez-Obregón y proporcionar un enlace a
       <code>https://ladonacion.es</code>.
     </p>
 
-    <p>
-      Para contactar con el autor puedes enviar un mensaje privado por Twitter a
-      <a href="https://twitter.com/jaimeobregon" rel="nofollow" target="_blank"
-        ><code>@JaimeObregon</code></a
-      >, o bien escribir un correo electrónico a
-      <code
-        ><a href="mailto:jaime@ladonacion.es" rel="nofollow"
-          >jaime@ladonacion.es</a
-        ></code
-      >. Son bienvenidos los mensajes con aportaciones de nuevos datos
-      documentalmente sostenidos y las propuestas de correcciones.
-    </p>
-
-    <ladonacion-details>
+    <!-- <ladonacion-details>
       <span slot="summary">Tabla de relaciones</span>
       <div slot="contents">
         <p>
@@ -636,7 +619,7 @@ template.innerHTML = `
         </p>
         <table></table>
       </div>
-    </ladonacion-details>
+    </ladonacion-details> -->
   </section>
 `
 
@@ -681,11 +664,19 @@ customElements.define(
     }
 
     connectedCallback() {
-      const sources = data.sources.sort((a, b) => {
-        return a.name.localeCompare(b.name, undefined, {
-          ignorePunctuation: true,
+      // Obtener todas las fuentes mencionadas en articles y documents
+      const usedSources = new Set([
+        ...data.articles.map(article => article.source),
+        ...data.documents.map(doc => doc.origin?.source)
+      ].filter(Boolean).map(source => references.parse(source).id))
+
+      const sources = data.sources
+        .filter(source => usedSources.has(source.id))
+        .sort((a, b) => {
+          return a.name.localeCompare(b.name, undefined, {
+            ignorePunctuation: true,
+          })
         })
-      })
 
       this.shadowRoot.getElementById('fuentes').innerHTML = sources
         .map((source) => {

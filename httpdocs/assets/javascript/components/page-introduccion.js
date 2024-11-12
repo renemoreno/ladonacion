@@ -435,16 +435,33 @@ template.innerHTML = `
 
     aside .platforms-container {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
-      gap: 2rem;
+      gap: 1rem;
       margin: 2rem 0;
     }
 
     aside .platform-item {
       text-align: center;
-      flex: 1;
-      max-width: 300px;
+      flex: 0 1 auto;
+      max-width: 250px;
+      margin: 0 1rem;
+    }
+
+    @media (max-width: 768px) {
+      aside .platforms-container {
+        justify-content: space-around;
+        gap: 0.5rem;
+      }
+
+      aside .platform-item {
+        flex: 1;
+        margin: 0;
+      }
+
+      aside .platform-item img {
+        max-width: 150px;
+      }
     }
 
     aside .platform-item a {
@@ -625,12 +642,12 @@ template.innerHTML = `
     </p>
   </section>
 
-  <!-- Epílogo: Desmontando la Cebolla -->
+  <!-- Epílogo: Sumergiéndonos al Iceberg -->
   <section id="epilogo">
-    <h2>Epílogo: Desmontando la Cebolla</h2>
+    <h2>Epílogo: Sumergiéndonos al Iceberg</h2>
     
     <p>
-      La imagen de la Torre Centinela, que al inicio se presentaba como un símbolo de seguridad, se transforma en la metáfora de una cebolla de múltiples capas. Cada capa que se desprende revela no solo un nivel más profundo de opacidad y control, sino también la compleja red de intereses políticos, económicos y tecnológicos que la sostienen. Al final, la narrativa invita a los lectores a reflexionar: ¿Qué más se oculta detrás de la fachada de la seguridad moderna? ¿Hasta dónde llega el verdadero alcance de la Plataforma Centinela?
+      La imagen de la Torre Centinela, que al inicio se presentaba como un símbolo de seguridad, se transforma en la metáfora de un iceberg. Cada capa que nos sumergimos revela no solo un nivel más profundo de opacidad y control, sino también la compleja red de intereses políticos, económicos y tecnológicos que la sostienen. Al final, la narrativa invita a los lectores a reflexionar: ¿Qué más se oculta detrás de la fachada de la seguridad moderna? ¿Hasta dónde llega el verdadero alcance de la Plataforma Centinela?
     </p>
   </section>
 `
