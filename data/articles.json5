@@ -557,5 +557,21 @@
         type: '#/relations/mentions',
       },
     ]
-  }
+  },
+  {
+    id: 'cruz_promete_camaras',
+    url: 'https://www.borderreport.com/regions/texas/new-leader-vows-to-make-a-dent-in-juarez-crime-through-closed-circuit-cameras-better-lit-streets/',
+    source: '#/sources/borderreport',
+    title: 'New leader vows to make a dent in Juarez crime through closed circuit cameras, better lit streets',
+    date: '2021-06-12',
+    lang: 'en',
+    description: 'El presidente electo de <a href="#/entities/municipio_juarez">Ciudad Juárez</a>, <a href="#/persons/cruz_perez">Cruz Pérez Cuellar</a>, promete reducir la delincuencia en la ciudad a través del uso de 2,000 cámaras de videovigilancia.',
+    relations: [
+      {
+        subject: '#/articles/cruz_promete_camaras',
+        object: '#/persons/cruz_perez',
+        type: '#/relations/mentions',
+      },
+    ]
+  },
 ]

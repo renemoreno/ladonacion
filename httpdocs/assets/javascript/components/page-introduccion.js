@@ -513,22 +513,28 @@ template.innerHTML = `
       <li>Drones equipados con cámaras térmicas, medidores laser y cámaras de alta definición esparcidas por el territorio estatal.</li> 
       <li>Equipos antidrones utilizados para neutralizar otros drones que se consideran como enemigos.</li>
     </p>
-
-    <ladonacion-details>
-      <span slot="summary">¿Cómo funcionan estas plataformas?</span>
-      <aside slot="contents">
-        <p>
-          <a href="/biblioteca/escudo_chihuahua_explicado">Plataforma Escudo Chihuahua</a>
-        </p>
-        <p>
-          <a href="/biblioteca/centinela_explicado">Plataforma Centinela</a>
-        </p>
-        <p>
-          <a href="/biblioteca/juarez_vigilante_explicado">Juárez Vigilante</a>
-        </p>
-      </aside>
-    </ladonacion-details>
   </section>
+  <aside>
+    <p>
+    ¿Como funcionan las tecnologías de estas plataformas?
+    </p>
+
+    <p>
+    Da click en el nombre de la plataforma para ver el análisis detallado.
+    </p>
+
+    <p>
+    Plataforma Escudo Chihuahua
+    </p>
+    
+    <p>
+    Plataforma Centinela
+    </p>
+
+    <p>
+    Juárez Vigilante
+    </p>
+  </aside>
 
   <!-- Cuarta Capa: La Amenaza Oculta y las Implicaciones Éticas -->
   <section id="cuarta-capa">

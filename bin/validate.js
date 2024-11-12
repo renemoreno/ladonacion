@@ -9,6 +9,7 @@ const cpy = require('cpy')
 const fs = require('fs')
 const gm = require('gm')
 const sharp = require('sharp')
+const JSON5 = require('json5')
 
 cache.fetch = async (key, callback) => {
   const info = await cache.get.info(config.cache.path, key)
@@ -102,8 +103,16 @@ const config = {
             width: 1280,
             height: 800,
             fullPage: true,
-            timeout: 180,
+            timeout: 180000,
+            waitForElement: 'body',
+            waitUntil: 'networkidle0',
             scripts: modules.length > 0 ? modules : undefined,
+            defaultBackground: true,
+            scaleFactor: 1,
+            disableAnimations: true,
+            headers: {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
           })
         }
       )
@@ -473,80 +482,193 @@ const validationErrors = config.documents
   )
   .filter((errors) => errors.length)
 
-config.makeThumbnails(catalog.thumbnails)
-config.takeScreenshots(catalog.screenshots)
-
-const results = Object.fromEntries(
-  config.documents.map((document) => [document.name, document.data])
-)
-
-const contents = `export const data = ${JSON.stringify(results)}`
-fs.writeFile(`${directories.target}/ladonacion.js`, contents, (error) => {
-  if (error) {
-    console.error(error)
+// Agregar las funciones de gestión de caché
+cache.removeByUrl = async (url) => {
+  console.log(`Limpiando caché para URL: ${url}`)
+  const keysToRemove = [
+    `screenshots:${url}`,
+    `optimized:${url}`,
+    `thumbnails:${url}`
+  ]
+  
+  for (const key of keysToRemove) {
+    try {
+      await cache.rm.entry(config.cache.path, key)
+      console.log(`Eliminado: ${key}`)
+    } catch (error) {
+      console.log(`No se encontró en caché: ${key}`)
+    }
   }
-})
-
-const files = catalog.files.map((file) => file.replace(/^file:/, ''))
-cpy(files, directories.target, {
-  parents: true,
-  cwd: directories.source,
-})
-
-const output = {
-  stats: Object.keys(results).map((model) => ({
-    [model]: config.documents.find((document) => document.name === model).data
-      .length,
-  })),
-  unused: catalog.ids
-    .filter(
-      (id) =>
-        config.documents
-          .filter(
-            (document) => !['articles', 'documents'].includes(document.name)
-          )
-          .filter((document) => document.data.find((item) => item.id === id))
-          .length
-    )
-    .filter(
-      (id) =>
-        !catalog.references.filter((reference) => reference.id === id).length
-    ),
-  errors: [...validationErrors, ...catalog.semanticErrors],
 }
 
-;(async () => {
-  const exceptions = [
-    `!${directories.source}/*.json5`,
-    `!${directories.source}/schemas/**/*.json5`,
-    `!${directories.target}/ladonacion.js`,
-  ]
-  const files = await globby([
-    `${directories.source}/**`,
-    `${directories.target}/**`,
-    ...exceptions,
-  ])
+cache.removeArticleCache = async (articleId) => {
+  const articles = JSON5.parse(fs.readFileSync(`${directories.source}/articles.json5`, 'utf8'))
+  const article = articles.find(a => a.id === articleId)
+  
+  if (!article) {
+    console.log(`No se encontró artículo con ID: ${articleId}`)
+    return
+  }
 
-  const expected = [
-    ...catalog.screenshots.map((file) => file.screenshot),
-    ...catalog.screenshots.map((file) => file.thumbnail),
-    ...catalog.thumbnails.map((file) => file.thumbnail),
-    ...catalog.files.map((file) =>
-      file.replace(/^file:/, `${directories.target}/`)
-    ),
-    ...catalog.files.map((file) =>
-      file.replace(/^file:/, `${directories.source}/`)
-    ),
-  ]
+  console.log(`Limpiando caché para artículo: ${article.title}`)
+  await cache.removeByUrl(article.url)
+}
 
-  const orphans = files.filter((file) => !expected.includes(file))
-  output.orphans = orphans
+cache.removeArticlesByPattern = async (urlPattern) => {
+  const articles = JSON5.parse(fs.readFileSync(`${directories.source}/articles.json5`, 'utf8'))
+  const matchingArticles = articles.filter(a => a.url.match(urlPattern))
+  
+  console.log(`Encontrados ${matchingArticles.length} artículos que coinciden con el patrón`)
+  
+  for (const article of matchingArticles) {
+    console.log(`Limpiando caché para: ${article.title}`)
+    await cache.removeByUrl(article.url)
+  }
+}
 
-  console.log(
-    util.inspect(output, {
-      depth: null,
-      colors: true,
-      maxArrayLength: null,
+cache.listArticleCache = async () => {
+  const items = await cache.ls(config.cache.path)
+  const screenshots = Object.values(items)
+    .filter(item => item.key.startsWith('screenshots:'))
+    .map(item => ({
+      url: item.key.replace('screenshots:', ''),
+      cached: new Date(item.time).toLocaleString()
+    }))
+  
+  console.table(screenshots)
+}
+
+// Modificar el bloque final para manejar los comandos
+if (require.main === module) {
+  const command = process.argv[2];
+  
+  // Si no hay comando, ejecutar el flujo normal
+  if (!command) {
+    // Ejecutar el proceso normal de validación y screenshots
+    config.makeThumbnails(catalog.thumbnails)
+    config.takeScreenshots(catalog.screenshots)
+
+    const results = Object.fromEntries(
+      config.documents.map((document) => [document.name, document.data])
+    )
+
+    const contents = `export const data = ${JSON.stringify(results)}`
+    fs.writeFile(`${directories.target}/ladonacion.js`, contents, (error) => {
+      if (error) {
+        console.error(error)
+      }
     })
-  )
-})()
+
+    const files = catalog.files.map((file) => file.replace(/^file:/, ''))
+    cpy(files, directories.target, {
+      parents: true,
+      cwd: directories.source,
+    })
+
+    const output = {
+      stats: Object.keys(results).map((model) => ({
+        [model]: config.documents.find((document) => document.name === model).data
+          .length,
+      })),
+      unused: catalog.ids
+        .filter(
+          (id) =>
+            config.documents
+              .filter(
+                (document) => !['articles', 'documents'].includes(document.name)
+              )
+              .filter((document) => document.data.find((item) => item.id === id))
+              .length
+        )
+        .filter(
+          (id) =>
+            !catalog.references.filter((reference) => reference.id === id).length
+        ),
+      errors: [...validationErrors, ...catalog.semanticErrors],
+    }
+
+    ;(async () => {
+      const exceptions = [
+        `!${directories.source}/*.json5`,
+        `!${directories.source}/schemas/**/*.json5`,
+        `!${directories.target}/ladonacion.js`,
+      ]
+      const files = await globby([
+        `${directories.source}/**`,
+        `${directories.target}/**`,
+        ...exceptions,
+      ])
+
+      const expected = [
+        ...catalog.screenshots.map((file) => file.screenshot),
+        ...catalog.screenshots.map((file) => file.thumbnail),
+        ...catalog.thumbnails.map((file) => file.thumbnail),
+        ...catalog.files.map((file) =>
+          file.replace(/^file:/, `${directories.target}/`)
+        ),
+        ...catalog.files.map((file) =>
+          file.replace(/^file:/, `${directories.source}/`)
+        ),
+      ]
+
+      const orphans = files.filter((file) => !expected.includes(file))
+      output.orphans = orphans
+
+      console.log(
+        util.inspect(output, {
+          depth: null,
+          colors: true,
+          maxArrayLength: null,
+        })
+      )
+    })()
+  } else {
+    // Ejecutar comandos de gestión de caché
+    const param = process.argv[3];
+    const commands = {
+      async removeCache(articleId) {
+        if (!articleId) {
+          console.error('Debes especificar un ID de artículo')
+          console.log('Uso: node validate.js removeCache yociudadano_piedracentinela')
+          process.exit(1)
+        }
+        await cache.removeArticleCache(articleId)
+      },
+
+      async removeByPattern(pattern) {
+        if (!pattern) {
+          console.error('Debes especificar un patrón')
+          console.log('Uso: node validate.js removeByPattern "yociudadano\\.com\\.mx"')
+          process.exit(1)
+        }
+        await cache.removeArticlesByPattern(pattern)
+      },
+
+      async listCache() {
+        await cache.listArticleCache()
+      },
+
+      async help() {
+        console.log(`
+Comandos disponibles:
+  node validate.js                             - Ejecuta el proceso normal de validación
+  node validate.js removeCache <articleId>     - Elimina el caché de un artículo específico
+  node validate.js removeByPattern <pattern>   - Elimina el caché de artículos que coincidan con el patrón
+  node validate.js listCache                   - Lista todos los artículos en caché
+  node validate.js help                        - Muestra esta ayuda
+        `)
+      }
+    }
+
+    if (commands[command]) {
+      commands[command](param)
+        .then(() => process.exit(0))
+        .catch(error => {
+          console.error(error)
+          process.exit(1)
+        })
+    } else {
+      commands.help()
+    }
+  }
+}

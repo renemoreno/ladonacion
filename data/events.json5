@@ -25,7 +25,7 @@
     id: 'presentacioncentinela',
     title: 'Gobierno del Estado presenta en Juárez la Plataforma Centinela',
     date: '2022-04-20',
-    description: '26 días después de que la <a href="#/entities/sspe_chihuahua">Secretaría de Seguridad Pública</a> reservó por 5 años toda la información relacionada con la <a href="#/places/torre_centinela">Torre Centinela</a>, la gobernadora María Eugenia Campos presentó en la <a href="#/places/ubicacionanterior_centinela">Plaza Misión de Guadalupe</a> la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a>.',
+    description: '26 días después de que la <a href="#/entities/sspe_chihuahua">Secretaría de Seguridad Pública</a> reservó por 5 años toda la información relacionada con la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a> y 6 días después del viaje a Austin Texas con <a href="#/persons/greg_abbott">Greg Abbott</a>, la gobernadora <a href="#/persons/maru_campos">Maru Campos</a> presentó en la <a href="#/places/ubicacionanterior_centinela">Plaza Misión de Guadalupe</a> la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a>.',
     pictures: [
       {
         file: 'file:events/pictures/marucampos_centinela.jpeg',
@@ -187,7 +187,7 @@
       id: 'maru_campos_gana2021',
       title: 'Maru Campos gana la gubernatura de Chihuahua',
       date: '2021-06-06',
-      description: '<a href="#/persons/maru_campos">Maru Campos</a> gana la <a href="#/entities/gobierno_chihuahua">Gubernatura de Chihuahua</a> por el periodo 2021-2027.',
+      description: '<a href="#/persons/maru_campos">Maru Campos</a> gana la <a href="#/entities/gobierno_chihuahua">Gubernatura de Chihuahua</a> por el periodo 2021-2027 con un total de 576,176 votos.',
       pictures: [
         {
           file: 'file:events/pictures/maru2021.jpg',
@@ -239,7 +239,7 @@
     },
     {
       id: 'cdc_terminatitulo42_2022',
-      title: 'CDC termina el uso del Título 42',
+      title: 'CDC pide terminar el uso del Título 42',
       date: '2022-04-01',
       description: 'El <a href="#/entities/cdc">Centro para el Control y Prevención de Enfermedades</a> de los Estados Unidos de América pide terminar la orden para usar el Título 42, la cual permite suspender la entrada de personas migrantes por motivos de salud pública a los Estados Unidos. Hasta ese momento se habían expulsado a 1,677,367 personas migrantes del Estado de Texas usando tanto los Títulos 42 como el 8; de ellas 830,037 personas (49.48%) fueron expulsadas por el uso del Título 42.',
     },
@@ -299,7 +299,7 @@
     },
     {
       id: 'maru_magnus',
-      title: 'Maru Campos y Chris Magnus acuerdan convenios de colaboración',
+      title: 'Maru Campos y Chris Magnus acuerdan colaboración en seguridad fronteriza',
       date: '2022-03-18',
       description: 'La gobernadora <a href="#/persons/maru_campos">Maru Campos</a> y el comisionado de la <a href="#/entities/cbp">Customs and Border Protection</a> <a href="#/persons/chris_magnus">Chris Magnus</a> acuerdan convenios de colaboración para la seguridad fronteriza.',
       pictures: [
@@ -317,7 +317,7 @@
       id: 'maru_ken',
       title: 'Maru Campos y Ken Salazar acuerdan colaboración en seguridad fronteriza',
       date: '2022-03-17',
-      description: 'La gobernadora <a href="#/persons/maru_campos">Maru Campos</a> y el embajador en México de Estados Unidos <a href="#/persons/ken_salazar">Ken Salazar</a> acordaron un colaboración para la seguridad fronteriza.',
+      description: 'La gobernadora <a href="#/persons/maru_campos">Maru Campos</a> y el embajador en México de Estados Unidos <a href="#/persons/ken_salazar">Ken Salazar</a> acordaron una colaboración para la seguridad fronteriza. Además en la misma reunión se le presentó al embajador la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a> para dar certeza a las empresas extranjeras radicadas en Chihuahua así como para apoyar con la seguridad fronteriza.',
       pictures: [
         {
           file: 'file:events/pictures/maru_ken.png',
@@ -325,6 +325,134 @@
           source: {
             name: 'Gobierno de Chihuahua',
             link: 'https://chihuahua.gob.mx/prensa/acuerdan-gobernadora-y-embajador-ken-salazar-cooperacion-en-seguridad-fronteriza-y-atencion',
+          },
+        },
+      ],
+    },
+    {
+      id: 'maru_binacional',
+      title: 'Maru Campos se reune con funcionarios del gobierno de Estados Unidos para armar el Grupo de Trabajo Binacional de Infraestructura',
+      date: '2022-02-15',
+      description: 'La gobernadora de Chihuahua <a href="#/persons/maru_campos">Maru Campos</a> se reunió con funcionarios del gobierno de Estados Unidos para armar el Grupo de Trabajo Binacional de Infraestructura.',
+      pictures: [
+        {
+          file: 'file:events/pictures/marubinacional.png',
+          caption: '',
+          source: {
+            name: 'Maru Campos Galván Fanpage',
+            link: 'https://www.facebook.com/MaruCamposG/posts/pfbid08hgvPkTSnuLCztXAns455VBUwY9rgy1iTMLFy7DVpy4kTzEqadkcop1ZqhC183NYl',
+          },
+        },
+      ],
+    },
+    {
+      id: 'maru_greg',
+      title: 'Maru Campos y Greg Abbott se reúnen para quitar inspecciones en la frontera a cambio de compartir la información de la Plataforma Centinela',
+      date: '2022-04-14',
+      description: 'La gobernadora <a href="#/persons/maru_campos">Maru Campos</a> y el gobernador de Texas <a href="#/persons/greg_abbott">Greg Abbott</a> se reunieron en Austin, Texas para discutir la colaboración en seguridad fronteriza a cambio de que el <a href="#/entities/gobierno_texas">gobierno de Texas</a> quite las inspecciones adicionales a vehículos comerciales. El <a href="#/entities/gobierno_chihuahua">gobierno de Chihuahua</a> se comprometió a compartir la información de la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a> tanto con el gobierno texano como con sus socios comerciales.',
+      pictures: [
+        {
+          file: 'file:events/pictures/maru_greg.png',
+          caption: '',
+          source: {
+            name: 'Maru Campos Galván Fanpage',
+            link: 'https://www.facebook.com/MaruCamposG/posts/pfbid0286xcdKC3yijzSDTXnQekZ8Bgghdknua1tynHEZUbMYpQkPEGioBRmx9D8WhhTfyJl',
+          },
+        },
+      ],
+    },
+    {
+      id: 'cruz_registro_2021',
+      title: 'Cruz Pérez Cuellar se registra como candidato a la presidencia de Juárez',
+      date: '2021-03-18',
+      description: '<a href="#/persons/cruz_perez_cuellar">Cruz Pérez Cuellar</a> se registra como candidato a la <a href="#/entities/municipio_juarez">presidencia de Juárez</a>.',
+      pictures: [
+        {
+          file: 'file:events/pictures/cruzregistro_2021.png',
+          caption: '',
+          source: {
+            name: 'El Puntero',
+            link: 'https://elpuntero.com.mx/inicio/2021/03/20/se-registra-cruz-perez-cuellar-a-la-alcaldia-de-juarez-como-candidato-de-morena-pt-nueva-alianza/',
+          },
+        },
+      ],
+    },
+    {
+      id: 'maru_registro_2021',
+      title: 'Maru Campos se registra como candidata a la gubernatura de Chihuahua',
+      date: '2021-03-15',
+      description: '<a href="#/persons/maru_campos">Maru Campos</a> se registra como candidata a la <a href="#/entities/gobierno_chihuahua">gubernatura de Chihuahua</a>.',
+      pictures: [
+        {
+          file: 'file:events/pictures/maruregistro_2021.png',
+          caption: '',
+          source: {
+            name: 'IEE Chihuahua',
+            link: 'https://www.facebook.com/ieechihuahua/posts/pfbid06RL33XZCeRj9rbBWFQkDrvaKvittrN66QSMfmcs4s3qJNTKBgScd5VxzU6nRtY9ol',
+          },
+        },
+      ],
+    },
+    {
+      id: 'marco_registro_2021',
+      title: 'Marco Bonilla se registra como candidato a la presidencia de Chihuahua',
+      date: '2021-03-13',
+      description: '<a href="#/persons/marco_bonilla">Marco Bonilla</a> se registra como candidato a la <a href="#/entities/municipio_chihuahua">presidencia de Chihuahua</a>.',
+      pictures: [
+        {
+          file: 'file:events/pictures/marcoregistro_2021.png',
+          caption: '',
+          source: {
+            name: 'El Heraldo de Chihuahua',
+            link: 'https://www.elheraldodechihuahua.com.mx/local/se-registra-marco-bonilla-ante-el-instituto-estatal-electoral-chihuahua-noticias-locales-elecciones-partidos-politica-partido-accion-nacional-pan-6473353.html',
+          },
+        },
+      ],
+    },
+    {
+      id: 'cruz_plangobierno',
+      title: 'Cruz Pérez Cuellar promete sistemas de videovigilancia en Juárez',
+      date: '2021-06-01',
+      description: '<a href="#/persons/cruz_perez_cuellar">Cruz Pérez Cuellar</a> presenta su plan de gobierno para <a href="#/entities/municipio_juarez">Juárez</a> en caso de ganar las elecciones. En el eje 5 denominado "Seguridad Comunitaria" promete orienta la actuación policial en un modelo que involucre un sistema de videovigilancia efectiva que incluye más cámaras así como drones. Se compromete ademas a realizar foros ciudadanos en el tema de Seguridad Ciudadana una vez ratificado su triunfo para desarrollarlo en el Plan Municipal de Desarrollo.',
+      pictures: [
+        {
+          file: 'file:events/pictures/cruz_plangobierno.png',
+          caption: '',
+          source: {
+            name: 'Cruz Pérez Cuellar',
+            link: 'https://x.com/CruzPerzCuellar/status/1399780788070141957',
+          },
+        },
+      ],
+    },
+    {
+      id: 'marco_plangobierno',
+      title: 'Marco Bonilla promete tercera etapa de Plataforma Escudo en Chihuahua',
+      date: '2021-05-04',
+      description: '<a href="#/persons/marco_bonilla">Marco Bonilla</a> promete un plan de gobierno para <a href="#/entities/municipio_chihuahua">Chihuahua</a> en caso de ganar las elecciones. En el eje de "Seguridad sin Excusas" promete una tercera etapa de la <a href="#/entities/plataforma_escudo_chihuahua">Plataforma Escudo</a> en el municipio que incluya cámaras con reconocimiento facial e inteligencia artificial.',
+      pictures: [
+        {
+          file: 'file:events/pictures/marco_plangobierno.png',
+          caption: '',
+          source: {
+            name: 'Marco Bonilla Fanpage',
+            link: 'https://www.facebook.com/SoyMarcoBonilla/videos/501570144541363/',
+          },
+        },
+      ],
+    },
+    {
+      id: 'marco_gana_2021',
+      title: 'Marco Bonilla gana las elecciones a la presidencia de Chihuahua',
+      date: '2021-06-06',
+      description: '<a href="#/persons/marco_bonilla">Marco Bonilla</a> gana las elecciones a la <a href="#/entities/municipio_chihuahua">presidencia de Chihuahua</a> con un total de 204,976 votos.',
+      pictures: [
+        {
+          file: 'file:events/pictures/marcogana_2021.png',
+          caption: '',
+          source: {
+            name: 'Comité Directivo Estatal del PAN Chihuahua',
+            link: 'https://www.facebook.com/cdepanchih/posts/pfbid0teKyWpYXBqiB7jGsTmfS11GmYzvhzYrDssBLyJH3K5N682iYDmkaoYzvvbwhp8zAl',
           },
         },
       ],

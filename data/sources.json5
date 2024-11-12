@@ -493,5 +493,13 @@
     avatar: 'file:sources/avatars/diario_juarez.png',
     country: 'mx',
     origin: 'https://diario.mx/',
+  },
+  {
+    id: 'borderreport',
+    name: 'Border Report',
+    logo: 'file:sources/logos/borderreport.svg',
+    avatar: 'file:sources/avatars/borderreport.png',
+    country: 'us',
+    origin: 'https://www.borderreport.com/',
   }
 ]
