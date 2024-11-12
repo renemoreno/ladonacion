@@ -501,5 +501,13 @@
     avatar: 'file:sources/avatars/borderreport.png',
     country: 'us',
     origin: 'https://www.borderreport.com/',
+  },
+  {
+    id: 'ojo_frontera',
+    name: 'Ojo en laFrontera',
+    logo: 'file:sources/logos/ojo_frontera.svg',
+    avatar: 'file:sources/avatars/ojo_frontera.png',
+    country: 'mx',
+    origin: 'https://youtube.com/',
   }
 ]

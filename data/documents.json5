@@ -1403,5 +1403,55 @@
         type: '#/relations/controls',
       }
     ]
+  },
+  {
+    id: 'pecuu_tecnologia',
+    file: 'file:documents/pecuu_tecnologia.pdf',
+    title: 'Conoce la tecnología de la Plataforma Escudo Chihuahua',
+    date: '2024-11-01',
+    lang: 'es',
+    description: 'Un documento de la Plataforma Escudo Chihuahua donde se explica cómo funciona la tecnología de la Plataforma Escudo Chihuahua.',
+    origin: {
+      url: 'https://youtube.com',
+      date: '2024-11-01',
+      source: '#/sources/ojo_frontera',
+    },
+    relations: [
+      {
+        subject: '#/documents/pecuu_tecnologia',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/entities/tkh',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/provides_technology_to',
+      },
+      {
+        subject: '#/entities/radwin',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/provides_technology_to',
+      },
+      {
+        subject: '#/entities/fanvil',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/provides_technology_to',
+      },
+      {
+        subject: '#/entities/hikvision',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/provides_technology_to',
+      },
+      {
+        subject: '#/entities/dahua',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/provides_technology_to',
+      },
+      {
+        subject: '#/entities/dji',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/provides_technology_to',
+      },
+    ],
   }
 ]

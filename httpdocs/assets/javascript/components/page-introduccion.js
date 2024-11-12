@@ -603,7 +603,7 @@ template.innerHTML = `
 
     <div class="platforms-container">
       <div class="platform-item">
-        <a href="/entramado/plataforma_escudo_chihuahua">
+        <a href="/biblioteca/pecuu_tecnologia">
           <img src="/assets/logos/pecuu.svg" alt="Logo Plataforma Escudo Chihuahua" />
         </a>
       </div>
