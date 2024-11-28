@@ -192,10 +192,9 @@ template.innerHTML = `
 
     section#quienes figure img {
       display: block;
-      margin: 0 1px -6px 0;
+      padding: 1.5em;
       width: 100%;
       box-sizing: border-box;
-      background-color: var(--color-warmGray-100);
     }
 
     section#quienes figure figcaption {
@@ -368,6 +367,17 @@ template.innerHTML = `
       tr.relation td:nth-child(4):before {
         content: "Objetos permitidos: ";
       }
+
+      section#quienes figure {
+        float: none;
+        width: 100%;
+        max-width: 400px;
+        margin: 1em auto;
+      }
+
+      section#quienes figure img {
+        padding: 1em;
+      }
     }
 
     @media (max-width: 640px) {
@@ -523,6 +533,12 @@ template.innerHTML = `
       de comunicaciones y en el espacio público</strong>, así como respecto de medidas que puedan entorpecer 
       el flujo informativo en línea. 
     </p>
+
+    <figure>
+      <div>
+        <img src="/assets/logos/europe.svg" alt="Union Europea" loading="lazy" />
+      </div>
+    </figure>
 
     <p>
       Para ver más del trabajo de R3D,
