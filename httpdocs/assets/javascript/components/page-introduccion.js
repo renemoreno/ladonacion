@@ -140,36 +140,31 @@ template.innerHTML = `
       border: none;
     }
 
-    section#introduccion figure {
+    section#introduccion figure,
+    section#primera-capa figure,
+    section#segunda-capa figure,
+    section#tercera-capa figure,
+    section#cuarta-capa figure,
+    section#epilogo figure {
       position: relative;
       float: right;
       width: 20em;
       margin: -0.5em 0 0 var(--figure-margin);
-      border: 10px solid var(--color-black);
       transform-origin: top;
-      animation: swing 3s ease-in-out alternate infinite;
       z-index: 1;
       box-sizing: border-box;
-      box-shadow: -1px 1px 4px 1px rgba(0, 0, 0, 0.1),
-        -2px 2px 4px 1px rgba(0, 0, 0, 0.09), -3px 3px 4px 1px rgba(0, 0, 0, 0.08),
-        -4px 4px 4px 1px rgba(0, 0, 0, 0.07), -5px 5px 4px 1px rgba(0, 0, 0, 0.06),
-        -6px 6px 4px 1px rgba(0, 0, 0, 0.05), -7px 7px 4px 1px rgba(0, 0, 0, 0.04),
-        -8px 8px 4px 1px rgba(0, 0, 0, 0.03), -9px 9px 4px 1px rgba(0, 0, 0, 0.03),
-        -10px 10px 4px 1px rgba(0, 0, 0, 0.03),
-        -11px 11px 4px 1px rgba(0, 0, 0, 0.03),
-        -12px 12px 4px 1px rgba(0, 0, 0, 0.02),
-        -13px 13px 4px 1px rgba(0, 0, 0, 0.02),
-        -14px 14px 4px 1px rgba(0, 0, 0, 0.01),
-        -15px 15px 4px 1px rgba(0, 0, 0, 0.01),
-        -16px 16px 4px 1px rgba(0, 0, 0, 0.01);
     }
 
-    section#introduccion figure img {
+    section#introduccion figure img,
+    section#primera-capa figure img,
+    section#segunda-capa figure img,
+    section#tercera-capa figure img,
+    section#cuarta-capa figure img,
+    section#epilogo figure img {
       display: block;
-      padding: 1.5em;
       width: 100%;
       box-sizing: border-box;
-      background: var(--color-warmGray-200);
+      margin-top: 1em;
     }
 
     aside#fuentes img {
@@ -303,12 +298,22 @@ template.innerHTML = `
       }
 
       section#introduccion figure,
-      section#colaborar figure {
+      section#colaborar figure,
+      section#primera-capa figure,
+      section#segunda-capa figure,
+      section#tercera-capa figure,
+      section#cuarta-capa figure,
+      section#epilogo figure {
         float: none;
         margin: 0 auto 2em auto;
       }
 
-      section#introduccion figure {
+      section#introduccion figure,
+      section#primera-capa figure,
+      section#segunda-capa figure,
+      section#tercera-capa figure,
+      section#cuarta-capa figure,
+      section#epilogo figure {
         max-width: 80%;
       }
 
@@ -526,8 +531,8 @@ template.innerHTML = `
     <figure>
       <div>
         <img
-          src="https://www.thedigitalfix.com/wp-content/sites/thedigitalfix/2022/09/rings-of-power-sauron-explained.jpg"
-          alt="Sauron"
+          src="/assets/images/ice00.png"
+          alt="Iceberg"
           loading="lazy"
         />
       </div>
@@ -542,6 +547,16 @@ template.innerHTML = `
   <section id="primera-capa">
     <h2>Primera Capa: La Superficie Visible</h2>
     
+    <figure>
+      <div>
+        <img
+          src="/assets/images/primera_capa.png"
+          alt="Primera Capa"
+          loading="lazy"
+        />
+      </div>
+    </figure>
+
     <p>
       La narrativa comienza en 2017 con la presentación de la <a href="/entramado/plataforma_escudo_chihuahua">"Plataforma Escudo Chihuahua"</a> en el municipio de Chihuahua, argumentando falta de inteligencia en el accionar de la policía municipal. <em>Esto dio pie a una inversión constante de recursos en tecnología de vigilancia masiva que ha trascendido las administraciones municipales</em> iniciándose con <a href="/entramado/maru_campos">Maru Campos</a> y continuando con <a href="/entramado/marco_bonilla">Marco Bonilla.</a>
     </p>
@@ -567,6 +582,16 @@ template.innerHTML = `
   <section id="segunda-capa">
     <h2>Segunda Capa: Los Integradores Tecnológicos</h2>
     
+    <figure>
+      <div>
+        <img
+          src="/assets/images/segunda_capa.png"
+          alt="Segunda Capa"
+          loading="lazy"
+        />
+      </div>
+    </figure>
+
     <p>
       Al analizar más a fondo los contratos, las escasas declaraciones oficiales disponibles <a href="/biblioteca">y demás documentos,</a> se pudo llegar a los intermediarios que instalaron distintas tecnologías de vigilancia masiva en las 3 plataformas. 
     </p>
@@ -579,6 +604,17 @@ template.innerHTML = `
   <!-- Tercera Capa: Los Fabricantes -->
   <section id="tercera-capa">
     <h2>Tercera Capa: Los Fabricantes</h2>
+
+    <figure>
+      <div>
+        <img
+          src="/assets/images/tercera_capa.png"
+          alt="Tercera Capa"
+          loading="lazy"
+        />
+      </div>
+    </figure>
+
     <p>
       A medida que desenmarañamos esta red de integradores, llegamos a los verdaderos fabricantes de la tecnología. <em>Normalmente las investigaciones de este tipo solo llegan en algunos casos a conocer quienes son los integradores,</em> pero no es común que se profundice en saber qué clase de tecnología están instalando. <a href="/metodología">Al realizar estudios de campo, revisiones hemerográficas, estudio de gabinete, entre otras formas de investigación, se nos revela la conexión con fabricantes de hardware y software que operan a nivel global.</a> 
     </p>
@@ -625,6 +661,17 @@ template.innerHTML = `
   <!-- Cuarta Capa: La Amenaza Oculta y las Implicaciones Éticas -->
   <section id="cuarta-capa">
     <h2>Cuarta Capa: La Amenaza Oculta y las Implicaciones Éticas</h2>
+
+    <figure>
+      <div>
+        <img
+          src="/assets/images/cuarta_capa.png"
+          alt="Cuarta Capa"
+          loading="lazy"
+        />
+      </div>
+    </figure>
+
     <p>
       La narrativa adquiere un tono transfronterizo cuando se descubre que, a través de colaboraciones con la administración de <a href="/entramado/greg_abbott">Greg Abbott</a> en el estado de Texas, de la fiscalía de distrito a cargo de <a href="/entramado/sam_bregman">Sam Bregman</a> en Albuquerque, Nuevo México y del embajador de los Estados Unidos de América en México <a href="/entramado/ken_salazar">Ken Salazar,</a> <em>los datos recolectados están siendo utilizados para fines de control migratorio y operaciones conjuntas a lo largo de la frontera entre México y Estados Unidos.</em>
     </p>
@@ -646,6 +693,16 @@ template.innerHTML = `
   <section id="epilogo">
     <h2>Epílogo: Sumergiéndonos al Iceberg</h2>
     
+    <figure>
+      <div>
+        <img
+          src="/assets/images/ice_fin.png"
+          alt="Epilogo"
+          loading="lazy"
+        />
+      </div>
+    </figure>
+
     <p>
       La imagen de la Torre Centinela, que al inicio se presentaba como un símbolo de seguridad, se transforma en la metáfora de un iceberg. Cada capa que nos sumergimos revela no solo un nivel más profundo de opacidad y control, sino también la compleja red de intereses políticos, económicos y tecnológicos que la sostienen. Al final, la narrativa invita a los lectores a reflexionar: ¿Qué más se oculta detrás de la fachada de la seguridad moderna? ¿Hasta dónde llega el verdadero alcance de la Plataforma Centinela?
     </p>
