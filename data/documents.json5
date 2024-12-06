@@ -1452,6 +1452,56 @@
         object: '#/entities/plataforma_escudo_chihuahua',
         type: '#/relations/provides_technology_to',
       },
+      {
+        subject: '#/entities/herta',
+        object: '#/entities/plataforma_escudo_chihuahua',
+        type: '#/relations/provides_technology_to',
+      }
+    ],
+  },
+  {
+    id: 'juarez_tecnologia',
+    file: 'file:documents/juarez_tecnologia.pdf',
+    title: 'Conoce la tecnología de la Plataforma Juárez Vigilante',
+    date: '2024-11-01',
+    lang: 'es',
+    description: 'Un documento donde se explica cómo funciona la tecnología de la <a href="#/entities/juarez_vigilante">Plataforma Juárez Vigilante</a>.',
+    origin: {
+      url: 'https://youtube.com',
+      date: '2024-11-01',
+      source: '#/sources/ojo_frontera',
+    },
+    relations: [
+      {
+        subject: '#/documents/juarez_tecnologia',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/mentions',
+      },
+      {
+        subject: '#/entities/hikvision',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/provides_technology_to',
+      },
+      {
+        subject: '#/entities/dahua',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/provides_technology_to',
+      },
+      {
+        subject: '#/entities/dji',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/provides_technology_to',
+      },
+      {
+        subject: '#/entities/iss',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/provides_technology_to',
+      },
+      {
+        subject: '#/entities/esri',
+        object: '#/entities/juarez_vigilante',
+        type: '#/relations/provides_technology_to',
+      }
     ],
   }
 ]

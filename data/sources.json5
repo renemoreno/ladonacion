@@ -495,7 +495,7 @@
     origin: 'https://diario.mx/',
   },
   {
-    id: 'borderreport',
+    id: 'border_report',
     name: 'Border Report',
     logo: 'file:sources/logos/borderreport.svg',
     avatar: 'file:sources/avatars/borderreport.png',
@@ -504,7 +504,7 @@
   },
   {
     id: 'ojo_frontera',
-    name: 'Ojo en laFrontera',
+    name: 'Ojo en la Frontera',
     logo: 'file:sources/logos/ojo_frontera.svg',
     avatar: 'file:sources/avatars/ojo_frontera.png',
     country: 'mx',

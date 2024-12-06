@@ -456,5 +456,145 @@
           },
         },
       ],
+    },
+    {
+      id: 'cruz_gana_2021',
+      title: 'Cruz Pérez Cuellar gana las elecciones a la presidencia de Juárez',
+      date: '2021-06-06',
+      description: '<a href="#/persons/cruz_perez_cuellar">Cruz Pérez Cuellar</a> gana las elecciones a la <a href="#/entities/municipio_juarez">presidencia de Juárez</a> con un total de 213,073 votos.',
+      pictures: [
+        {
+          file: 'file:events/pictures/cruzgana_2021.png',
+          caption: '',
+          source: {
+            name: 'El Diario de Juárez',
+            link: 'https://www.pressreader.com/mexico/el-diario-de-juarez/20210607/281547998825694/',
+          },
+        },
+      ],
+    },
+    {
+      id: 'cruz_protesta_2021',
+      title: 'Cruz Pérez Cuellar toma protesta como presidente de Juárez',
+      date: '2021-09-10',
+      description: '<a href="#/persons/cruz_perez_cuellar">Cruz Pérez Cuellar</a> toma protesta como <a href="#/entities/municipio_juarez">presidente de Juárez</a>.',
+      pictures: [
+        {
+          file: 'file:events/pictures/cruz_protesta_2021.png',
+          caption: '',
+          source: {
+            name: 'Milenio',
+            link: 'https://www.milenio.com/estados/cruz-perez-rinde-protesta-presidente-municipal-ciudad-juarez',
+          },
+        },
+      ],
+    },
+    {
+      id: 'marco_protesta_2021',
+      title: 'Marco Bonilla toma protesta como presidente de Chihuahua',
+      date: '2021-09-10',
+      description: '<a href="#/persons/marco_bonilla">Marco Bonilla</a> toma protesta como <a href="#/entities/municipio_chihuahua">presidente de Chihuahua</a>.',
+      pictures: [
+        {
+          file: 'file:events/pictures/marco_protesta_2021.png',
+          caption: '',
+          source: {
+            name: 'Marco Bonilla Fanpage',
+            link: 'https://www.facebook.com/SoyMarcoBonilla/posts/pfbid0HJaFXpv4cFgLJjUW1Xcmb3puBXrTuhRQjdBKZG3BDukb7RGg8TewC3T4sC4kAXD5l',
+          },
+        },
+      ],
+    },
+    {
+      id: 'juarez_internacional',
+      title: 'El municipio de Juárez contrata a INT para desarrollar Juárez Vigilante',
+      date: '2022-03-12',
+      description: 'El <a href="#/entities/municipio_juarez">municipio de Juárez</a> contrata a <a href="#/entities/int_intelligence">INT Intelligence and Telecom Technologies</a> para desarrollar el proyecto <a href="#/entities/juarez_vigilante">Juárez Vigilante</a> por un monto de 157,171,387.64 MXN.',
+    },
+    {
+      id: 'telematica_contrato03',
+      title: 'Municipio de Chihuahua firma contrato para tercera etapa de Plataforma Escudo',
+      date: '2022-05-09',
+      description: 'La empresa <a href="#/entities/telematica">Telemática Lefic</a> firma contrato con el <a href="#/entities/municipio_chihuahua">municipio de Chihuahua</a> para desarrollar la tercera etapa de la <a href="#/entities/plataforma_escudo_chihuahua">Plataforma Escudo</a> por un monto de 64,297,968.13 MXN.',
+    },
+    {
+      id: 'presentan_plataforma_escudo03',
+      title: 'Presentan la tercera etapa de Plataforma Escudo',
+      date: '2022-08-15',
+      description: 'Se presenta la tercera etapa de la <a href="#/entities/plataforma_escudo_chihuahua">Plataforma Escudo</a> en el <a href="#/entities/municipio_chihuahua">municipio de Chihuahua</a>.',
+      pictures: [
+        {
+          file: 'file:events/pictures/marco_presenta2022.png',
+          caption: '',
+          source: {
+            name: 'Marco Bonilla Fanpage',
+            link: 'https://www.facebook.com/SoyMarcoBonilla/posts/pfbid02kK5nSuaFYrksis4sZkeziiqgNf9msvjUyrCRpLa5Vj4Ek4T4g6E9SpPh6Yx557b2l',
+          },
+        },
+      ],
+    },
+    {
+      id: 'presentan_juarez_vigilante',
+      title: 'Presentan Juárez Vigilante',
+      date: '2022-08-19',
+      description: 'Se presenta el proyecto <a href="#/entities/juarez_vigilante">Juárez Vigilante</a> en el <a href="#/entities/municipio_juarez">municipio de Juárez</a>.',
+      pictures: [
+        {
+          file: 'file:events/pictures/cruz_presenta2022.png',
+          caption: '',
+          source: {
+            name: 'El Heraldo de Juárez',
+            link: 'https://www.elheraldodejuarez.com.mx/local/juarez/respalda-ip-nueva-estrategia-de-seguridad-juarez-vigilante-8765143.html',
+          },
+        },
+      ],
+    },
+    {
+      id: 'como_opera_plataforma_escudo',
+      title: '¿Cómo opera la Plataforma Escudo 3ra Etapa?',
+      date: '2023-02-02',
+      description: '<a href="#/persons/marco_bonilla">Marco Bonilla</a> presenta en vivo cómo opera la tercera etapa de la <a href="#/entities/plataforma_escudo_chihuahua">Plataforma Escudo</a> en el <a href="#/entities/municipio_chihuahua">municipio de Chihuahua</a>.',
+      pictures: [
+        {
+          file: 'file:events/pictures/marco_presenta2023.png',
+          caption: '',
+          source: {
+            name: 'Marco Bonilla Fanpage',
+            link: 'https://www.facebook.com/SoyMarcoBonilla/posts/pfbid02zbSb29EoEWdUce7TszUTPcLFSuYvnF8t9LNUZ7Y3fizPAx4b9c3L4ZKu3zUMKjn5l',
+          },
+        },
+      ],
+    },
+    {
+      id: 'inaugura_subcentro_juarez',
+      title: 'Inauguran Subcentro Centinela en Juárez',
+      date: '2023-02-03',
+      description: '<a href="#/persons/maru_campos">Maru Campos</a> inaugura el <a href="#/places/subcentro_juarez">Subcentro Centinela de Juárez</a> de la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a>.',
+      pictures: [
+        {
+          file: 'file:events/pictures/maru_inaugura_juarez.png',
+          caption: '',
+          source: {
+            name: 'Gobierno del Estado de Chihuahua',
+            link: 'https://chihuahua.gob.mx/prensa/en-chihuahua-el-crimen-no-quedara-impune-gobernadora-maru-campos-inaugura-el-centro-de-la',
+          },
+        },
+      ],
+    },
+    {
+      id: 'capacitan_en_facex',
+      title: 'Capacitan en Reconocimiento Facial a SSPM de Juárez',
+      date: '2023-05-19',
+      description: 'Se capacitan a elementos de la <a href="#/entities/sspm_juarez">SSPM de Juárez</a> en el uso de la tecnología de <a href="#/entities/iss">SecureOS FaceX</a> para el reconocimiento facial, al parecer las imagenes vienen tanto de las cámaras de los centros de mando móvil como de cámaras PTZ de postes.',
+      pictures: [
+        {
+          file: 'file:events/pictures/capacitan_facex.png',
+          caption: '',
+          source: {
+            name: 'Norte Digital',
+            link: 'https://nortedigital.mx/se-les-acabo-su-choque-y-fuga/',
+          },
+        },
+      ],
     }
 ]

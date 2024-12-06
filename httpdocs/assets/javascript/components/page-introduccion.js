@@ -645,7 +645,7 @@ template.innerHTML = `
       </div>
       
       <div class="platform-item">
-        <a href="/entramado/juarez_vigilante">
+        <a href="/biblioteca/juarez_tecnologia">
           <img src="/assets/logos/juarez.svg" alt="Logo Juárez Vigilante" />
         </a>
       </div>
