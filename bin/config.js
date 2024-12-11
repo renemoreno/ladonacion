@@ -358,6 +358,28 @@ module.exports = {
         mainContent.style.width = '80%';
       }    
     `,
+    diario_juarez: `
+      // Remover elementos no deseados
+      const elementsToRemove = [
+        // Publicidad y elementos promocionales
+        'div.banner',
+        'div[class*="col-aside"]',
+        'footer',
+      ];
+      
+      // Remover elementos
+      elementsToRemove.forEach(selector => {
+        document.querySelectorAll(selector).forEach(el => el.remove());
+      });
+
+      // Centrar la sección principal del contenido
+      const mainContent = document.querySelector('div.article--content');
+      if (mainContent) {
+        mainContent.style.float = 'none';
+        mainContent.style.margin = '0 auto';
+        mainContent.style.width = '80%';
+      }    
+    `,
     eluniversal: `
       // Remover elementos no deseados
       const elementsToRemove = [
@@ -415,6 +437,105 @@ module.exports = {
         img.style.visibility = 'visible';
         img.loading = 'eager';
       });      
+    `,
+    yociudadano: `
+      // Prevenir que SuperPWA se inicie (ejecutar inmediatamente)
+      (() => {
+        // Prevenir registro del service worker
+        if (navigator.serviceWorker) {
+          navigator.serviceWorker.register = function() {
+            return new Promise(() => {});
+          };
+        }
+        
+        // Remover scripts de SuperPWA antes de que carguen
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+              if (node.tagName === 'SCRIPT' && (node.id?.includes('superpwa') || node.src?.includes('superpwa'))) {
+                node.remove();
+              }
+              if (node.tagName === 'LINK' && node.rel === 'manifest') {
+                node.remove();
+              }
+            });
+          });
+        });
+        
+        observer.observe(document.documentElement, {
+          childList: true,
+          subtree: true
+        });
+      })();
+
+      // Remover elementos no deseados
+      const elementsToRemove = [
+        'div[class*="header__switch"]',
+        'div[class*="neeon"]',
+        'div[class*="col-xl-3"]',
+      ];
+      
+      elementsToRemove.forEach(selector => {
+        document.querySelectorAll(selector).forEach(el => el.remove());
+      });
+
+      // Eliminar todos los elementos después de entry-content
+      const entryContent = document.querySelector('.entry-content');
+      if (entryContent) {
+        let nextElement = entryContent.nextElementSibling;
+        while (nextElement) {
+          const current = nextElement;
+          nextElement = nextElement.nextElementSibling;
+          current.remove();
+        }
+      }
+
+      // Deshabilitar SuperPWA de manera más agresiva
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+          registrations.forEach(registration => {
+            registration.unregister();
+          });
+        });
+      }
+
+      // Limpiar variables globales y cache
+      if (window.superpwa_sw) {
+        delete window.superpwa_sw;
+      }
+      
+      if (caches) {
+        caches.keys().then(names => {
+          names.forEach(name => {
+            if (name.includes('superpwa')) {
+              caches.delete(name);
+            }
+          });
+        });
+      }
+    `,
+    norte: `
+      // Remover elementos no deseados
+      const elementsToRemove = [
+        // Publicidad
+        'section.notas_after_header',
+        'a.bannerboletin',
+        'div.relacionadas',
+        'footer',
+        'div.footer-widgets',
+        'iframe',
+        'div#st-3',
+        'div.gb-cta-content',
+        'div[id*="div-gpt-ad"]',
+        'div.wp-block-genesis-blocks-gb-cta gb-block-cta',
+        'div.gb-cta-button',
+        'div#hreERN',
+      ];
+      
+      // Remover elementos básicos
+      elementsToRemove.forEach(selector => {
+        document.querySelectorAll(selector).forEach(el => el.remove());
+      });
     `,
     elheraldodechihuahua: `
       // Remover elementos no deseados

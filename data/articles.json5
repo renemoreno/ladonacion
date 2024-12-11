@@ -6,9 +6,10 @@
     title: 'Colocan primera piedra de Torre Centinela; costará 4 mmdp y estaría lista en año y medio',
     date: '2022-08-10',
     lang: 'es',
+    description: 'La <a href="#/entities/gobierno_chihuahua">gobernadora de Chihuahua</a>, <a href="#/persons/maru_campos">Maru Campos</a>, colocó la primera piedra de la <a href="#/places/torre_centinela">Torre Centinela</a>, un centro de mando de 20 pisos para la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a> y la <a href="#/entities/sspe_chihuahua">Secretaría de Seguridad Pública Estatal</a>. Con una inversión total de 4 mil millones de pesos, incluirá tecnología avanzada distribuida en 13 regiones del estado. El edificio, ubicado en Ciudad Juárez, estará listo en 18 meses y será el primer C6 del país. La empresa <a href="#/entities/seguritech">Seguritech</a> gestionará los servicios tecnológicos. El Cabildo donó seis predios para su construcción, destacando el cambio de ubicación para evitar conflictos con la ciudadanía por el cierre de espacios públicos.',
     relations: [
       {
-        subject: '#/persons/ernesto_valdes',
+        subject: '#/persons/ariel_picker',
         object: '#/events/primerapiedra',
         type: '#/relations/takes_part',
       },
@@ -449,6 +450,7 @@
     title: 'Se empalman esfuerzos e inversión y generan pobres resultados en seguridad.',
     date: '2024-09-09',
     lang: 'es',
+    description: 'La descoordinación entre los gobiernos municipal y estatal en Ciudad Juárez ha generado duplicidad de esfuerzos y gastos millonarios en videovigilancia, con pocos resultados en seguridad. Ambos niveles compiten por implementar más cámaras y tecnología, sin conectar sus plataformas ni mejorar la cooperación entre sus corporaciones. La inversión estatal en la <a href="#/entities/plataforma_centinela">Plataforma Centinela</a> supera los 4,700 millones de pesos, mientras que el <a href="#/entities/municipio_juarez">municipio</a> destina 495 millones al <a href="#/entities/juarez_vigilante">CERI</a>, pero los índices delictivos continúan en aumento. Factores políticos, personales y la falta de transparencia agravan la situación, generando preocupación por el impacto económico, la efectividad en seguridad y la privacidad ciudadana.',
     relations: [
       {
         subject: '#/articles/cooperacionjuarezcentinela_nortedigital',
